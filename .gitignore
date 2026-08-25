@@ -23,3 +23,11 @@ vectorstore/
 # Editor
 .vscode/
 .idea/
+
+# Corpus — never commit. Course-provided, 1.5 GB, redistributable only via Canvas.
+# Lives OUTSIDE this repo at ../data/capstone-corpus/
+ResearchPapers/
+Wikipedia/
+CapstoneDatasets/
+*.pdf
+*.zip
