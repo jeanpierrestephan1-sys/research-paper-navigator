@@ -1,0 +1,287 @@
+{
+ "_about": "Key facts for the 12 new cross-paper questions in testInputs_multipaper.json. Same rule as passage_key_facts.json: a chunk counts only if EVERY group has at least one alternative present in that one chunk. Kept in a separate file so the frozen file for the 45 stays byte-identical. Tightened before first scoring: M3 QBS, M4 Jeeves, M5 Lifty, M7 DreamCoder, M9 Fusion 360 (its title is a running header on 12 chunks and contained both original facts), M11 OmegaC, M12 both.",
+ "M1": {
+  "DBLP_journals_corr_AlurFSS16": [
+   [
+    "\\bconditional linear arithmetic"
+   ],
+   [
+    "\\binvariant synthesis"
+   ]
+  ],
+  "DBLP_journals_corr_AlurFSS16a": [
+   [
+    "\\bprogramming by examples?\\b"
+   ],
+   [
+    "\\bstrings?\\b",
+    "\\bbit vectors?\\b"
+   ]
+  ],
+  "DBLP_journals_corr_abs-1711-11438": [
+   [
+    "\\b1500\\b"
+   ],
+   [
+    "\\bnew solvers\\b"
+   ]
+  ]
+ },
+ "M2": {
+  "DBLP_conf_hybrid_HuntFMHDS21": [
+   [
+    "\\bsafety constraints?\\b"
+   ],
+   [
+    "\\bobject detect",
+    "\\bhybrid"
+   ]
+  ],
+  "DBLP_journals_corr_abs-2110-05440": [
+   [
+    "\\bbackup actions?\\b"
+   ],
+   [
+    "\\boverrid",
+    "\\bshield"
+   ]
+  ]
+ },
+ "M3": {
+  "DBLP_journals_corr_abs-1208-2013": [
+   [
+    "\\bpostcondition"
+   ],
+   [
+    "\\bsql\\b"
+   ],
+   [
+    "\\binvariant"
+   ]
+  ],
+  "DBLP_conf_cidr_CheungAMSM13": [
+   [
+    "\\bstatusquo\\b"
+   ],
+   [
+    "\\brelational quer",
+    "\\bimperative"
+   ]
+  ],
+  "DBLP_journals_debu_CheungMSAM14": [
+   [
+    "\\borders of magnitude"
+   ],
+   [
+    "\\bprogram analysis"
+   ]
+  ]
+ },
+ "M4": {
+  "DBLP_conf_plas_AustinYFS13": [
+   [
+    "\\bfaceted"
+   ],
+   [
+    "\\bjeeves\\b"
+   ],
+   [
+    "\\bnon interference",
+    "\\bmultiple views"
+   ]
+  ],
+  "DBLP_conf_pldi_YangHASFC16": [
+   [
+    "\\bjacqueline\\b"
+   ],
+   [
+    "\\bdatabase"
+   ]
+  ]
+ },
+ "M5": {
+  "DBLP_conf_pldi_PolikarpovaKS16": [
+   [
+    "\\bpolymorphic refinement types?\\b"
+   ],
+   [
+    "\\bsynthes"
+   ]
+  ],
+  "DBLP_journals_corr_PolikarpovaYIS16": [
+   [
+    "\\blifty\\b"
+   ],
+   [
+    "\\bliquid types?\\b",
+    "\\brefinement types?\\b"
+   ],
+   [
+    "\\bpolic"
+   ],
+   [
+    "\\brepair",
+    "\\bverif"
+   ]
+  ]
+ },
+ "M6": {
+  "DBLP_conf_cav_ChaudhuriS11": [
+   [
+    "\\bgaussian"
+   ],
+   [
+    "\\bsmooth"
+   ]
+  ],
+  "DBLP_conf_cav_ChaudhuriS12": [
+   [
+    "\\beuler\\b"
+   ],
+   [
+    "\\boptimization"
+   ]
+  ],
+  "DBLP_journals_corr_abs-1802-04408": [
+   [
+    "\\breas\\b"
+   ],
+   [
+    "\\bsat solv"
+   ],
+   [
+    "\\bsmooth",
+    "\\bdifferentiab"
+   ]
+  ]
+ },
+ "M7": {
+  "DBLP_journals_corr_abs-2006-08381": [
+   [
+    "\\blibrar",
+    "\\babstractions?\\b"
+   ],
+   [
+    "\\bimagined",
+    "\\breplayed",
+    "\\bwake sleep"
+   ]
+  ],
+  "DBLP_journals_pacmpl_BowersOWGTES23": [
+   [
+    "\\bstitch\\b"
+   ],
+   [
+    "\\borders of magnitude"
+   ]
+  ]
+ },
+ "M8": {
+  "DBLP_journals_corr_abs-1204-1751": [
+   [
+    "\\berror models?\\b"
+   ],
+   [
+    "\\b65\\b"
+   ]
+  ],
+  "DBLP_conf_oopsla_PuNSB16": [
+   [
+    "\\bseq2seq\\b"
+   ],
+   [
+    "\\bmoocs?\\b"
+   ]
+  ]
+ },
+ "M9": {
+  "DBLP_journals_tog_WillisPLCDLSM21": [
+   [
+    "\\b8 625\\b"
+   ],
+   [
+    "\\bhuman design"
+   ]
+  ],
+  "DBLP_conf_cvpr_WillisJCT0GSTLS22": [
+   [
+    "\\bjoinable\\b"
+   ],
+   [
+    "\\bjoints?\\b"
+   ]
+  ]
+ },
+ "M10": {
+  "DBLP_journals_corr_abs-1906-04604": [
+   [
+    "\\brepl\\b",
+    "\\bread eval print"
+   ],
+   [
+    "\\bvalue function"
+   ]
+  ],
+  "DBLP_conf_iclr_NyePBATS21": [
+   [
+    "\\bpartial programs?\\b",
+    "\\bpartially written"
+   ],
+   [
+    "\\bapproximate execution",
+    "\\bconcrete execution"
+   ]
+  ]
+ },
+ "M11": {
+  "DBLP_conf_icml_TavaresK0DS21": [
+   [
+    "\\bcounterfactual inference"
+   ],
+   [
+    "\\bomegac\\b"
+   ],
+   [
+    "\\boperator",
+    "\\bintervention"
+   ]
+  ],
+  "DBLP_journals_corr_abs-1903-10556": [
+   [
+    "\\brandom conditional distribution"
+   ],
+   [
+    "\\bomega\\b"
+   ]
+  ]
+ },
+ "M12": {
+  "DBLP_journals_corr_0002S16": [
+   [
+    "\\bsimplifier"
+   ],
+   [
+    "\\brewrit"
+   ],
+   [
+    "\\bmachine learning",
+    "\\bcorpus"
+   ]
+  ],
+  "DBLP_conf_sat_Inala0S16": [
+   [
+    "\\bcnf\\b"
+   ],
+   [
+    "\\bbit vector"
+   ],
+   [
+    "\\bcvc4\\b"
+   ],
+   [
+    "\\bmachine learning",
+    "\\bsynthes"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,727 @@
+[
+ {
+  "id": "M1",
+  "category": "cross_paper",
+  "sub_queries": [
+   "SyGuS 2015 competition additions and reported results",
+   "SyGuS 2016 competition additions and reported results",
+   "SyGuS 2017 competition additions and reported results"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 2,
+   "top6": [
+    "journals_corr_abs-1711-11438:p1",
+    "journals_corr_abs-1711-11438:p1*",
+    "journals_corr_AlurFSS16a:p7*",
+    "journals_corr_AlurFSS16a:p1*",
+    "journals_corr_abs-1711-11438:p18",
+    "journals_corr_AlurFSS16a:p21"
+   ],
+   "covered": [
+    2,
+    3
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_corr_abs-1711-11438:p1*",
+    "journals_corr_AlurFSS16a:p7*",
+    "journals_corr_abs-1711-11438:p1",
+    "journals_corr_AlurFSS16a:p1*",
+    "journals_corr_AlurFSS16a:p21",
+    "journals_corr_abs-1711-11438:p18"
+   ],
+   "covered": [
+    2,
+    3
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_corr_abs-1711-11438:p1*",
+    "journals_corr_AlurFSS16a:p7*",
+    "journals_corr_abs-1711-11438:p1",
+    "journals_corr_AlurFSS16a:p1*",
+    "journals_corr_AlurFSS16a:p21",
+    "journals_corr_abs-1711-11438:p18"
+   ],
+   "covered": [
+    2,
+    3
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "M2",
+  "category": "cross_paper",
+  "sub_queries": [
+   "approaches used in the papers to enforce safety constraints during agent or robot controller execution",
+   "methods for online or run-time safety enforcement in learning agents and robot controllers in the collection",
+   "papers describing safety filters, shields, supervisors, or control barrier function-based enforcement while acting",
+   "how the collection\u2019s papers ensure constraint satisfaction during policy execution or control action selection"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 6,
+   "top6": [
+    "conf_hybrid_HuntFMHDS21:p5",
+    "journals_corr_abs-2110-05440:p1",
+    "journals_corr_abs-2110-05440:p3",
+    "journals_corr_abs-2110-05440:p1",
+    "journals_corr_abs-2110-05440:p2",
+    "journals_corr_abs-2110-05440:p1*"
+   ],
+   "covered": [
+    1,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_corr_abs-2110-05440:p1*",
+    "journals_corr_abs-2110-05440:p6*",
+    "journals_corr_abs-2110-05440:p3",
+    "journals_corr_abs-2102-11137:p4",
+    "conf_hybrid_HuntFMHDS21:p5",
+    "conf_nips_Tjandrasuwita0S24:p5"
+   ],
+   "covered": [
+    1,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_corr_abs-2110-05440:p1*",
+    "journals_corr_abs-2110-05440:p6*",
+    "journals_corr_abs-2110-05440:p3",
+    "journals_corr_abs-2110-05440:p2*",
+    "conf_hybrid_HuntFMHDS21:p5",
+    "journals_corr_abs-2110-05440:p1"
+   ],
+   "covered": [
+    1,
+    2
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "M3",
+  "category": "cross_paper",
+  "sub_queries": [
+   "papers in the collection that use program analysis to improve applications that interact with a database",
+   "papers in the collection that use program synthesis to improve applications that interact with a database",
+   "specific techniques or methods used in these papers for database-backed applications",
+   "reported benefits or application improvements from program analysis or synthesis in database-related papers"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 6,
+   "top6": [
+    "journals_debu_CheungMSAM14:p1",
+    "journals_debu_CheungMSAM14:p2",
+    "journals_debu_CheungMSAM14:p8",
+    "journals_debu_CheungMSAM14:p11",
+    "journals_corr_abs-1208-2013:p1",
+    "conf_cidr_CheungAMSM13:p1*"
+   ],
+   "covered": [
+    1,
+    3
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 2,
+   "top6": [
+    "journals_debu_CheungMSAM14:p1",
+    "journals_corr_abs-1208-2013:p1*",
+    "conf_cidr_CheungAMSM13:p7",
+    "journals_debu_CheungMSAM14:p2",
+    "journals_debu_CheungMSAM14:p1*",
+    "journals_corr_abs-2206-06164:p28"
+   ],
+   "covered": [
+    2,
+    3
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 2,
+   "top6": [
+    "journals_debu_CheungMSAM14:p1",
+    "journals_corr_abs-1208-2013:p1*",
+    "conf_cidr_CheungAMSM13:p7",
+    "journals_debu_CheungMSAM14:p2",
+    "journals_debu_CheungMSAM14:p1*",
+    "journals_corr_abs-2206-06164:p28"
+   ],
+   "covered": [
+    2,
+    3
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "M4",
+  "category": "cross_paper",
+  "sub_queries": [
+   "What is faceted execution and how is it defined or implemented in the collection?",
+   "How does faceted execution enforce information flow control or security policies?",
+   "What examples or case studies in the collection show faceted execution being used to enforce specific information flow policies?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 3,
+   "top6": [
+    "conf_plas_AustinYFS13:p1",
+    "conf_plas_AustinYFS13:p7",
+    "conf_pldi_YangHASFC16:p2*",
+    "conf_plas_AustinYFS13:p10*",
+    "conf_plas_AustinYFS13:p7",
+    "conf_pldi_YangHASFC16:p7*"
+   ],
+   "covered": [
+    2,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 3,
+   "top6": [
+    "conf_plas_AustinYFS13:p7",
+    "conf_plas_AustinYFS13:p1",
+    "conf_plas_AustinYFS13:p10*",
+    "conf_pldi_YangHASFC16:p2",
+    "conf_pldi_YangHASFC16:p2*",
+    "conf_pldi_YangHASFC16:p13"
+   ],
+   "covered": [
+    2,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 3,
+   "top6": [
+    "conf_plas_AustinYFS13:p7",
+    "conf_plas_AustinYFS13:p1",
+    "conf_plas_AustinYFS13:p10*",
+    "conf_plas_AustinYFS13:p8",
+    "conf_pldi_YangHASFC16:p2*",
+    "conf_pldi_YangHASFC16:p13"
+   ],
+   "covered": [
+    2,
+    2
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "M5",
+  "category": "cross_paper",
+  "sub_queries": [
+   "papers in this collection refinement types use cases",
+   "specific applications of refinement types in the collection",
+   "how refinement types are used in the papers of this collection"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "journals_corr_PolikarpovaYIS16:p13",
+    "conf_pldi_PolikarpovaKS16:p18",
+    "conf_pldi_PolikarpovaKS16:p16",
+    "conf_pldi_PolikarpovaKS16:p11",
+    "conf_pldi_PolikarpovaKS16:p17",
+    "conf_pldi_PolikarpovaKS16:p5"
+   ],
+   "covered": [
+    0,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "journals_corr_PolikarpovaYIS16:p13",
+    "conf_pldi_PolikarpovaKS16:p15",
+    "conf_pldi_PolikarpovaKS16:p18",
+    "conf_pldi_PolikarpovaKS16:p16",
+    "journals_corr_PolikarpovaYIS16:p29",
+    "journals_corr_PolikarpovaYIS16:p13"
+   ],
+   "covered": [
+    0,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "journals_corr_PolikarpovaYIS16:p13",
+    "conf_pldi_PolikarpovaKS16:p15",
+    "conf_pldi_PolikarpovaKS16:p18",
+    "conf_pldi_PolikarpovaKS16:p16",
+    "conf_pldi_PolikarpovaKS16:p17",
+    "conf_pldi_PolikarpovaKS16:p11"
+   ],
+   "covered": [
+    0,
+    2
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "M6",
+  "category": "cross_paper",
+  "sub_queries": [
+   "What is the method described in 'Smoothing a Program Soundly and Robustly' for enabling numerical optimization on programs?",
+   "How does the Euler system formulate or transform programs so numerical optimization can be applied?",
+   "How does ReaS make numerical optimization work on programs, and what technique or representation does it use?",
+   "What are the key similarities and differences among 'Smoothing a Program Soundly and Robustly', Euler, and ReaS in their approach to optimizing programs numerically?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_corr_abs-1802-04408:p4*",
+    "conf_cav_ChaudhuriS12:p1*",
+    "conf_cav_ChaudhuriS12:p4*",
+    "conf_cav_ChaudhuriS11:p1*",
+    "conf_cav_ChaudhuriS12:p6*",
+    "conf_cav_ChaudhuriS12:p1*"
+   ],
+   "covered": [
+    3,
+    3
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_cav_ChaudhuriS11:p1*",
+    "conf_cav_ChaudhuriS12:p1*",
+    "journals_corr_abs-1802-04408:p1*",
+    "conf_cav_ChaudhuriS12:p6",
+    "conf_cav_ChaudhuriS11:p3",
+    "conf_cav_ChaudhuriS12:p1*"
+   ],
+   "covered": [
+    3,
+    3
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_cav_ChaudhuriS11:p1*",
+    "conf_cav_ChaudhuriS12:p1*",
+    "journals_corr_abs-1802-04408:p1*",
+    "conf_cav_ChaudhuriS12:p6",
+    "conf_cav_ChaudhuriS11:p3",
+    "conf_cav_ChaudhuriS12:p1*"
+   ],
+   "covered": [
+    3,
+    3
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "M7",
+  "category": "cross_paper",
+  "sub_queries": [
+   "What is Stitch's approach to library learning and how does it work?",
+   "What is DreamCoder's approach to library learning and how does it work?",
+   "What are the key differences between Stitch and DreamCoder in how they learn or refine libraries of reusable components?",
+   "How do Stitch and DreamCoder compare in terms of abstraction discovery, reuse, and library growth?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 5,
+   "top6": [
+    "journals_pacmpl_BowersOWGTES23:p18",
+    "journals_pacmpl_BowersOWGTES23:p25",
+    "journals_pacmpl_BowersOWGTES23:p28",
+    "journals_pacmpl_BowersOWGTES23:p19",
+    "journals_pacmpl_BowersOWGTES23:p17*",
+    "journals_pacmpl_BowersOWGTES23:p18"
+   ],
+   "covered": [
+    1,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "journals_pacmpl_BowersOWGTES23:p17",
+    "journals_pacmpl_BowersOWGTES23:p18",
+    "journals_pacmpl_BowersOWGTES23:p19",
+    "journals_corr_abs-2409-17490:p6",
+    "journals_corr_abs-2006-08381:p13",
+    "journals_corr_abs-2006-08381:p1"
+   ],
+   "covered": [
+    0,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 5,
+   "top6": [
+    "journals_pacmpl_BowersOWGTES23:p17",
+    "journals_pacmpl_BowersOWGTES23:p18",
+    "journals_pacmpl_BowersOWGTES23:p19",
+    "journals_pacmpl_BowersOWGTES23:p19",
+    "journals_pacmpl_BowersOWGTES23:p3*",
+    "journals_pacmpl_BowersOWGTES23:p25"
+   ],
+   "covered": [
+    1,
+    2
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "M8",
+  "category": "cross_paper",
+  "sub_queries": [
+   "How does the automated feedback system for introductory programming assignments correct student programs?",
+   "How does sk_p correct student programs?",
+   "What are the key differences between the correction approaches used by the automated feedback system and sk_p?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_corr_abs-1204-1751:p1*",
+    "journals_corr_abs-1204-1751:p10*",
+    "journals_corr_abs-1204-1751:p1",
+    "conf_oopsla_PuNSB16:p9",
+    "conf_oopsla_PuNSB16:p2",
+    "journals_corr_abs-1204-1751:p1*"
+   ],
+   "covered": [
+    1,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_corr_abs-1204-1751:p1*",
+    "conf_oopsla_PuNSB16:p9",
+    "conf_oopsla_PuNSB16:p2",
+    "journals_corr_abs-1204-1751:p10*",
+    "conf_oopsla_PuNSB16:p9",
+    "journals_corr_abs-1204-1751:p3"
+   ],
+   "covered": [
+    1,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_corr_abs-1204-1751:p1*",
+    "conf_oopsla_PuNSB16:p9",
+    "conf_oopsla_PuNSB16:p2",
+    "journals_corr_abs-1204-1751:p10*",
+    "conf_oopsla_PuNSB16:p9",
+    "journals_corr_abs-1204-1751:p3"
+   ],
+   "covered": [
+    1,
+    2
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "M9",
+  "category": "cross_paper",
+  "sub_queries": [
+   "What does the Fusion 360 Gallery paper say it contributes to learning from CAD designs?",
+   "What does JoinABLe contribute to learning from CAD designs?",
+   "How do the contributions of the Fusion 360 Gallery paper and JoinABLe compare or complement each other?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 2,
+   "top6": [
+    "journals_tog_WillisPLCDLSM21:p15",
+    "journals_tog_WillisPLCDLSM21:p4*",
+    "journals_tog_WillisPLCDLSM21:p6",
+    "journals_tog_WillisPLCDLSM21:p2*",
+    "journals_tog_WillisPLCDLSM21:p1*",
+    "journals_tog_WillisPLCDLSM21:p21"
+   ],
+   "covered": [
+    1,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 2,
+   "top6": [
+    "journals_tog_WillisPLCDLSM21:p15",
+    "conf_cvpr_WillisJCT0GSTLS22:p1*",
+    "journals_tog_WillisPLCDLSM21:p5",
+    "journals_tog_WillisPLCDLSM21:p4*",
+    "conf_cvpr_WillisJCT0GSTLS22:p2*",
+    "conf_cvpr_WillisJCT0GSTLS22:p13"
+   ],
+   "covered": [
+    2,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 2,
+   "top6": [
+    "journals_tog_WillisPLCDLSM21:p15",
+    "conf_cvpr_WillisJCT0GSTLS22:p1*",
+    "journals_tog_WillisPLCDLSM21:p5",
+    "journals_tog_WillisPLCDLSM21:p4*",
+    "conf_cvpr_WillisJCT0GSTLS22:p2*",
+    "conf_cvpr_WillisJCT0GSTLS22:p13"
+   ],
+   "covered": [
+    2,
+    2
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "M10",
+  "category": "cross_paper",
+  "sub_queries": [
+   "How does the 'Write, Execute, Assess' approach use execution feedback to guide program search?",
+   "How does the blended abstract semantics paper use execution to guide or prune program search?",
+   "What role does execution play in the search loop or optimization process in each paper?",
+   "How do the two papers compare in their use of execution as a search heuristic or validation signal?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_iclr_NyePBATS21:p3*",
+    "journals_corr_abs-1906-04604:p1",
+    "conf_iclr_NyePBATS21:p9",
+    "conf_iclr_NyePBATS21:p9*",
+    "journals_corr_abs-1906-04604:p1*",
+    "conf_iclr_NyePBATS21:p2*"
+   ],
+   "covered": [
+    2,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 2,
+   "top6": [
+    "journals_corr_abs-1906-04604:p1",
+    "conf_iclr_NyePBATS21:p3*",
+    "conf_nips_li2025encompass:p14",
+    "conf_iclr_NyePBATS21:p6",
+    "journals_corr_abs-1906-04604:p1*",
+    "conf_iclr_NyePBATS21:p9*"
+   ],
+   "covered": [
+    2,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 2,
+   "top6": [
+    "journals_corr_abs-1906-04604:p1",
+    "conf_iclr_NyePBATS21:p3*",
+    "conf_nips_li2025encompass:p14",
+    "conf_iclr_NyePBATS21:p6",
+    "journals_corr_abs-1906-04604:p1*",
+    "conf_iclr_NyePBATS21:p9*"
+   ],
+   "covered": [
+    2,
+    2
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "M11",
+  "category": "cross_paper",
+  "sub_queries": [
+   "What is OmegaC and how does it extend probabilistic programming?",
+   "What is the random conditional distribution paper and how does it extend probabilistic programming?",
+   "What are the main differences between OmegaC and the random conditional distribution paper in their approaches to probabilistic programming?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_corr_abs-1903-10556:p1*",
+    "journals_corr_abs-1903-10556:p2*",
+    "journals_corr_abs-1903-10556:p11*",
+    "journals_corr_abs-1903-10556:p1",
+    "journals_corr_abs-1903-10556:p5*",
+    "journals_corr_abs-1903-10556:p8*"
+   ],
+   "covered": [
+    1,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_icml_TavaresK0DS21:p1*",
+    "journals_corr_abs-1903-10556:p1*",
+    "journals_corr_abs-1903-10556:p2*",
+    "conf_icml_TavaresK0DS21:p2*",
+    "journals_corr_abs-1903-10556:p1",
+    "conf_icml_TavaresK0DS21:p4"
+   ],
+   "covered": [
+    2,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_icml_TavaresK0DS21:p1*",
+    "journals_corr_abs-1903-10556:p1*",
+    "journals_corr_abs-1903-10556:p2*",
+    "conf_icml_TavaresK0DS21:p2*",
+    "journals_corr_abs-1903-10556:p1",
+    "conf_icml_TavaresK0DS21:p4"
+   ],
+   "covered": [
+    2,
+    2
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "M12",
+  "category": "cross_paper",
+  "sub_queries": [
+   "How does the formula-simplifier paper use synthesis to simplify formulas for constraint solving?",
+   "How does the CNF-encoder paper use synthesis to improve CNF encoding for constraint solvers?",
+   "What benefits to constraint solvers are claimed by each paper from using synthesis?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 4,
+   "top6": [
+    "journals_corr_0002S16:p1",
+    "conf_sat_Inala0S16:p15",
+    "conf_sat_Inala0S16:p9",
+    "journals_corr_0002S16:p1*",
+    "conf_sat_Inala0S16:p3",
+    "conf_sat_Inala0S16:p3*"
+   ],
+   "covered": [
+    2,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 2,
+   "top6": [
+    "journals_corr_0002S16:p1",
+    "conf_sat_Inala0S16:p3*",
+    "journals_fmsd_FismanSS21:p1",
+    "journals_corr_0002S16:p1*",
+    "conf_sat_Inala0S16:p15",
+    "journals_fmsd_JeonQSF17:p3"
+   ],
+   "covered": [
+    2,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 2,
+   "top6": [
+    "journals_corr_0002S16:p1",
+    "conf_sat_Inala0S16:p3*",
+    "journals_fmsd_FismanSS21:p1",
+    "journals_corr_0002S16:p1*",
+    "conf_sat_Inala0S16:p15",
+    "journals_fmsd_JeonQSF17:p3"
+   ],
+   "covered": [
+    2,
+    2
+   ],
+   "cap": 3
+  }
+ }
+]

@@ -1,0 +1,238 @@
+[2026-09-15T16:16:57]  GRAPH  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How does breaking a question into parts and following document links help retrieval?
+RESPONSE: Breaking a question into parts helps because “**Query decomposition breaks a complex question into sub-queries, improving multi-aspect retrieval**” [d4]. Following document links helps because “**Graph-based retrieval traverses relationships between documents to add related context**” [d5].
+
+So, together, they help retrieval by:
+- splitting a complex question into smaller sub-questions, which improves coverage of different aspects, and
+- moving through linked documents to gather related context that might otherwise be missed.
+
+
+------------------------------------------------------------------------
+[2026-09-15T16:17:08]  DECOMPOSE M1  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What did the SyGuS competition add or report in each of its 2015, 2016 and 2017 editions?
+RESPONSE: ["SyGuS 2015 competition additions and reported results", "SyGuS 2016 competition additions and reported results", "SyGuS 2017 competition additions and reported results"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:11]  DECOMPOSE M2  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What approaches do papers in this collection use to enforce safety constraints while a learning agent or robot controller is acting?
+RESPONSE: ["approaches used in the papers to enforce safety constraints during agent or robot controller execution", "methods for online or run-time safety enforcement in learning agents and robot controllers in the collection", "papers describing safety filters, shields, supervisors, or control barrier function-based enforcement while acting", "how the collection\u2019s papers ensure constraint satisfaction during policy execution or control action selection"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:14]  DECOMPOSE M3  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How do papers in this collection use program analysis or synthesis to improve applications that run against a database?
+RESPONSE: ["papers in the collection that use program analysis to improve applications that interact with a database", "papers in the collection that use program synthesis to improve applications that interact with a database", "specific techniques or methods used in these papers for database-backed applications", "reported benefits or application improvements from program analysis or synthesis in database-related papers"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:16]  DECOMPOSE M4  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How is faceted execution used in this collection to enforce information flow policies?
+RESPONSE: ["What is faceted execution and how is it defined or implemented in the collection?", "How does faceted execution enforce information flow control or security policies?", "What examples or case studies in the collection show faceted execution being used to enforce specific information flow policies?"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:18]  DECOMPOSE M5  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What do papers in this collection use refinement types for?
+RESPONSE: ["papers in this collection refinement types use cases", "specific applications of refinement types in the collection", "how refinement types are used in the papers of this collection"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:21]  DECOMPOSE M6  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How do 'Smoothing a Program Soundly and Robustly', the Euler system, and ReaS each make numerical optimization work on programs?
+RESPONSE: ["What is the method described in 'Smoothing a Program Soundly and Robustly' for enabling numerical optimization on programs?", "How does the Euler system formulate or transform programs so numerical optimization can be applied?", "How does ReaS make numerical optimization work on programs, and what technique or representation does it use?", "What are the key similarities and differences among 'Smoothing a Program Soundly and Robustly', Euler, and ReaS in their approach to optimizing programs numerically?"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:23]  DECOMPOSE M7  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How does Stitch's approach to library learning differ from DreamCoder's?
+RESPONSE: ["What is Stitch's approach to library learning and how does it work?", "What is DreamCoder's approach to library learning and how does it work?", "What are the key differences between Stitch and DreamCoder in how they learn or refine libraries of reusable components?", "How do Stitch and DreamCoder compare in terms of abstraction discovery, reuse, and library growth?"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:25]  DECOMPOSE M8  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How do the automated feedback system for introductory programming assignments and sk_p differ in how they correct student programs?
+RESPONSE: ["How does the automated feedback system for introductory programming assignments correct student programs?", "How does sk_p correct student programs?", "What are the key differences between the correction approaches used by the automated feedback system and sk_p?"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:29]  DECOMPOSE M9  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What do the Fusion 360 Gallery paper and JoinABLe each contribute to learning from CAD designs?
+RESPONSE: ["What does the Fusion 360 Gallery paper say it contributes to learning from CAD designs?", "What does JoinABLe contribute to learning from CAD designs?", "How do the contributions of the Fusion 360 Gallery paper and JoinABLe compare or complement each other?"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:31]  DECOMPOSE M10  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How do 'Write, Execute, Assess' and the blended abstract semantics paper each use execution to guide program search?
+RESPONSE: ["How does the 'Write, Execute, Assess' approach use execution feedback to guide program search?", "How does the blended abstract semantics paper use execution to guide or prune program search?", "What role does execution play in the search loop or optimization process in each paper?", "How do the two papers compare in their use of execution as a search heuristic or validation signal?"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:33]  DECOMPOSE M11  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How do OmegaC and the random conditional distribution paper each extend probabilistic programming?
+RESPONSE: ["What is OmegaC and how does it extend probabilistic programming?", "What is the random conditional distribution paper and how does it extend probabilistic programming?", "What are the main differences between OmegaC and the random conditional distribution paper in their approaches to probabilistic programming?"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:35]  DECOMPOSE M12  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How do the formula-simplifier paper and the CNF-encoder paper each use synthesis to improve constraint solvers?
+RESPONSE: ["How does the formula-simplifier paper use synthesis to simplify formulas for constraint solving?", "How does the CNF-encoder paper use synthesis to improve CNF encoding for constraint solvers?", "What benefits to constraint solvers are claimed by each paper from using synthesis?"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:54]  DECOMPOSE S1  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   In the ENCOMPASS paper, what does PAN stand for and what two concerns does the programming model separate?
+RESPONSE: ["In the ENCOMPASS paper, what does PAN stand for?", "In the ENCOMPASS paper, what two concerns does the programming model separate?"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:56]  DECOMPOSE S2  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How many Python functions are in the CRUXEval benchmark, and what two tasks does each function support?
+RESPONSE: ["CRUXEval benchmark number of Python functions", "What two tasks each CRUXEval function supports"]
+------------------------------------------------------------------------
+[2026-09-15T16:17:57]  DECOMPOSE S3  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What does LINC stand for, and what role does the language model play in it?
+RESPONSE: ["What does LINC stand for in the relevant context?", "What role does the language model play in LINC?", "How is the language model used or integrated within LINC?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:01]  DECOMPOSE S4  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What are the three pillars of machine programming, and what does each emphasize?
+RESPONSE: ["What are the three pillars of machine programming?", "What does each pillar of machine programming emphasize?", "What is the standard explanation or definition of the three pillars of machine programming?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:03]  DECOMPOSE S5  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Besides the sketch itself, what must a programmer supply to the Sketch synthesizer?
+RESPONSE: ["What inputs, in addition to the sketch, are required by the Sketch synthesizer?", "What information or constraints must the programmer provide to guide synthesis in Sketch?", "Does the Sketch synthesizer require examples, specifications, or assertions besides the sketch?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:06]  DECOMPOSE S6  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   In 'Selecting Representative Examples for Program Synthesis', how is the subset of examples chosen?
+RESPONSE: ["How are representative examples selected in the paper 'Selecting Representative Examples for Program Synthesis'?", "What criteria or optimization objective is used to choose the subset of examples?", "Does the paper describe an algorithm for selecting the examples, and if so how does it work?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:08]  DECOMPOSE S7  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   In 'The Counterfeit Conundrum', what two properties define a counterfeit sample?
+RESPONSE: ["What definition or criteria does 'The Counterfeit Conundrum' give for a counterfeit sample?", "What are the two properties that characterize a counterfeit sample in 'The Counterfeit Conundrum'?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:10]  DECOMPOSE N2  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   In the Lynx paper, what problem is the programmatic SAT solver applied to?
+RESPONSE: ["Locate the Lynx paper and identify the section that describes the programmatic SAT solver", "Determine what specific problem or task the programmatic SAT solver is used to solve in Lynx", "Find any example, benchmark, or application context in the paper where the programmatic SAT solver is applied"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:13]  DECOMPOSE N3  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What does the SPARLING method learn, and what does its main theorem state?
+RESPONSE: ["What is the SPARLING method and what does it learn?", "What is the main theorem of the SPARLING method?", "What assumptions or guarantees are included in the SPARLING main theorem?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:14]  DECOMPOSE N4  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   In the LINC paper, what limits the setting the authors consider, and what effect does that limitation have?
+RESPONSE: ["In the LINC paper, what is the specific setting limitation the authors consider?", "According to the LINC paper, what effect does that limitation have on the method or results?", "What motivation or rationale do the authors give for considering that limited setting?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:17]  DECOMPOSE C1  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How do different papers in this collection define the program synthesis problem, and where do their definitions disagree?
+RESPONSE: ["What definitions of the program synthesis problem are given in the papers in this collection?", "How do these papers differ in their assumptions about the synthesis input, output, and specification?", "Which papers explicitly disagree on what counts as program synthesis or on the scope of the task?", "What terminology or formalism does each paper use to define program synthesis?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:19]  DECOMPOSE C2  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What different strategies do these papers use to combine language models with formal verification or symbolic reasoning?
+RESPONSE: ["Identify the papers being referred to and extract how each combines language models with formal verification or symbolic reasoning", "Compare the integration strategy used in each paper, such as model-guided search, proof synthesis, theorem proving, constraint solving, or program/logic generation", "Summarize the key differences and common patterns across the papers in how language model outputs are verified or used by symbolic systems"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:23]  DECOMPOSE C3  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What benchmarks for evaluating code-generating language models appear in this collection, and what does each measure?
+RESPONSE: ["Identify the benchmark names for evaluating code-generating language models mentioned in the collection", "For each benchmark in the collection, determine what capability or aspect of code generation it measures", "Find any descriptions, task formats, or evaluation metrics associated with these code-generation benchmarks"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:26]  DECOMPOSE C4  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Across these papers, what reasons are given for why program synthesis is computationally hard?
+RESPONSE: ["What reasons do the papers give for program synthesis being computationally hard?", "Which complexity-theoretic results or lower bounds are cited for program synthesis in the papers?", "What aspects of the synthesis problem (e.g., search space, specification ambiguity, semantics, grammar size) are identified as sources of hardness?", "Do the papers distinguish between hardness in general program synthesis and hardness of specific synthesis variants or benchmarks?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:28]  DECOMPOSE C5  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How do papers in this collection use reinforcement learning in connection with programs or policies?
+RESPONSE: ["Identify papers in the collection that apply reinforcement learning to programs, program synthesis, or code generation, and summarize how RL is used", "Identify papers in the collection that apply reinforcement learning to policies, policy learning, or decision-making policies, and summarize how RL is used", "Find papers that connect reinforcement learning with both programs and policies, and extract the specific role RL plays in each case", "Compare the different ways reinforcement learning is used across the collection in relation to programs versus policies"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:30]  DECOMPOSE C6  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What roles do partial or incomplete programs play across these papers?
+RESPONSE: ["How are partial or incomplete programs defined or characterized in each paper?", "What specific roles or uses do partial or incomplete programs serve in the methods, experiments, or arguments of these papers?", "What benefits, limitations, or motivations are associated with using partial or incomplete programs across the papers?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:32]  DECOMPOSE C7  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What different ways do these papers evaluate whether a synthesized program is correct?
+RESPONSE: ["How do the papers define or determine that a synthesized program is correct?", "What correctness metrics, benchmarks, or formal verification methods do the papers use to evaluate synthesized programs?", "Do the papers compare synthesized programs against ground truth, specifications, tests, or human judgments to assess correctness?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:34]  DECOMPOSE C8  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Where do these papers disagree about whether language models genuinely understand the code they produce?
+RESPONSE: ["What do the papers claim about whether language models genuinely understand the code they produce?", "What evidence or arguments do the papers use to support the view that language models do understand the code they produce?", "What evidence or arguments do the papers use to support the view that language models do not genuinely understand the code they produce?", "Where exactly do the papers differ in definitions, assumptions, or interpretation of 'understanding' in the context of code generation?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:36]  DECOMPOSE Q1  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Quote the first sentence of the abstract of 'The Sketching Approach to Program Synthesis'.
+RESPONSE: ["Find the abstract of the paper \"The Sketching Approach to Program Synthesis\" and extract its first sentence", "Locate the exact wording of the first sentence in the abstract of \"The Sketching Approach to Program Synthesis\""]
+------------------------------------------------------------------------
+[2026-09-15T16:18:37]  DECOMPOSE Q2  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Quote the opening sentence of the abstract of the ENCOMPASS paper.
+RESPONSE: ["Find the ENCOMPASS paper and identify its abstract", "Extract the opening sentence of the abstract from the ENCOMPASS paper"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:39]  DECOMPOSE Q3  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Quote the sentence in which the CRUXEval paper introduces the benchmark.
+RESPONSE: ["What sentence does the CRUXEval paper use to introduce the benchmark?", "In the CRUXEval paper, locate the exact sentence introducing the benchmark and quote it verbatim"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:41]  DECOMPOSE Q4  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Quote the first sentence of the abstract of 'The Three Pillars of Machine Programming'.
+RESPONSE: ["Find the abstract of the paper titled 'The Three Pillars of Machine Programming'.", "Identify the first sentence of that abstract exactly as written.", "Verify the paper title and ensure the sentence quoted comes from the abstract, not the introduction or summary."]
+------------------------------------------------------------------------
+[2026-09-15T16:18:43]  DECOMPOSE Q5  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Quote the sentence in which 'Selecting Representative Examples for Program Synthesis' defines program synthesis.
+RESPONSE: ["\"Selecting Representative Examples for Program Synthesis\" definition of program synthesis", "\"Selecting Representative Examples for Program Synthesis\" where does the paper define program synthesis", "\"Selecting Representative Examples for Program Synthesis\" sentence defining program synthesis"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:45]  DECOMPOSE Q6  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Quote the sentence in the LINC paper that describes the role of the language model.
+RESPONSE: ["Find the LINC paper and locate the sentence that describes the role of the language model", "Identify the exact quoted sentence in the LINC paper about the language model's role", "Verify the surrounding context in the LINC paper to ensure the sentence is quoted accurately"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:47]  DECOMPOSE Q7  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Quote the opening sentence of the abstract of 'The Counterfeit Conundrum'.
+RESPONSE: ["What is the opening sentence of the abstract for the paper titled 'The Counterfeit Conundrum'?", "Locate the abstract text for 'The Counterfeit Conundrum' and identify its first sentence."]
+------------------------------------------------------------------------
+[2026-09-15T16:18:49]  DECOMPOSE Q8  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Quote the first sentence of the abstract of 'Smoothing a Program Soundly and Robustly'.
+RESPONSE: ["Find the abstract of the paper 'Smoothing a Program Soundly and Robustly'", "Extract the first sentence of that abstract", "Verify the exact wording to quote it verbatim"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:51]  DECOMPOSE V1  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What does RVISmith fuzz, and what does it target?
+RESPONSE: ["What does RVISmith fuzz in the paper or documentation?", "What is the target or target platform of RVISmith fuzzing?", "What types of inputs, instructions, or programs does RVISmith generate or mutate during fuzzing?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:53]  DECOMPOSE V2  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What is MANTRA, and what does it validate?
+RESPONSE: ["What is MANTRA in the relevant technical or domain context?", "What does MANTRA validate, including the objects, properties, or processes it checks?", "What is the purpose or scope of MANTRA's validation?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:55]  DECOMPOSE V3  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   In the work on knowledge graphs for agentic AI formal verification, what is generated?
+RESPONSE: ["What artifact is generated in the work on knowledge graphs for agentic AI formal verification?", "In that work, what is produced by the knowledge graph approach or formal verification pipeline?", "Does the paper/work state that a theorem, proof, model, dataset, or graph is generated?"]
+------------------------------------------------------------------------
+[2026-09-15T16:18:57]  DECOMPOSE V4  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What is NeSyCat?
+RESPONSE: ["What does NeSyCat stand for and what is its main purpose?", "What are the key features or capabilities of NeSyCat?", "In what context, domain, or project is NeSyCat used?"]
+------------------------------------------------------------------------
+[2026-09-15T16:19:01]  DECOMPOSE V5  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What does 'Beyond the Training Distribution' map?
+RESPONSE: ["What is the document or source titled 'Beyond the Training Distribution'?", "What topic, concept, or mapping is described by 'Beyond the Training Distribution'?", "Does 'Beyond the Training Distribution' refer to a specific chart, figure, or diagram, and what are its elements?"]
+------------------------------------------------------------------------
+[2026-09-15T16:19:03]  DECOMPOSE V6  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What does BLK-Assist propose?
+RESPONSE: ["What is BLK-Assist and what is its main proposal or purpose?", "What problem or need is BLK-Assist designed to address?", "What features, methods, or actions does BLK-Assist propose to implement?"]
+------------------------------------------------------------------------
+[2026-09-15T16:19:07]  DECOMPOSE V7  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What is Bench-Push benchmarking?
+RESPONSE: ["What is Bench-Push benchmarking in robotics or manipulation?", "What tasks, metrics, and setup does Bench-Push include?", "What problem or capability is Bench-Push designed to evaluate?"]
+------------------------------------------------------------------------
+[2026-09-15T16:19:09]  DECOMPOSE V8  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What does the Advanced Encryption Standard specify?
+RESPONSE: ["What is the Advanced Encryption Standard (AES) and what does it define?", "What algorithms, key sizes, and block sizes are specified by AES?", "What standards or NIST publication established AES?"]
+------------------------------------------------------------------------
+[2026-09-15T17:26:11]  DECOMPOSE T1  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How did the stated motivation for program synthesis change between the earliest and the most recent work in this collection?
+RESPONSE: ["Identify the earliest work in the collection and extract its stated motivation for program synthesis", "Identify the most recent work in the collection and extract its stated motivation for program synthesis", "Compare the motivations in the earliest and most recent works to determine how the framing changed over time"]
+------------------------------------------------------------------------
+[2026-09-15T17:26:13]  DECOMPOSE T2  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Which came first in this collection: work on sketching, or work on neurosymbolic methods?
+RESPONSE: ["What documents in the collection discuss work on sketching, and what are their dates or order?", "What documents in the collection discuss work on neurosymbolic methods, and what are their dates or order?", "Which of the sketching-related or neurosymbolic-methods-related items appears earliest in the collection?"]
+------------------------------------------------------------------------
+[2026-09-15T17:26:15]  DECOMPOSE T3  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How has the role of large language models in program synthesis changed over the period covered by this collection?
+RESPONSE: ["What documents in the collection discuss large language models in program synthesis, and what dates do they cover?", "How did the responsibilities or capabilities of large language models for program synthesis evolve over time in the collection?", "What early examples or initial uses of large language models in program synthesis are described in the collection?", "What later examples, improvements, or shifts in the role of large language models in program synthesis are described in the collection?"]
+------------------------------------------------------------------------
+[2026-09-15T17:26:17]  DECOMPOSE T4  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What is the most recent work in this collection on code benchmarks, and how does it differ from earlier benchmarks?
+RESPONSE: ["Identify the most recent document in the collection that discusses code benchmarks or coding benchmarks", "Extract the benchmark names, tasks, datasets, or evaluation setup described in that most recent code-benchmark work", "Find earlier benchmark-related documents in the collection and summarize how their benchmark design, scope, or metrics differ from the most recent one"]
+------------------------------------------------------------------------
+[2026-09-15T17:26:20]  DECOMPOSE T5  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Over time, have the papers in this collection moved toward or away from requiring formal specifications?
+RESPONSE: ["What is the trend over time in the collection's use of formal specifications or specification requirements?", "Which papers in the collection explicitly require formal specifications, and how does that vary by publication year?", "Are there periods where papers increasingly depend on formal specifications versus periods where they avoid or reduce them?", "What evidence in the collection indicates movement toward or away from formal specification requirements over time?"]
+------------------------------------------------------------------------
+[2026-09-15T17:26:23]  DECOMPOSE U1  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What do these papers say about using CRISPR gene editing to optimize code?
+RESPONSE: ["What do the papers say about using CRISPR gene editing for code optimization?", "Which papers discuss CRISPR gene editing in relation to software/code optimization?", "Do the papers actually mention CRISPR, gene editing, and code optimization together, and in what context?"]
+------------------------------------------------------------------------
+[2026-09-15T17:26:25]  DECOMPOSE U2  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   How many papers in this collection use reinforcement learning?
+RESPONSE: ["Identify which papers in the collection mention or use reinforcement learning", "Count the total number of papers in the collection that use reinforcement learning", "Determine whether papers use reinforcement learning explicitly in methods, experiments, or related work"]
+------------------------------------------------------------------------
+[2026-09-15T17:26:27]  DECOMPOSE U3  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What does this collection say about randomized controlled trial design?
+RESPONSE: ["What documents in the collection discuss randomized controlled trial design?", "What methods, principles, or best practices for randomized controlled trial design are described in the collection?", "Are there any examples, case studies, or critiques of randomized controlled trial design in the collection?"]
+------------------------------------------------------------------------
+[2026-09-15T17:26:29]  DECOMPOSE U4  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Which paper in this collection reports the highest accuracy on protein folding prediction?
+RESPONSE: ["Identify papers in the collection related to protein folding prediction and extract their reported accuracy metrics.", "Compare the reported accuracies across those protein folding prediction papers to determine which is highest.", "Return the paper title/authors that correspond to the highest reported protein folding prediction accuracy in the collection."]
+------------------------------------------------------------------------
+[2026-09-15T17:26:31]  DECOMPOSE N1  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   Which papers in this collection do not use neural networks?
+RESPONSE: ["Identify all papers in the collection and determine which ones do not use neural networks", "For each paper, inspect the methods/approach sections to see whether neural networks are used", "Return only the papers whose models, algorithms, or experiments do not involve neural network methods"]
+------------------------------------------------------------------------
+[2026-09-15T17:26:36]  DECOMPOSE N5  SCENARIO=research_papers  MODEL=openai/gpt-5.4-mini
+PROMPT:   What about sketching?
+RESPONSE: ["What are the document's statements or guidance about sketching as an activity or skill?", "Does the document mention sketching tools, techniques, or materials?", "Are there any contexts, examples, or outcomes related to sketching in the document?"]
+------------------------------------------------------------------------

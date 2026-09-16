@@ -1,0 +1,242 @@
+[
+ {
+  "id": "M1",
+  "category": "cross_paper",
+  "style": "concept",
+  "question": "What did the SyGuS competition add or report in each of its 2015, 2016 and 2017 editions?",
+  "grading_notes": "Must cover at least two of the three editions from their results papers: 2015 added a track for conditional linear arithmetic and a track for invariant synthesis; 2016 added a programming-by-examples track with bit-vector and string categories; 2017 had six new solvers competing on over 1500 benchmarks.",
+  "sources": [
+   {
+    "source": "DBLP_journals_corr_AlurFSS16",
+    "page": 1
+   },
+   {
+    "source": "DBLP_journals_corr_AlurFSS16a",
+    "page": 1
+   },
+   {
+    "source": "DBLP_journals_corr_abs-1711-11438",
+    "page": 1
+   }
+  ],
+  "expected": "uncertain",
+  "expected_basis": "Closed set: 'SyGuS-Comp' appears 3 or fewer times in every other indexed paper. The three abstracts are near-identical except for one sentence each, which tests whether retrieval can separate them."
+ },
+ {
+  "id": "M2",
+  "category": "cross_paper",
+  "style": "concept",
+  "question": "What approaches do papers in this collection use to enforce safety constraints while a learning agent or robot controller is acting?",
+  "grading_notes": "Must describe both: enforcing formal safety constraints during exploration for end-to-end reinforcement learning policies with visual inputs, using object detection and automated reasoning for hybrid systems; and a shield that overrides a given controller when needed, based on backup actions the human is assumed to take.",
+  "sources": [
+   {
+    "source": "DBLP_conf_hybrid_HuntFMHDS21",
+    "page": 1
+   },
+   {
+    "source": "DBLP_journals_corr_abs-2110-05440",
+    "page": 1
+   }
+  ],
+  "expected": "uncertain",
+  "expected_basis": "Closed set: 'safe exploration' or 'shield' appear substantively only in these two; BastaniPS18 and its twin mention safe exploration only in related work and references."
+ },
+ {
+  "id": "M3",
+  "category": "cross_paper",
+  "style": "concept",
+  "question": "How do papers in this collection use program analysis or synthesis to improve applications that run against a database?",
+  "grading_notes": "Must draw on at least two papers: QBS synthesizes invariants and postconditions so fragments of application code can be pushed into SQL queries; StatusQuo moves functionality between the application and database layers by translating imperative code into relational queries; the Data Engineering Bulletin article combines database optimization with program analysis and reports speedups of orders of magnitude.",
+  "sources": [
+   {
+    "source": "DBLP_journals_corr_abs-1208-2013",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_cidr_CheungAMSM13",
+    "page": 1
+   },
+   {
+    "source": "DBLP_journals_debu_CheungMSAM14",
+    "page": 1
+   }
+  ],
+  "expected": "uncertain",
+  "expected_basis": "Closed set: 'SQL queries' appears 2 or fewer times in every other clean indexed paper."
+ },
+ {
+  "id": "M4",
+  "category": "cross_paper",
+  "style": "concept",
+  "question": "How is faceted execution used in this collection to enforce information flow policies?",
+  "grading_notes": "Must describe both: extending the Jeeves language with faceted values that propagate multiple views of sensitive data, with a proof of termination-insensitive non-interference; and Jacqueline, a Python web framework that enforces information flow policies across the application and the database.",
+  "sources": [
+   {
+    "source": "DBLP_conf_plas_AustinYFS13",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_pldi_YangHASFC16",
+    "page": 1
+   }
+  ],
+  "expected": "uncertain",
+  "expected_basis": "Closed set: 'faceted' appears 89 and 61 times in these two, 3 or fewer anywhere else."
+ },
+ {
+  "id": "M5",
+  "category": "cross_paper",
+  "style": "concept",
+  "question": "What do papers in this collection use refinement types for?",
+  "grading_notes": "Must cover both: Synquid synthesizes recursive functions that provably satisfy a specification written as a polymorphic refinement type; Lifty uses liquid types to verify statically that data-centric applications follow information flow policies, and suggests provably correct repairs when they do not.",
+  "sources": [
+   {
+    "source": "DBLP_conf_pldi_PolikarpovaKS16",
+    "page": 1
+   },
+   {
+    "source": "DBLP_journals_corr_PolikarpovaYIS16",
+    "page": 1
+   }
+  ],
+  "expected": "uncertain",
+  "expected_basis": "Closed set: 'refinement type' appears 45 and 17 times in these two, 2 or fewer anywhere else."
+ },
+ {
+  "id": "M6",
+  "category": "cross_paper",
+  "style": "named",
+  "question": "How do 'Smoothing a Program Soundly and Robustly', the Euler system, and ReaS each make numerical optimization work on programs?",
+  "grading_notes": "Must cover at least two: smooth interpretation convolves a program with a Gaussian so discontinuous switches become continuous transitions and local numerical search works; Euler solves optimization problems of finding an input that minimizes the output of a C-like program; ReaS smooths Boolean expressions to make a program differentiable and uses a SAT solver to help numerical search escape local solutions.",
+  "sources": [
+   {
+    "source": "DBLP_conf_cav_ChaudhuriS11",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_cav_ChaudhuriS12",
+    "page": 1
+   },
+   {
+    "source": "DBLP_journals_corr_abs-1802-04408",
+    "page": 1
+   }
+  ],
+  "expected": "uncertain",
+  "expected_basis": "Named, so the set is closed by construction. Not phrased as a concept question because InalaBTS20 also uses numerical optimization substantively."
+ },
+ {
+  "id": "M7",
+  "category": "cross_paper",
+  "style": "named",
+  "question": "How does Stitch's approach to library learning differ from DreamCoder's?",
+  "grading_notes": "Must state that DreamCoder grows a library of abstractions through wake-sleep learning and trains a neural network on imagined and replayed problems, and that Stitch searches top-down for abstractions and, compared with DreamCoder's deductive library learning, is 3-4 orders of magnitude faster and uses 2 orders of magnitude less memory.",
+  "sources": [
+   {
+    "source": "DBLP_journals_corr_abs-2006-08381",
+    "page": 1
+   },
+   {
+    "source": "DBLP_journals_pacmpl_BowersOWGTES23",
+    "page": 1
+   }
+  ],
+  "expected": "uncertain",
+  "expected_basis": "Named. 'Library learning' is not a closed concept here: MathDSL and the AI-for-SE position paper also discuss it."
+ },
+ {
+  "id": "M8",
+  "category": "cross_paper",
+  "style": "named",
+  "question": "How do the automated feedback system for introductory programming assignments and sk_p differ in how they correct student programs?",
+  "grading_notes": "Must state that the feedback system needs a reference implementation and an error model of correction rules, reduces finding minimal corrections to synthesis from a sketch, and corrects on average 65% of incorrect submissions; and that sk_p trains a seq2seq neural network on MOOC programs to generate candidate corrections checked against a test suite, correcting 29% of incorrect submissions.",
+  "sources": [
+   {
+    "source": "DBLP_journals_corr_abs-1204-1751",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_oopsla_PuNSB16",
+    "page": 1
+   }
+  ],
+  "expected": "uncertain",
+  "expected_basis": "Named. 'Student' is not a closed concept: two misattributed files use it heavily."
+ },
+ {
+  "id": "M9",
+  "category": "cross_paper",
+  "style": "named",
+  "question": "What do the Fusion 360 Gallery paper and JoinABLe each contribute to learning from CAD designs?",
+  "grading_notes": "Must state that Fusion 360 Gallery provides a simple sketch-and-extrude language with a dataset of 8,625 human design sequences and an environment for programmatic CAD construction, and that JoinABLe is a learning-based method that assembles parts by predicting joints, with 79.53% accuracy against 80% human performance.",
+  "sources": [
+   {
+    "source": "DBLP_journals_tog_WillisPLCDLSM21",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_cvpr_WillisJCT0GSTLS22",
+    "page": 1
+   }
+  ],
+  "expected": "uncertain",
+  "expected_basis": "Named. 'CAD' is not closed: Write, Execute, Assess and Metric Program Synthesis also mention it."
+ },
+ {
+  "id": "M10",
+  "category": "cross_paper",
+  "style": "named",
+  "question": "How do 'Write, Execute, Assess' and the blended abstract semantics paper each use execution to guide program search?",
+  "grading_notes": "Must state that Write, Execute, Assess runs partially written programs in a REPL and trains a policy and a value function that are combined with Sequential Monte Carlo; and that blended abstract semantics represents partial programs by combining concrete execution state with a learned neural approximate execution model for the unfinished parts.",
+  "sources": [
+   {
+    "source": "DBLP_journals_corr_abs-1906-04604",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_iclr_NyePBATS21",
+    "page": 1
+   }
+  ],
+  "expected": "uncertain",
+  "expected_basis": "Named. NyePBATS21 is also a source for 3.1's C6; the question asks about a different aspect."
+ },
+ {
+  "id": "M11",
+  "category": "cross_paper",
+  "style": "named",
+  "question": "How do OmegaC and the random conditional distribution paper each extend probabilistic programming?",
+  "grading_notes": "Must state that OmegaC adds counterfactual inference through a new operator akin to Pearl's do, and that the random conditional distribution is a higher-order random variable added to the Omega language so that distributional properties such as expectation can be conditioned.",
+  "sources": [
+   {
+    "source": "DBLP_conf_icml_TavaresK0DS21",
+    "page": 1
+   },
+   {
+    "source": "DBLP_journals_corr_abs-1903-10556",
+    "page": 1
+   }
+  ],
+  "expected": "uncertain",
+  "expected_basis": "Named. Neither paper has a twin in the index."
+ },
+ {
+  "id": "M12",
+  "category": "cross_paper",
+  "style": "named",
+  "question": "How do the formula-simplifier paper and the CNF-encoder paper each use synthesis to improve constraint solvers?",
+  "grading_notes": "Must state that the first combines machine learning with constraint-based synthesis to synthesize formula simplifiers based on conditional rewrite rules from a corpus of problems, and that the second combines program synthesis and machine learning to generate domain-specific code that translates bit-vector terms to CNF, improving on the encoding used by CVC4.",
+  "sources": [
+   {
+    "source": "DBLP_journals_corr_0002S16",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_sat_Inala0S16",
+    "page": 1
+   }
+  ],
+  "expected": "uncertain",
+  "expected_basis": "Named. Neither paper has a twin in the index."
+ }
+]

@@ -1,0 +1,1726 @@
+[
+ {
+  "id": "S1",
+  "category": "specific_paper",
+  "sub_queries": [
+   "In the ENCOMPASS paper, what does PAN stand for?",
+   "In the ENCOMPASS paper, what two concerns does the programming model separate?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 4,
+   "top6": [
+    "conf_nips_li2025encompass:p2",
+    "conf_nips_li2025encompass:p3",
+    "conf_nips_li2025encompass:p10",
+    "conf_nips_li2025encompass:p1*",
+    "conf_nips_li2025encompass:p3",
+    "conf_nips_li2025encompass:p25"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_nips_li2025encompass:p3",
+    "conf_nips_li2025encompass:p10",
+    "conf_nips_li2025encompass:p2",
+    "conf_snapl_KurajS17:p13",
+    "conf_mapl_GottschlichSTCR18:p2",
+    "conf_mapl_GottschlichSTCR18:p7"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_nips_li2025encompass:p3",
+    "conf_nips_li2025encompass:p10",
+    "conf_nips_li2025encompass:p2",
+    "conf_nips_li2025encompass:p9",
+    "conf_nips_li2025encompass:p25",
+    "conf_nips_li2025encompass:p10"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "S2",
+  "category": "specific_paper",
+  "sub_queries": [
+   "CRUXEval benchmark number of Python functions",
+   "What two tasks each CRUXEval function supports"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 2,
+   "passage": 2,
+   "top6": [
+    "journals_corr_abs-2401-03065:p5",
+    "conf_icml_GuRLSS024:p1*",
+    "conf_icml_GuRLSS024:p16",
+    "journals_corr_abs-2401-03065:p1",
+    "conf_icml_GuRLSS024:p3*",
+    "conf_icml_GuRLSS024:p3"
+   ]
+  },
+  "v1": {
+   "paper": 2,
+   "passage": 2,
+   "top6": [
+    "journals_corr_abs-2401-03065:p5",
+    "conf_icml_GuRLSS024:p3*",
+    "conf_icml_GuRLSS024:p16",
+    "journals_corr_abs-2401-03065:p1",
+    "conf_icml_GuRLSS024:p1*",
+    "journals_corr_abs-2401-03065:p2"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 2,
+   "passage": 2,
+   "top6": [
+    "journals_corr_abs-2401-03065:p5",
+    "conf_icml_GuRLSS024:p3*",
+    "conf_icml_GuRLSS024:p16",
+    "journals_corr_abs-2401-03065:p1",
+    "conf_icml_GuRLSS024:p1*",
+    "conf_icml_GuRLSS024:p3"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "S3",
+  "category": "specific_paper",
+  "sub_queries": [
+   "What does LINC stand for in the relevant context?",
+   "What role does the language model play in LINC?",
+   "How is the language model used or integrated within LINC?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 4,
+   "top6": [
+    "conf_emnlp_OlaussonGLZSTL23:p2",
+    "conf_emnlp_OlaussonGLZSTL23:p2",
+    "conf_emnlp_OlaussonGLZSTL23:p8",
+    "conf_emnlp_OlaussonGLZSTL23:p1*",
+    "conf_emnlp_OlaussonGLZSTL23:p9",
+    "conf_emnlp_OlaussonGLZSTL23:p3"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_emnlp_OlaussonGLZSTL23:p2",
+    "conf_emnlp_OlaussonGLZSTL23:p2",
+    "conf_emnlp_OlaussonGLZSTL23:p4",
+    "conf_icml_GuJLSESS25:p41",
+    "journals_ftpl_ChaudhuriEPSSY21:p1",
+    "conf_oopsla_YessenovXS11:p4"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_emnlp_OlaussonGLZSTL23:p2",
+    "conf_emnlp_OlaussonGLZSTL23:p2",
+    "conf_emnlp_OlaussonGLZSTL23:p4",
+    "conf_emnlp_OlaussonGLZSTL23:p8",
+    "conf_emnlp_OlaussonGLZSTL23:p9",
+    "conf_emnlp_OlaussonGLZSTL23:p4"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "S4",
+  "category": "specific_paper",
+  "sub_queries": [
+   "What are the three pillars of machine programming?",
+   "What does each pillar of machine programming emphasize?",
+   "What is the standard explanation or definition of the three pillars of machine programming?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 2,
+   "top6": [
+    "conf_mapl_GottschlichSTCR18:p7",
+    "conf_mapl_GottschlichSTCR18:p2*",
+    "conf_mapl_GottschlichSTCR18:p1*",
+    "conf_mapl_GottschlichSTCR18:p7",
+    "conf_mapl_GottschlichSTCR18:p8",
+    "conf_mapl_GottschlichSTCR18:p1"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 3,
+   "top6": [
+    "conf_mapl_GottschlichSTCR18:p7",
+    "conf_mapl_GottschlichSTCR18:p1",
+    "conf_mapl_GottschlichSTCR18:p2*",
+    "conf_iclr_NyePBATS21:p11",
+    "conf_iclr_InalaBTS20:p2",
+    "journals_pacmpl_KoppelKS22:p21"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 3,
+   "top6": [
+    "conf_mapl_GottschlichSTCR18:p7",
+    "conf_mapl_GottschlichSTCR18:p1",
+    "conf_mapl_GottschlichSTCR18:p2*",
+    "conf_mapl_GottschlichSTCR18:p1*",
+    "conf_mapl_GottschlichSTCR18:p1",
+    "conf_mapl_GottschlichSTCR18:p8"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "S5",
+  "category": "specific_paper",
+  "sub_queries": [
+   "What inputs, in addition to the sketch, are required by the Sketch synthesizer?",
+   "What information or constraints must the programmer provide to guide synthesis in Sketch?",
+   "Does the Sketch synthesizer require examples, specifications, or assertions besides the sketch?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_aplas_Solar-Lezama09:p1*",
+    "conf_aplas_Solar-Lezama09:p1*",
+    "conf_sigsoft_JeonQFS15:p1",
+    "conf_sigsoft_JeonQFS15:p1",
+    "conf_sigsoft_JeonQFS15:p1",
+    "conf_sigsoft_JeonQFS15:p1"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_aplas_Solar-Lezama09:p1*",
+    "conf_cikm_CheungSM12:p3",
+    "journals_corr_0002S16:p4",
+    "conf_sigsoft_JeonQFS15:p1",
+    "conf_sigsoft_SinghS11:p10",
+    "conf_sigsoft_JeonQFS15:p1"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_aplas_Solar-Lezama09:p1*",
+    "conf_cikm_CheungSM12:p3",
+    "journals_corr_0002S16:p4",
+    "conf_sigsoft_JeonQFS15:p1",
+    "conf_sigsoft_SinghS11:p10",
+    "conf_sigsoft_JeonQFS15:p1"
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "S6",
+  "category": "specific_paper",
+  "sub_queries": [
+   "How are representative examples selected in the paper 'Selecting Representative Examples for Program Synthesis'?",
+   "What criteria or optimization objective is used to choose the subset of examples?",
+   "Does the paper describe an algorithm for selecting the examples, and if so how does it work?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_icml_PuMSK18:p1*",
+    "journals_corr_abs-1711-03243:p1",
+    "journals_corr_abs-1711-03243:p3",
+    "conf_icml_PuMSK18:p3*",
+    "conf_icml_PuMSK18:p7",
+    "journals_corr_abs-1711-03243:p7"
+   ]
+  },
+  "v1": {
+   "paper": 3,
+   "passage": 3,
+   "top6": [
+    "journals_corr_abs-1711-03243:p3",
+    "journals_corr_abs-1711-03243:p3",
+    "conf_icml_PuMSK18:p3*",
+    "journals_corr_abs-1711-03243:p6",
+    "conf_icml_PuMSK18:p3",
+    "conf_icml_PuMSK18:p1*"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 3,
+   "passage": 3,
+   "top6": [
+    "journals_corr_abs-1711-03243:p3",
+    "journals_corr_abs-1711-03243:p3",
+    "conf_icml_PuMSK18:p3*",
+    "journals_corr_abs-1711-03243:p6",
+    "conf_icml_PuMSK18:p3",
+    "journals_corr_abs-1711-03243:p1"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "S7",
+  "category": "specific_paper",
+  "sub_queries": [
+   "What definition or criteria does 'The Counterfeit Conundrum' give for a counterfeit sample?",
+   "What are the two properties that characterize a counterfeit sample in 'The Counterfeit Conundrum'?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_acl_GuLJOLSS24:p1*",
+    "journals_corr_abs-2402-19475:p3",
+    "conf_acl_GuLJOLSS24:p1",
+    "journals_corr_abs-2402-19475:p10",
+    "conf_acl_GuLJOLSS24:p2",
+    "journals_corr_abs-2402-19475:p1"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_acl_GuLJOLSS24:p1*",
+    "journals_corr_abs-2402-19475:p3",
+    "conf_acl_GuLJOLSS24:p2",
+    "journals_corr_abs-2402-19475:p10",
+    "conf_acl_GuLJOLSS24:p4",
+    "journals_corr_abs-2402-19475:p1"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_acl_GuLJOLSS24:p1*",
+    "journals_corr_abs-2402-19475:p3",
+    "conf_acl_GuLJOLSS24:p2",
+    "journals_corr_abs-2402-19475:p10",
+    "conf_acl_GuLJOLSS24:p4",
+    "journals_corr_abs-2402-19475:p1"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "N2",
+  "category": "specific_paper",
+  "sub_queries": [
+   "Locate the Lynx paper and identify the section that describes the programmatic SAT solver",
+   "Determine what specific problem or task the programmatic SAT solver is used to solve in Lynx",
+   "Find any example, benchmark, or application context in the paper where the programmatic SAT solver is applied"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_sat_GaneshOSDRS12:p1*",
+    "conf_sat_GaneshOSDRS12:p2",
+    "conf_sat_GaneshOSDRS12:p1",
+    "conf_sat_GaneshOSDRS12:p2*",
+    "journals_corr_abs-1711-11438:p3",
+    "Ellis22Linguistics:p4"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_sat_GaneshOSDRS12:p1*",
+    "conf_sat_GaneshOSDRS12:p2",
+    "conf_cav_JeonQSF15:p15",
+    "conf_sat_GaneshOSDRS12:p1",
+    "journals_corr_abs-1711-11438:p3",
+    "conf_sat_Inala0S16:p18"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_sat_GaneshOSDRS12:p1*",
+    "conf_sat_GaneshOSDRS12:p2",
+    "conf_cav_JeonQSF15:p15",
+    "conf_sat_GaneshOSDRS12:p1",
+    "conf_sat_GaneshOSDRS12:p2*",
+    "conf_sat_Inala0S16:p18"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "N3",
+  "category": "specific_paper",
+  "sub_queries": [
+   "What is the SPARLING method and what does it learn?",
+   "What is the main theorem of the SPARLING method?",
+   "What assumptions or guarantees are included in the SPARLING main theorem?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 2,
+   "passage": 2,
+   "top6": [
+    "journals_corr_abs-2302-01976:p1",
+    "conf_iclr_gupta2025sparling:p1*",
+    "conf_nips_li2025encompass:p54",
+    "conf_nips_li2025encompass:p51",
+    "conf_iclr_gupta2025sparling:p34",
+    "journals_corr_abs-2302-01976:p34"
+   ]
+  },
+  "v1": {
+   "paper": 3,
+   "passage": 3,
+   "top6": [
+    "journals_corr_abs-2302-01976:p1",
+    "journals_corr_abs-2302-01976:p7",
+    "conf_iclr_gupta2025sparling:p1*",
+    "conf_iclr_gupta2025sparling:p34",
+    "conf_iclr_gupta2025sparling:p7",
+    "journals_corr_abs-2302-01976:p36"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 3,
+   "passage": 3,
+   "top6": [
+    "journals_corr_abs-2302-01976:p1",
+    "journals_corr_abs-2302-01976:p7",
+    "conf_iclr_gupta2025sparling:p1*",
+    "conf_iclr_gupta2025sparling:p34",
+    "conf_iclr_gupta2025sparling:p7",
+    "journals_corr_abs-2302-01976:p36"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "N4",
+  "category": "specific_paper",
+  "sub_queries": [
+   "In the LINC paper, what is the specific setting limitation the authors consider?",
+   "According to the LINC paper, what effect does that limitation have on the method or results?",
+   "What motivation or rationale do the authors give for considering that limited setting?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_emnlp_OlaussonGLZSTL23:p9",
+    "journals_corr_abs-2501-02825:p33",
+    "conf_nips_li2025encompass:p14",
+    "journals_corr_abs-2407-01567:p24",
+    "conf_nips_Tjandrasuwita0S24:p24",
+    "conf_emnlp_OlaussonGLZSTL23:p15"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_emnlp_OlaussonGLZSTL23:p9",
+    "conf_emnlp_OlaussonGLZSTL23:p8",
+    "conf_pldi_ChaudhuriS10:p11",
+    "journals_corr_abs-2501-02825:p33",
+    "conf_emnlp_OlaussonGLZSTL23:p8",
+    "conf_cav_ChaudhuriS11:p8"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_emnlp_OlaussonGLZSTL23:p9",
+    "conf_emnlp_OlaussonGLZSTL23:p8",
+    "conf_pldi_ChaudhuriS10:p11",
+    "journals_corr_abs-2501-02825:p33",
+    "conf_emnlp_OlaussonGLZSTL23:p8",
+    "conf_cav_ChaudhuriS11:p8"
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "C1",
+  "category": "cross_paper",
+  "sub_queries": [
+   "What definitions of the program synthesis problem are given in the papers in this collection?",
+   "How do these papers differ in their assumptions about the synthesis input, output, and specification?",
+   "Which papers explicitly disagree on what counts as program synthesis or on the scope of the task?",
+   "What terminology or formalism does each paper use to define program synthesis?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 6,
+   "passage": null,
+   "top6": [
+    "journals_corr_abs-2302-01976:p4",
+    "conf_iclr_gupta2025sparling:p4",
+    "journals_fmsd_JeonQSF17:p2",
+    "conf_sigsoft_SinghS11:p11",
+    "conf_pldi_PolikarpovaKS16:p14",
+    "conf_icml_PuMSK18:p1"
+   ],
+   "covered": [
+    0,
+    1
+   ]
+  },
+  "v1": {
+   "paper": 5,
+   "passage": null,
+   "top6": [
+    "conf_pldi_PolikarpovaKS16:p14",
+    "journals_corr_0002S16:p10",
+    "journals_corr_abs-1906-04604:p2",
+    "journals_fmsd_FismanSS21:p1",
+    "conf_icml_PuMSK18:p1",
+    "journals_fmsd_FismanSS21:p1"
+   ],
+   "covered": [
+    0,
+    1
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 5,
+   "passage": null,
+   "top6": [
+    "conf_pldi_PolikarpovaKS16:p14",
+    "journals_corr_0002S16:p10",
+    "journals_corr_abs-1906-04604:p2",
+    "journals_fmsd_FismanSS21:p1",
+    "conf_icml_PuMSK18:p1",
+    "journals_fmsd_FismanSS21:p1"
+   ],
+   "covered": [
+    0,
+    1
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "C2",
+  "category": "cross_paper",
+  "sub_queries": [
+   "Identify the papers being referred to and extract how each combines language models with formal verification or symbolic reasoning",
+   "Compare the integration strategy used in each paper, such as model-guided search, proof synthesis, theorem proving, constraint solving, or program/logic generation",
+   "Summarize the key differences and common patterns across the papers in how language model outputs are verified or used by symbolic systems"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_emnlp_OlaussonGLZSTL23:p9",
+    "conf_emnlp_OlaussonGLZSTL23:p9",
+    "journals_corr_abs-2501-02825:p13",
+    "conf_emnlp_OlaussonGLZSTL23:p14",
+    "conf_icml_GuJLSESS25:p60",
+    "conf_vmcai_SinghSXKS14:p2"
+   ],
+   "covered": [
+    0,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_emnlp_OlaussonGLZSTL23:p9",
+    "journals_corr_AlurFSS16a:p1",
+    "conf_emnlp_OlaussonGLZSTL23:p9",
+    "conf_snapl_CheungKS15:p3",
+    "journals_fmsd_JeonQSF17:p3",
+    "conf_acl_GuLJOLSS24:p10"
+   ],
+   "covered": [
+    0,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_emnlp_OlaussonGLZSTL23:p9",
+    "journals_corr_AlurFSS16a:p1",
+    "conf_emnlp_OlaussonGLZSTL23:p9",
+    "conf_snapl_CheungKS15:p3",
+    "journals_fmsd_JeonQSF17:p3",
+    "conf_acl_GuLJOLSS24:p10"
+   ],
+   "covered": [
+    0,
+    2
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "C3",
+  "category": "cross_paper",
+  "sub_queries": [
+   "Identify the benchmark names for evaluating code-generating language models mentioned in the collection",
+   "For each benchmark in the collection, determine what capability or aspect of code generation it measures",
+   "Find any descriptions, task formats, or evaluation metrics associated with these code-generation benchmarks"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": null,
+   "passage": null,
+   "top6": [
+    "journals_cacm_AlurSFS18:p2",
+    "journals_corr_abs-2401-03065:p2",
+    "conf_iclr_JainHGLYZWSSS25:p9",
+    "journals_corr_abs-2403-07974:p15",
+    "journals_corr_abs-2501-02825:p9",
+    "journals_corr_abs-2403-07974:p24"
+   ],
+   "covered": [
+    0,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 4,
+   "passage": null,
+   "top6": [
+    "journals_corr_abs-2403-07974:p24",
+    "journals_corr_abs-2503-22625:p14",
+    "conf_icml_GuJLSESS25:p59",
+    "conf_icml_GuRLSS024:p30",
+    "conf_icml_GuRLSS024:p2",
+    "journals_corr_abs-2503-22625:p74"
+   ],
+   "covered": [
+    0,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 4,
+   "passage": null,
+   "top6": [
+    "journals_corr_abs-2403-07974:p24",
+    "journals_corr_abs-2503-22625:p14",
+    "conf_icml_GuJLSESS25:p59",
+    "conf_icml_GuRLSS024:p30",
+    "conf_icml_GuRLSS024:p2",
+    "journals_corr_abs-2503-22625:p74"
+   ],
+   "covered": [
+    0,
+    2
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "C4",
+  "category": "cross_paper",
+  "sub_queries": [
+   "What reasons do the papers give for program synthesis being computationally hard?",
+   "Which complexity-theoretic results or lower bounds are cited for program synthesis in the papers?",
+   "What aspects of the synthesis problem (e.g., search space, specification ambiguity, semantics, grammar size) are identified as sources of hardness?",
+   "Do the papers distinguish between hardness in general program synthesis and hardness of specific synthesis variants or benchmarks?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": null,
+   "passage": null,
+   "top6": [
+    "journals_fmsd_FismanSS21:p1",
+    "journals_fmsd_JeonQSF17:p2",
+    "journals_fmsd_FismanSS21:p2",
+    "conf_nips_PuEK0S20:p1",
+    "conf_sigsoft_SinghS11:p11",
+    "conf_nips_EllisRST18:p5"
+   ],
+   "covered": [
+    0,
+    2
+   ]
+  },
+  "v1": {
+   "paper": null,
+   "passage": null,
+   "top6": [
+    "journals_fmsd_FismanSS21:p1",
+    "conf_nips_EllisST16:p5",
+    "journals_cacm_AlurSFS18:p22",
+    "journals_fmsd_FismanSS21:p1",
+    "journals_fmsd_JeonQSF17:p2",
+    "journals_fmsd_FismanSS21:p2"
+   ],
+   "covered": [
+    0,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": null,
+   "passage": null,
+   "top6": [
+    "journals_fmsd_FismanSS21:p1",
+    "conf_nips_EllisST16:p5",
+    "journals_cacm_AlurSFS18:p22",
+    "journals_fmsd_FismanSS21:p1",
+    "journals_fmsd_JeonQSF17:p2",
+    "journals_fmsd_FismanSS21:p2"
+   ],
+   "covered": [
+    0,
+    2
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "C5",
+  "category": "cross_paper",
+  "sub_queries": [
+   "Identify papers in the collection that apply reinforcement learning to programs, program synthesis, or code generation, and summarize how RL is used",
+   "Identify papers in the collection that apply reinforcement learning to policies, policy learning, or decision-making policies, and summarize how RL is used",
+   "Find papers that connect reinforcement learning with both programs and policies, and extract the specific role RL plays in each case",
+   "Compare the different ways reinforcement learning is used across the collection in relation to programs versus policies"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_iclr_InalaBTS20:p1*",
+    "conf_nips_BastaniPS18:p1*",
+    "journals_corr_abs-1805-08328:p1",
+    "conf_iclr_InalaBTS20:p10",
+    "conf_nips_BastaniPS18:p1*",
+    "journals_corr_abs-1805-08328:p1"
+   ],
+   "covered": [
+    2,
+    3
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_hybrid_HuntFMHDS21:p12*",
+    "conf_nips_BastaniPS18:p1*",
+    "conf_icra_CamposISK19:p7",
+    "conf_iclr_InalaBTS20:p1*",
+    "conf_iclr_InalaBTS20:p12",
+    "conf_icml_LiPS24:p1"
+   ],
+   "covered": [
+    3,
+    3
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_hybrid_HuntFMHDS21:p12*",
+    "conf_nips_BastaniPS18:p1*",
+    "conf_icra_CamposISK19:p7",
+    "conf_iclr_InalaBTS20:p1*",
+    "conf_iclr_InalaBTS20:p12",
+    "conf_icml_LiPS24:p1"
+   ],
+   "covered": [
+    3,
+    3
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "C6",
+  "category": "cross_paper",
+  "sub_queries": [
+   "How are partial or incomplete programs defined or characterized in each paper?",
+   "What specific roles or uses do partial or incomplete programs serve in the methods, experiments, or arguments of these papers?",
+   "What benefits, limitations, or motivations are associated with using partial or incomplete programs across the papers?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 3,
+   "top6": [
+    "conf_iclr_NyePBATS21:p2",
+    "conf_iclr_NyePBATS21:p4",
+    "conf_iclr_NyePBATS21:p1*",
+    "journals_corr_abs-1208-2013:p7",
+    "conf_iclr_OlaussonIW0S24:p9",
+    "journals_corr_abs-1208-2013:p9"
+   ],
+   "covered": [
+    1,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 4,
+   "top6": [
+    "conf_iclr_NyePBATS21:p2",
+    "conf_iclr_NyePBATS21:p4",
+    "conf_nips_Tjandrasuwita0S24:p24",
+    "conf_iclr_NyePBATS21:p1*",
+    "conf_nips_li2025encompass:p15",
+    "journals_corr_abs-2407-01567:p24"
+   ],
+   "covered": [
+    1,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 4,
+   "top6": [
+    "conf_iclr_NyePBATS21:p2",
+    "conf_iclr_NyePBATS21:p4",
+    "conf_nips_Tjandrasuwita0S24:p24",
+    "conf_iclr_NyePBATS21:p1*",
+    "conf_iclr_NyePBATS21:p3*",
+    "journals_corr_abs-2407-01567:p24"
+   ],
+   "covered": [
+    1,
+    2
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "C7",
+  "category": "cross_paper",
+  "sub_queries": [
+   "How do the papers define or determine that a synthesized program is correct?",
+   "What correctness metrics, benchmarks, or formal verification methods do the papers use to evaluate synthesized programs?",
+   "Do the papers compare synthesized programs against ground truth, specifications, tests, or human judgments to assess correctness?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 3,
+   "passage": null,
+   "top6": [
+    "journals_corr_EllisRST17:p10",
+    "journals_corr_InalaQLS15:p2",
+    "conf_acl_GuLJOLSS24:p1",
+    "conf_nips_ZhangSS18:p6",
+    "journals_corr_abs-1204-1751:p10",
+    "journals_corr_abs-1204-1751:p10"
+   ],
+   "covered": [
+    0,
+    3
+   ]
+  },
+  "v1": {
+   "paper": null,
+   "passage": null,
+   "top6": [
+    "conf_icml_NyeHTS19:p4",
+    "conf_pldi_PolikarpovaKS16:p15",
+    "conf_cvpr_WillisJCT0GSTLS22:p28",
+    "journals_corr_abs-1902-06349:p4",
+    "journals_corr_abs-2503-22625:p76",
+    "journals_corr_abs-2206-06164:p23"
+   ],
+   "covered": [
+    0,
+    3
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": null,
+   "passage": null,
+   "top6": [
+    "conf_icml_NyeHTS19:p4",
+    "conf_pldi_PolikarpovaKS16:p15",
+    "conf_cvpr_WillisJCT0GSTLS22:p28",
+    "journals_corr_abs-1902-06349:p4",
+    "journals_corr_abs-2503-22625:p76",
+    "journals_corr_abs-2206-06164:p23"
+   ],
+   "covered": [
+    0,
+    3
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "C8",
+  "category": "cross_paper",
+  "sub_queries": [
+   "What do the papers claim about whether language models genuinely understand the code they produce?",
+   "What evidence or arguments do the papers use to support the view that language models do understand the code they produce?",
+   "What evidence or arguments do the papers use to support the view that language models do not genuinely understand the code they produce?",
+   "Where exactly do the papers differ in definitions, assumptions, or interpretation of 'understanding' in the context of code generation?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 2,
+   "passage": 2,
+   "top6": [
+    "journals_corr_abs-2402-19475:p13",
+    "conf_acl_GuLJOLSS24:p1*",
+    "journals_corr_abs-2402-19475:p13",
+    "conf_acl_GuLJOLSS24:p8",
+    "conf_acl_GuLJOLSS24:p1",
+    "conf_acl_GuLJOLSS24:p3"
+   ],
+   "covered": [
+    1,
+    2
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_acl_GuLJOLSS24:p1*",
+    "journals_corr_abs-2402-19475:p13",
+    "journals_corr_abs-2402-19475:p13",
+    "journals_corr_abs-2503-22625:p21",
+    "conf_acl_GuLJOLSS24:p1",
+    "conf_acl_GuLJOLSS24:p8"
+   ],
+   "covered": [
+    1,
+    2
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_acl_GuLJOLSS24:p1*",
+    "journals_corr_abs-2402-19475:p13",
+    "journals_corr_abs-2402-19475:p13",
+    "journals_corr_abs-2503-22625:p21",
+    "conf_acl_GuLJOLSS24:p1",
+    "conf_acl_GuLJOLSS24:p8"
+   ],
+   "covered": [
+    1,
+    2
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "Q1",
+  "category": "quote_verification",
+  "sub_queries": [
+   "Find the abstract of the paper \"The Sketching Approach to Program Synthesis\" and extract its first sentence",
+   "Locate the exact wording of the first sentence in the abstract of \"The Sketching Approach to Program Synthesis\""
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_aplas_Solar-Lezama09:p1*",
+    "conf_pldi_Solar-LezamaRBE05:p1",
+    "conf_sigsoft_JeonQFS15:p4",
+    "journals_corr_0002S16:p18",
+    "conf_sigsoft_JeonQFS15:p1",
+    "conf_cav_SinghS12:p6"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_aplas_Solar-Lezama09:p1*",
+    "conf_pldi_Solar-LezamaRBE05:p1",
+    "journals_corr_abs-2206-06164:p7",
+    "journals_corr_0002S16:p18",
+    "journals_corr_abs-2409-17490:p2",
+    "conf_sigsoft_JeonQFS15:p4"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_aplas_Solar-Lezama09:p1*",
+    "conf_pldi_Solar-LezamaRBE05:p1",
+    "journals_corr_abs-2206-06164:p7",
+    "journals_corr_0002S16:p18",
+    "journals_corr_abs-2409-17490:p2",
+    "conf_sigsoft_JeonQFS15:p4"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "Q2",
+  "category": "quote_verification",
+  "sub_queries": [
+   "Find the ENCOMPASS paper and identify its abstract",
+   "Extract the opening sentence of the abstract from the ENCOMPASS paper"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_nips_li2025encompass:p25",
+    "journals_ftpl_CheungS16:p8",
+    "journals_corr_abs-2402-19475:p11",
+    "conf_acl_GuLJOLSS24:p7",
+    "conf_nips_li2025encompass:p2",
+    "conf_nips_li2025encompass:p7"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_nips_li2025encompass:p25",
+    "journals_ftpl_CheungS16:p8",
+    "conf_nips_li2025encompass:p7",
+    "journals_corr_abs-2402-19475:p11",
+    "conf_nips_li2025encompass:p2",
+    "conf_acl_GuLJOLSS24:p7"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_nips_li2025encompass:p25",
+    "journals_ftpl_CheungS16:p8",
+    "conf_nips_li2025encompass:p7",
+    "journals_corr_abs-2402-19475:p11",
+    "conf_nips_li2025encompass:p2",
+    "conf_acl_GuLJOLSS24:p7"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "Q3",
+  "category": "quote_verification",
+  "sub_queries": [
+   "What sentence does the CRUXEval paper use to introduce the benchmark?",
+   "In the CRUXEval paper, locate the exact sentence introducing the benchmark and quote it verbatim"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 5,
+   "top6": [
+    "conf_icml_GuRLSS024:p2",
+    "journals_corr_abs-2401-03065:p1",
+    "conf_icml_GuRLSS024:p15",
+    "journals_corr_abs-2401-03065:p5",
+    "conf_icml_GuRLSS024:p1*",
+    "conf_icml_GuRLSS024:p9"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_icml_GuRLSS024:p2",
+    "journals_corr_abs-2401-03065:p1",
+    "journals_corr_abs-2401-03065:p5",
+    "conf_icml_GuRLSS024:p15",
+    "conf_icml_GuRLSS024:p16",
+    "journals_ftpl_ChaudhuriEPSSY21:p2"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_icml_GuRLSS024:p2",
+    "journals_corr_abs-2401-03065:p1",
+    "journals_corr_abs-2401-03065:p5",
+    "conf_icml_GuRLSS024:p15",
+    "conf_icml_GuRLSS024:p16",
+    "journals_ftpl_ChaudhuriEPSSY21:p2"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "Q4",
+  "category": "quote_verification",
+  "sub_queries": [
+   "Find the abstract of the paper titled 'The Three Pillars of Machine Programming'.",
+   "Identify the first sentence of that abstract exactly as written.",
+   "Verify the paper title and ensure the sentence quoted comes from the abstract, not the introduction or summary."
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_mapl_GottschlichSTCR18:p1*",
+    "conf_mapl_GottschlichSTCR18:p7",
+    "conf_mapl_GottschlichSTCR18:p2",
+    "conf_mapl_GottschlichSTCR18:p8",
+    "conf_mapl_GottschlichSTCR18:p1",
+    "conf_mapl_GottschlichSTCR18:p7"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_mapl_GottschlichSTCR18:p1*",
+    "journals_corr_GaneshMSR13:p4",
+    "conf_nips_li2025encompass:p14",
+    "conf_mapl_GottschlichSTCR18:p7",
+    "journals_pacmpl_KoppelKS22:p42",
+    "conf_sigsoft_SinghS11:p8"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_mapl_GottschlichSTCR18:p1*",
+    "journals_corr_GaneshMSR13:p4",
+    "conf_nips_li2025encompass:p14",
+    "conf_mapl_GottschlichSTCR18:p7",
+    "journals_pacmpl_KoppelKS22:p42",
+    "conf_sigsoft_SinghS11:p8"
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "Q5",
+  "category": "quote_verification",
+  "sub_queries": [
+   "\"Selecting Representative Examples for Program Synthesis\" definition of program synthesis",
+   "\"Selecting Representative Examples for Program Synthesis\" where does the paper define program synthesis",
+   "\"Selecting Representative Examples for Program Synthesis\" sentence defining program synthesis"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_icml_PuMSK18:p1*",
+    "journals_corr_abs-1711-03243:p1",
+    "journals_corr_abs-1711-03243:p6",
+    "conf_icml_PuMSK18:p6",
+    "conf_icml_PuMSK18:p1",
+    "conf_icml_PuMSK18:p2"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_icml_PuMSK18:p1*",
+    "journals_corr_abs-1711-03243:p1",
+    "journals_corr_abs-1711-03243:p6",
+    "conf_icml_PuMSK18:p6",
+    "conf_icml_PuMSK18:p2",
+    "journals_corr_abs-1711-03243:p2"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_icml_PuMSK18:p1*",
+    "journals_corr_abs-1711-03243:p1",
+    "journals_corr_abs-1711-03243:p6",
+    "conf_icml_PuMSK18:p6",
+    "conf_icml_PuMSK18:p2",
+    "journals_corr_abs-1711-03243:p2"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "Q6",
+  "category": "quote_verification",
+  "sub_queries": [
+   "Find the LINC paper and locate the sentence that describes the role of the language model",
+   "Identify the exact quoted sentence in the LINC paper about the language model's role",
+   "Verify the surrounding context in the LINC paper to ensure the sentence is quoted accurately"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_emnlp_OlaussonGLZSTL23:p22",
+    "conf_emnlp_OlaussonGLZSTL23:p13",
+    "journals_corr_abs-2403-07974:p24",
+    "journals_corr_abs-2501-02825:p3",
+    "conf_emnlp_OlaussonGLZSTL23:p4",
+    "conf_emnlp_OlaussonGLZSTL23:p13"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_emnlp_OlaussonGLZSTL23:p4",
+    "conf_emnlp_OlaussonGLZSTL23:p22",
+    "conf_emnlp_OlaussonGLZSTL23:p15",
+    "journals_corr_abs-2501-02825:p3",
+    "journals_corr_abs-2501-02825:p10",
+    "conf_oopsla_PuNSB16:p4"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_emnlp_OlaussonGLZSTL23:p4",
+    "conf_emnlp_OlaussonGLZSTL23:p22",
+    "conf_emnlp_OlaussonGLZSTL23:p15",
+    "conf_emnlp_OlaussonGLZSTL23:p2",
+    "conf_emnlp_OlaussonGLZSTL23:p13",
+    "conf_emnlp_OlaussonGLZSTL23:p23"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "Q7",
+  "category": "quote_verification",
+  "sub_queries": [
+   "What is the opening sentence of the abstract for the paper titled 'The Counterfeit Conundrum'?",
+   "Locate the abstract text for 'The Counterfeit Conundrum' and identify its first sentence."
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 2,
+   "passage": 2,
+   "top6": [
+    "journals_corr_abs-2402-19475:p1",
+    "conf_acl_GuLJOLSS24:p1*",
+    "journals_corr_abs-2402-19475:p11",
+    "conf_acl_GuLJOLSS24:p7",
+    "journals_ftpl_CheungS16:p8",
+    "conf_acl_GuLJOLSS24:p6"
+   ]
+  },
+  "v1": {
+   "paper": 2,
+   "passage": 2,
+   "top6": [
+    "journals_corr_abs-2402-19475:p1",
+    "conf_acl_GuLJOLSS24:p1*",
+    "journals_corr_abs-2402-19475:p11",
+    "conf_acl_GuLJOLSS24:p3",
+    "conf_acl_GuLJOLSS24:p7",
+    "journals_corr_abs-2402-19475:p5"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 2,
+   "passage": 2,
+   "top6": [
+    "journals_corr_abs-2402-19475:p1",
+    "conf_acl_GuLJOLSS24:p1*",
+    "journals_corr_abs-2402-19475:p11",
+    "conf_acl_GuLJOLSS24:p3",
+    "conf_acl_GuLJOLSS24:p7",
+    "journals_corr_abs-2402-19475:p5"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "Q8",
+  "category": "quote_verification",
+  "sub_queries": [
+   "Find the abstract of the paper 'Smoothing a Program Soundly and Robustly'",
+   "Extract the first sentence of that abstract",
+   "Verify the exact wording to quote it verbatim"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_cav_ChaudhuriS11:p1*",
+    "conf_cav_ChaudhuriS11:p7",
+    "conf_cav_ChaudhuriS11:p3",
+    "conf_cav_ChaudhuriS11:p9",
+    "conf_cav_ChaudhuriS11:p16",
+    "conf_cav_ChaudhuriS11:p13"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_cav_ChaudhuriS11:p1*",
+    "journals_pacmpl_KoppelKS22:p42",
+    "journals_pvldb_SinghMEMPQST17:p6",
+    "conf_cav_ChaudhuriS11:p3",
+    "conf_emnlp_OlaussonGLZSTL23:p16",
+    "conf_emnlp_OlaussonGLZSTL23:p18"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_cav_ChaudhuriS11:p1*",
+    "journals_pacmpl_KoppelKS22:p42",
+    "journals_pvldb_SinghMEMPQST17:p6",
+    "conf_cav_ChaudhuriS11:p3",
+    "conf_emnlp_OlaussonGLZSTL23:p16",
+    "conf_emnlp_OlaussonGLZSTL23:p18"
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "V1",
+  "category": "source_verification",
+  "sub_queries": [
+   "What does RVISmith fuzz in the paper or documentation?",
+   "What is the target or target platform of RVISmith fuzzing?",
+   "What types of inputs, instructions, or programs does RVISmith generate or mutate during fuzzing?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_cacm_WangZKS16:p9*",
+    "journals_cacm_WangZKS16:p13*",
+    "journals_cacm_WangZKS16:p5*",
+    "journals_cacm_WangZKS16:p2*",
+    "journals_cacm_WangZKS16:p2",
+    "journals_cacm_WangZKS16:p13*"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_cacm_WangZKS16:p9*",
+    "journals_cacm_WangZKS16:p13*",
+    "journals_cacm_WangZKS16:p13*",
+    "conf_nips_li2025encompass:p53",
+    "series_natosec_40:p2"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_cacm_WangZKS16:p9*",
+    "journals_cacm_WangZKS16:p13*",
+    "journals_cacm_WangZKS16:p13*",
+    "journals_cacm_WangZKS16:p5*",
+    "journals_cacm_WangZKS16:p2*",
+    "journals_cacm_WangZKS16:p13*"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "V2",
+  "category": "source_verification",
+  "sub_queries": [
+   "What is MANTRA in the relevant technical or domain context?",
+   "What does MANTRA validate, including the objects, properties, or processes it checks?",
+   "What is the purpose or scope of MANTRA's validation?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 2,
+   "top6": [
+    "conf_icse_JeonQFFS16:p2",
+    "conf_icse_JeonQFFS16:p14*",
+    "conf_icse_JeonQFFS16:p3",
+    "conf_icse_JeonQFFS16:p2*",
+    "conf_icse_JeonQFFS16:p5",
+    "conf_icse_JeonQFFS16:p19*"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "conf_icse_JeonQFFS16:p3",
+    "conf_icse_JeonQFFS16:p2",
+    "conf_icse_JeonQFFS16:p5",
+    "conf_oopsla_YessenovXS11:p5",
+    "journals_corr_GopalakrishnanH17:p23",
+    "conf_icml_GuJLSESS25:p41"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 5,
+   "top6": [
+    "conf_icse_JeonQFFS16:p3",
+    "conf_icse_JeonQFFS16:p2",
+    "conf_icse_JeonQFFS16:p5",
+    "conf_icse_JeonQFFS16:p4",
+    "conf_icse_JeonQFFS16:p5*",
+    "conf_icse_JeonQFFS16:p14*"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "V3",
+  "category": "source_verification",
+  "sub_queries": [
+   "What artifact is generated in the work on knowledge graphs for agentic AI formal verification?",
+   "In that work, what is produced by the knowledge graph approach or formal verification pipeline?",
+   "Does the paper/work state that a theorem, proof, model, dataset, or graph is generated?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_fmcad_AlurBJMRSSSTU13:p1*",
+    "conf_fmcad_AlurBJMRSSSTU13:p1",
+    "conf_fmcad_AlurBJMRSSSTU13:p2",
+    "conf_fmcad_AlurBJMRSSSTU13:p5",
+    "conf_fmcad_AlurBJMRSSSTU13:p1",
+    "conf_fmcad_AlurBJMRSSSTU13:p2"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_fmcad_AlurBJMRSSSTU13:p1*",
+    "conf_fmcad_AlurBJMRSSSTU13:p2",
+    "journals_pacmpl_KoppelKS22:p38",
+    "conf_fmcad_AlurBJMRSSSTU13:p1",
+    "conf_icml_GuJLSESS25:p3",
+    "conf_nips_li2025encompass:p15"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_fmcad_AlurBJMRSSSTU13:p1*",
+    "conf_fmcad_AlurBJMRSSSTU13:p2",
+    "journals_pacmpl_KoppelKS22:p38",
+    "conf_fmcad_AlurBJMRSSSTU13:p1",
+    "conf_icml_GuJLSESS25:p3",
+    "conf_nips_li2025encompass:p15"
+   ],
+   "cap": 3
+  }
+ },
+ {
+  "id": "V4",
+  "category": "source_verification",
+  "sub_queries": [
+   "What does NeSyCat stand for and what is its main purpose?",
+   "What are the key features or capabilities of NeSyCat?",
+   "In what context, domain, or project is NeSyCat used?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "journals_ftpl_ChaudhuriEPSSY21:p33",
+    "journals_ftpl_ChaudhuriEPSSY21:p3",
+    "journals_ftpl_ChaudhuriEPSSY21:p31",
+    "journals_ftpl_ChaudhuriEPSSY21:p33",
+    "journals_ftpl_ChaudhuriEPSSY21:p32",
+    "journals_ftpl_ChaudhuriEPSSY21:p27"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "journals_ftpl_ChaudhuriEPSSY21:p33",
+    "journals_ftpl_ChaudhuriEPSSY21:p31",
+    "journals_ftpl_ChaudhuriEPSSY21:p3",
+    "conf_iclr_NyePBATS21:p15",
+    "journals_corr_abs-2102-11137:p17",
+    "conf_mapl_GottschlichSTCR18:p3"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": null,
+   "top6": [
+    "journals_ftpl_ChaudhuriEPSSY21:p33",
+    "journals_ftpl_ChaudhuriEPSSY21:p31",
+    "journals_ftpl_ChaudhuriEPSSY21:p3",
+    "journals_ftpl_ChaudhuriEPSSY21:p13",
+    "journals_ftpl_ChaudhuriEPSSY21:p33",
+    "journals_ftpl_ChaudhuriEPSSY21:p3"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "V5",
+  "category": "source_verification",
+  "sub_queries": [
+   "What is the document or source titled 'Beyond the Training Distribution'?",
+   "What topic, concept, or mapping is described by 'Beyond the Training Distribution'?",
+   "Does 'Beyond the Training Distribution' refer to a specific chart, figure, or diagram, and what are its elements?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_cacm_AlurSFS18:p1*",
+    "journals_cacm_AlurSFS18:p7*",
+    "journals_cacm_AlurSFS18:p5*",
+    "journals_cacm_AlurSFS18:p1",
+    "journals_cacm_AlurSFS18:p1*",
+    "journals_cacm_AlurSFS18:p2"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_cacm_AlurSFS18:p1*",
+    "journals_cacm_AlurSFS18:p7*",
+    "journals_cacm_AlurSFS18:p5*",
+    "journals_corr_abs-2409-17490:p4",
+    "conf_iclr_gupta2025sparling:p1",
+    "conf_icml_GuJLSESS25:p49"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_cacm_AlurSFS18:p1*",
+    "journals_cacm_AlurSFS18:p7*",
+    "journals_cacm_AlurSFS18:p5*",
+    "journals_corr_abs-2409-17490:p4",
+    "journals_cacm_AlurSFS18:p3*",
+    "conf_icml_GuJLSESS25:p49"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "V6",
+  "category": "source_verification",
+  "sub_queries": [
+   "What is BLK-Assist and what is its main proposal or purpose?",
+   "What problem or need is BLK-Assist designed to address?",
+   "What features, methods, or actions does BLK-Assist propose to implement?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_pldi_Solar-LezamaATBSS07:p1*",
+    "conf_pldi_Solar-LezamaATBSS07:p2",
+    "conf_pldi_Solar-LezamaATBSS07:p2",
+    "conf_pldi_Solar-LezamaATBSS07:p2*",
+    "conf_pldi_Solar-LezamaATBSS07:p5",
+    "conf_pldi_Solar-LezamaATBSS07:p6"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 3,
+   "top6": [
+    "conf_pldi_Solar-LezamaATBSS07:p2",
+    "conf_pldi_Solar-LezamaATBSS07:p2",
+    "conf_pldi_Solar-LezamaATBSS07:p1*",
+    "conf_cav_ChaudhuriS11:p16",
+    "journals_corr_abs-2403-07974:p6",
+    "conf_icml_GuJLSESS25:p38"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 3,
+   "top6": [
+    "conf_pldi_Solar-LezamaATBSS07:p2",
+    "conf_pldi_Solar-LezamaATBSS07:p2",
+    "conf_pldi_Solar-LezamaATBSS07:p1*",
+    "conf_pldi_Solar-LezamaATBSS07:p2*",
+    "conf_pldi_Solar-LezamaATBSS07:p5",
+    "conf_pldi_Solar-LezamaATBSS07:p6"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "V7",
+  "category": "source_verification",
+  "sub_queries": [
+   "What is Bench-Push benchmarking in robotics or manipulation?",
+   "What tasks, metrics, and setup does Bench-Push include?",
+   "What problem or capability is Bench-Push designed to evaluate?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_icra_CamposISK19:p1*",
+    "conf_icra_CamposISK19:p2*",
+    "conf_icra_CamposISK19:p2",
+    "conf_icra_CamposISK19:p8*",
+    "conf_icra_CamposISK19:p2*",
+    "conf_icra_CamposISK19:p5"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_icra_CamposISK19:p1*",
+    "conf_icra_CamposISK19:p2",
+    "conf_icra_CamposISK19:p2*",
+    "conf_iclr_JainHGLYZWSSS25:p41",
+    "journals_corr_abs-2403-07974:p17",
+    "conf_icml_GuJLSESS25:p36"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "conf_icra_CamposISK19:p1*",
+    "conf_icra_CamposISK19:p2",
+    "conf_icra_CamposISK19:p2*",
+    "conf_icra_CamposISK19:p8*",
+    "conf_icra_CamposISK19:p2*",
+    "conf_icra_CamposISK19:p5"
+   ],
+   "cap": 6
+  }
+ },
+ {
+  "id": "V8",
+  "category": "source_verification",
+  "sub_queries": [
+   "What is the Advanced Encryption Standard (AES) and what does it define?",
+   "What algorithms, key sizes, and block sizes are specified by AES?",
+   "What standards or NIST publication established AES?"
+  ],
+  "split_failed": false,
+  "baseline": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_sttt_Solar-Lezama13:p1*",
+    "journals_sttt_Solar-Lezama13:p5",
+    "journals_sttt_Solar-Lezama13:p2*",
+    "journals_sttt_Solar-Lezama13:p51",
+    "journals_sttt_Solar-Lezama13:p9",
+    "journals_sttt_Solar-Lezama13:p9"
+   ]
+  },
+  "v1": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_sttt_Solar-Lezama13:p1*",
+    "journals_sttt_Solar-Lezama13:p9",
+    "journals_sttt_Solar-Lezama13:p51",
+    "conf_pldi_Solar-LezamaRBE05:p13",
+    "journals_corr_abs-2409-17490:p9",
+    "conf_pldi_Solar-LezamaRBE05:p14"
+   ],
+   "cap": 3
+  },
+  "v2": {
+   "paper": 1,
+   "passage": 1,
+   "top6": [
+    "journals_sttt_Solar-Lezama13:p1*",
+    "journals_sttt_Solar-Lezama13:p9",
+    "journals_sttt_Solar-Lezama13:p51",
+    "journals_sttt_Solar-Lezama13:p5",
+    "journals_sttt_Solar-Lezama13:p18",
+    "journals_sttt_Solar-Lezama13:p2"
+   ],
+   "cap": 6
+  }
+ }
+]
