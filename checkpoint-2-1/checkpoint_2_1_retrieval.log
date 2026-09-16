@@ -1,0 +1,288 @@
+[2026-08-31T20:15:52] QUERY 1: In the ENCOMPASS paper, what does PAN stand for and what two concerns does the programming model separate?
+retrieved:
+  #1 0.876  conf_nips_li2025encompass p.2  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #2 0.807  conf_nips_li2025encompass p.3  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #3 0.643  conf_nips_li2025encompass p.10  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #4 0.571  conf_nips_li2025encompass p.1  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #5 0.441  conf_nips_li2025encompass p.3  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #6 0.414  conf_nips_li2025encompass p.25  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+
+answer:
+PAN stands for **“probabilistic angelic nondeterminism”**: the paper says, “we introduce probabilistic angelic nondeterminism (PAN)” [conf_nips_li2025encompass p.1], and later “call this programming model probabilistic angelic nondeterminism (PAN)” [conf_nips_li2025encompass p.2].
+
+The programming model separates **“inference-time algorithms (search policy)”** from **“the underlying logic of the agent (specification of the search space)”** [conf_nips_li2025encompass p.2]. The abstract also describes this as disentangling “the core workflow logic and the inference-time strategy” [conf_nips_li2025encompass p.1].
+------------------------------------------------------------------------
+[2026-08-31T20:15:54] QUERY 2: Quote the first sentence of the abstract of 'The Sketching Approach to Program Synthesis'.
+retrieved:
+  #1 1.000  DBLP_conf_aplas_Solar-Lezama09 p.1  — The Sketching Approach to Program Synthesis Armando Solar-Lezama
+  #2 0.218  DBLP_conf_pldi_Solar-LezamaRBE05 p.1  — Programming by Sketching for Bit-Streaming Programs Armando Sola
+  #3 0.205  DBLP_conf_sigsoft_JeonQFS15 p.4  — JSKETCH: Sketching for Java Jinseong Jeon† Xiaokang Qiu‡ Jeffrey
+  #4 0.203  DBLP_journals_corr_0002S16 p.18  — Automatic Generation of Formula Simplifiers based on Conditional
+  #5 0.168  DBLP_conf_sigsoft_JeonQFS15 p.1  — JSKETCH: Sketching for Java Jinseong Jeon† Xiaokang Qiu‡ Jeffrey
+  #6 0.163  DBLP_conf_cav_SinghS12 p.6  — SPT: Storyboard Programming Tool⋆ Rishabh Singh and Armando Sola
+
+answer:
+The first sentence of the abstract is:
+
+“Sketching is a new form of localized software synthesis that aims to bridge the gap between a programmer’s high-level insights about a problem and the computer’s ability to manage low-level details.” [DBLP_conf_aplas_Solar-Lezama09 p.1]
+------------------------------------------------------------------------
+[2026-08-31T20:15:56] QUERY 3: How do different papers in this collection define the program synthesis problem, and where do their definitions disagree?
+retrieved:
+  #1 0.500  DBLP_journals_corr_abs-2302-01976 p.4  — SPARLING: END-TO-END SPATIAL CONCEPT LEARNING VIA EXTREMELY SPAR
+  #2 0.500  conf_iclr_gupta2025sparling p.4  — SPARLING: END-TO-END SPATIAL CONCEPT LEARNING VIA EXTREMELY SPAR
+  #3 0.500  DBLP_journals_fmsd_JeonQSF17 p.2  — Form Methods Syst Des (2017) 50:75–95 DOI 10.1007/s10703-017-026
+  #4 0.474  DBLP_conf_sigsoft_SinghS11 p.11  — Synthesizing Data-structure Manipulations from Storyboards Risha
+  #5 0.371  DBLP_conf_pldi_PolikarpovaKS16 p.14  — Program Synthesis from Polymorphic Refinement Types Extended Ver
+  #6 0.366  DBLP_conf_icml_PuMSK18 p.1  — Selecting Representative Examples for Program Synthesis Yewen Pu
+
+answer:
+The excerpts give one explicit definition of program synthesis and one discussion of it as a problem class, but they do not provide multiple formal, conflicting definitions to compare.
+
+What one paper says:
+- “Program synthesis aims to construct a program satisfying a given specification.” [DBLP_journals_fmsd_JeonQSF17 p.2]
+- It adds that “One popular style of program synthesis is syntax-guided synthesis, which starts with a structural hypothesis describing the shape of possible programs, and then searches through the space of candidates until it finds a solution.” [DBLP_journals_fmsd_JeonQSF17 p.2]
+
+Another paper frames synthesis differently, but not as a contradiction:
+- “Program synthesis (or synthesis for short) is a special class of regression problems where rather than minimizing the error on an example dataset, one seeks an exact fit of the examples in the form of a program.” [DBLP_conf_icml_PuMSK18 p.1]
+- It also says synthesis involves “a DSL and a specification,” where “The DSL defines a space of candidate programs which serve as the model class. The specification is commonly expressed as a set of input-output examples which the candidate program needs to fit exact[ly].” [DBLP_conf_icml_PuMSK18 p.1]
+
+So, the main difference in these excerpts is emphasis:
+- One paper gives a general goal-based definition: constructing a program satisfying a specification. [DBLP_journals_fmsd_JeonQSF17 p.2]
+- The other treats synthesis as an exact-fit regression problem over examples, with a DSL plus specification. [DBLP_conf_icml_PuMSK18 p.1]
+
+The excerpts do not show a direct disagreement in the sense of incompatible definitions. Rather, they present different framings of the same problem.
+------------------------------------------------------------------------
+[2026-08-31T20:15:58] QUERY 4: Which work lets a programmer leave blanks in an unfinished program for a machine to fill in automatically?
+retrieved:
+  #1 0.500  DBLP_conf_iclr_NyePBATS21 p.2  — REPRESENTING PARTIAL PROGRAMS WITH BLENDED
+  #2 0.500  DBLP_conf_mapl_GottschlichSTCR18 p.9  — The Three Pillars of Machine Programming Justin Gottschlich Inte
+  #3 0.435  DBLP_conf_nips_EllisMSST18 p.1  — Library Learning for Neurally-Guided Bayesian Program Induction 
+  #4 0.414  DBLP_journals_corr_GaneshMSR13 p.5  — (Un)Decidability Results for Word Equations with Length and Regu
+  #5 0.399  DBLP_journals_corr_GaneshMSR13 p.5  — (Un)Decidability Results for Word Equations with Length and Regu
+  #6 0.385  DBLP_conf_mapl_GottschlichSTCR18 p.6  — The Three Pillars of Machine Programming Justin Gottschlich Inte
+
+answer:
+The excerpts do **not** explicitly name a work that “lets a programmer leave blanks in an unfinished program for a machine to fill in automatically.”
+
+What the excerpts **do** say is that one paper is about “**representing partial programs**” and asks, “**How might we represent the semantics of unfinished code?**” It proposes “**neural abstract semantics**” for “**partially written code**” [DBLP_conf_iclr_NyePBATS21 p.2]. Another excerpt says FlashFill “**solves problems such as these**” in text editing and that program induction systems rely on DSLs [DBLP_conf_nips_EllisMSST18 p.1], but it does not describe blanks in an unfinished program.
+
+So, based only on the provided excerpts, I can’t identify a specific work that matches your description exactly.
+------------------------------------------------------------------------
+[2026-08-31T20:16:00] QUERY 5: How did the stated motivation for program synthesis change between the earliest and the most recent work in this collection?
+retrieved:
+  #1 0.500  DBLP_journals_corr_abs-2102-11137 p.19  — Program Synthesis Guided Reinforcement Learning for Partially Ob
+  #2 0.500  DBLP_journals_fmsd_JeonQSF17 p.2  — Form Methods Syst Des (2017) 50:75–95 DOI 10.1007/s10703-017-026
+  #3 0.350  DBLP_journals_pacmpl_KoppelKS22 p.27  — Automatically Deriving Control-Flow Graph Generators from Operat
+  #4 0.262  DBLP_conf_pldi_PolikarpovaKS16 p.16  — Program Synthesis from Polymorphic Refinement Types Extended Ver
+  #5 0.246  DBLP_journals_fmsd_FismanSS21 p.1  — Formal Methods in System Design (2021) 58:469–470 https://doi.or
+  #6 0.238  DBLP_journals_fmsd_FismanSS21 p.2  — Formal Methods in System Design (2021) 58:469–470 https://doi.or
+
+answer:
+The excerpts show a shift from **program synthesis as a way to automatically construct programs satisfying a specification** to **program synthesis as a tool integrated into other systems and tasks**.
+
+Earliest work in the collection states the basic goal plainly: “**Program synthesis aims to construct a program satisfying a given specification**” [DBLP_journals_fmsd_JeonQSF17 p.2]. It also frames synthesis as searching candidate programs until a solution is found: “**syntax-guided synthesis, which starts with a structural hypothesis describing the shape of possible programs, and then searches through the space of candidates until it finds a solution**” [DBLP_journals_fmsd_JeonQSF17 p.2].
+
+More recent work in the collection motivates synthesis more instrumentally. In the program-synthesis-guided reinforcement learning paper, the authors say: “**our work uses program synthesis to guide reinforcement learning**” [DBLP_journals_corr_abs-2102-11137 p.19]. They further contrast this with prior synthesis-oriented work by emphasizing the application context: “**In contrast, our approach learns a simple straight line program that is most likely to solve the task and then replans if needed**” [DBLP_journals_corr_abs-2102-11137 p.19].
+
+So, based on the excerpts, the motivation changed from **synthesis as the direct end goal of producing a correct program** to **synthesis as a means to support another objective, such as guiding reinforcement learning or planning** [DBLP_journals_fmsd_JeonQSF17 p.2; DBLP_journals_corr_abs-2102-11137 p.19].
+------------------------------------------------------------------------
+[2026-08-31T22:24:25] QUERY 1 (k=3): In the ENCOMPASS paper, what does PAN stand for and what two concerns does the programming model separate?
+retrieved:
+  #1 0.876  conf_nips_li2025encompass p.2  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #2 0.807  conf_nips_li2025encompass p.3  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #3 0.643  conf_nips_li2025encompass p.10  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+
+answer:
+PAN stands for **“probabilistic angelic nondeterminism”**: the paper says, “call this programming model probabilistic angelic nondeterminism (PAN)” [conf_nips_li2025encompass p.2], and later repeats the section title “Probabilistic angelic nondeterminism (PAN)” [conf_nips_li2025encompass p.3].
+
+The programming model separates **“inference-time algorithms (search policy)”** from **“the underlying logic of the agent (specification of the search space)”** [conf_nips_li2025encompass p.2]. The paper also describes this as separating “the two main concerns of agent programming: specifying the core agent workflow and implementing the inference-time search strategy” [conf_nips_li2025encompass p.10].
+------------------------------------------------------------------------
+[2026-08-31T22:24:26] QUERY 2 (k=3): Quote the first sentence of the abstract of 'The Sketching Approach to Program Synthesis'.
+retrieved:
+  #1 1.000  DBLP_conf_aplas_Solar-Lezama09 p.1  — The Sketching Approach to Program Synthesis Armando Solar-Lezama
+  #2 0.218  DBLP_conf_pldi_Solar-LezamaRBE05 p.1  — Programming by Sketching for Bit-Streaming Programs Armando Sola
+  #3 0.205  DBLP_conf_sigsoft_JeonQFS15 p.4  — JSKETCH: Sketching for Java Jinseong Jeon† Xiaokang Qiu‡ Jeffrey
+
+answer:
+“The first sentence of the abstract” is: “Sketching is a new form of localized software synthesis that aims to bridge the gap between a programmer’s high-level insights about a problem and the computer’s ability to manage low-level details.” [DBLP_conf_aplas_Solar-Lezama09 p.1]
+------------------------------------------------------------------------
+[2026-08-31T22:24:29] QUERY 3 (k=3): How do different papers in this collection define the program synthesis problem, and where do their definitions disagree?
+retrieved:
+  #1 0.500  DBLP_journals_corr_abs-2302-01976 p.4  — SPARLING: END-TO-END SPATIAL CONCEPT LEARNING VIA EXTREMELY SPAR
+  #2 0.500  conf_iclr_gupta2025sparling p.4  — SPARLING: END-TO-END SPATIAL CONCEPT LEARNING VIA EXTREMELY SPAR
+  #3 0.500  DBLP_journals_fmsd_JeonQSF17 p.2  — Form Methods Syst Des (2017) 50:75–95 DOI 10.1007/s10703-017-026
+
+answer:
+The excerpts do **not** provide multiple, directly comparable definitions of the *program synthesis problem*.
+
+What they do contain is one explicit definition:
+
+- “**Program synthesis aims to construct a program satisfying a given specification**” [DBLP_journals_fmsd_JeonQSF17 p.2].
+
+The same excerpt then narrows this to a particular style:
+
+- “**One popular style of program synthesis is syntax-guided synthesis, which starts with a structural hypothesis describing the shape of possible programs, and then searches through the space of candidates until it finds a solution**” [DBLP_journals_fmsd_JeonQSF17 p.2].
+
+The other provided excerpt is about SPARLING and does **not** define program synthesis; it defines “local” motif models and relies on “locality” and “MOTIF-SUFFICIENCY” [DBLP_journals_corr_abs-2302-01976 p.4] / [conf_iclr_gupta2025sparling p.4].
+
+So, based on these excerpts alone, I **cannot identify disagreements between papers about the definition of program synthesis**, because only one excerpt actually defines it. If you want, I can compare the *program-synthesis-related framing* in the synthesis paper against the SPARLING paper, but that would not be a disagreement over the definition of program synthesis itself.
+------------------------------------------------------------------------
+[2026-08-31T22:24:30] QUERY 4 (k=3): Which work lets a programmer leave blanks in an unfinished program for a machine to fill in automatically?
+retrieved:
+  #1 0.500  DBLP_conf_iclr_NyePBATS21 p.2  — REPRESENTING PARTIAL PROGRAMS WITH BLENDED
+  #2 0.500  DBLP_conf_mapl_GottschlichSTCR18 p.9  — The Three Pillars of Machine Programming Justin Gottschlich Inte
+  #3 0.435  DBLP_conf_nips_EllisMSST18 p.1  — Library Learning for Neurally-Guided Bayesian Program Induction 
+
+answer:
+The excerpt points to **“neural abstract semantics”** as the work about unfinished programs with blanks: it says, “**we introduce neural abstract semantics, in which a compositional, approximate execution model is used to represent partially written code**” [DBLP_conf_iclr_NyePBATS21 p.2].
+
+It also says this is about “**the semantics of unfinished code**” and “**partially written code**” [DBLP_conf_iclr_NyePBATS21 p.2].
+
+However, the excerpt does **not** explicitly say that a programmer “leave[s] blanks” for a machine to fill in automatically. It only describes representing and reasoning about “partially written code” [DBLP_conf_iclr_NyePBATS21 p.2].
+------------------------------------------------------------------------
+[2026-08-31T22:24:33] QUERY 5 (k=3): How did the stated motivation for program synthesis change between the earliest and the most recent work in this collection?
+retrieved:
+  #1 0.500  DBLP_journals_corr_abs-2102-11137 p.19  — Program Synthesis Guided Reinforcement Learning for Partially Ob
+  #2 0.500  DBLP_journals_fmsd_JeonQSF17 p.2  — Form Methods Syst Des (2017) 50:75–95 DOI 10.1007/s10703-017-026
+  #3 0.350  DBLP_journals_pacmpl_KoppelKS22 p.27  — Automatically Deriving Control-Flow Graph Generators from Operat
+
+answer:
+The excerpts show a shift from **general program synthesis as a way to construct programs from specifications** to **using program synthesis as a tool for another system goal**.
+
+- In the earlier paper, the motivation is stated very broadly: “**Program synthesis aims to construct a program satisfying a given specification**” and syntax-guided synthesis “**starts with a structural hypothesis describing the shape of possible programs, and then searches through the space of candidates until it finds a solution**” [DBLP_journals_fmsd_JeonQSF17 p.2].
+
+- In the later paper, the motivation is more specialized: “**our work uses program synthesis to guide reinforcement learning**” [DBLP_journals_corr_abs-2102-11137 p.19]. It also contrasts this with prior use in other domains: “**There has also been work leveraging program synthesis to improve performance in image and natural language domains**” [DBLP_journals_corr_abs-2102-11137 p.19].
+
+So, based on these excerpts, the stated motivation changed from **solving synthesis as an end in itself** to **using synthesis as a component to guide reinforcement learning** [DBLP_journals_fmsd_JeonQSF17 p.2; DBLP_journals_corr_abs-2102-11137 p.19].
+------------------------------------------------------------------------
+[2026-08-31T22:24:46] QUERY 1 (k=10): In the ENCOMPASS paper, what does PAN stand for and what two concerns does the programming model separate?
+retrieved:
+  #1 0.876  conf_nips_li2025encompass p.2  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #2 0.807  conf_nips_li2025encompass p.3  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #3 0.643  conf_nips_li2025encompass p.10  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #4 0.571  conf_nips_li2025encompass p.1  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #5 0.441  conf_nips_li2025encompass p.3  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #6 0.414  conf_nips_li2025encompass p.25  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #7 0.346  conf_nips_li2025encompass p.9  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #8 0.211  conf_nips_li2025encompass p.2  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #9 0.184  conf_nips_li2025encompass p.10  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+  #10 0.176  conf_nips_li2025encompass p.7  — ENCOMPASS: Enhancing Agent Programming with Search Over Program 
+
+answer:
+PAN stands for **“probabilistic angelic nondeterminism”**: “We call this programming model probabilistic angelic nondeterminism (PAN)” [conf_nips_li2025encompass p.2]. The abstract also says PAN is “a programming model that disentangles these two concerns” [conf_nips_li2025encompass p.1].
+
+The two concerns it separates are:
+1. **“the core workflow logic”** and
+2. **“the inference-time strategy (e.g., tree search)”** [conf_nips_li2025encompass p.1].
+
+This is also phrased elsewhere as separating “inference-time algorithms (search policy) from the underlying logic of the agent (specification of the search space)” [conf_nips_li2025encompass p.2].
+------------------------------------------------------------------------
+[2026-08-31T22:24:47] QUERY 2 (k=10): Quote the first sentence of the abstract of 'The Sketching Approach to Program Synthesis'.
+retrieved:
+  #1 1.000  DBLP_conf_aplas_Solar-Lezama09 p.1  — The Sketching Approach to Program Synthesis Armando Solar-Lezama
+  #2 0.218  DBLP_conf_pldi_Solar-LezamaRBE05 p.1  — Programming by Sketching for Bit-Streaming Programs Armando Sola
+  #3 0.205  DBLP_conf_sigsoft_JeonQFS15 p.4  — JSKETCH: Sketching for Java Jinseong Jeon† Xiaokang Qiu‡ Jeffrey
+  #4 0.203  DBLP_journals_corr_0002S16 p.18  — Automatic Generation of Formula Simplifiers based on Conditional
+  #5 0.168  DBLP_conf_sigsoft_JeonQFS15 p.1  — JSKETCH: Sketching for Java Jinseong Jeon† Xiaokang Qiu‡ Jeffrey
+  #6 0.163  DBLP_conf_cav_SinghS12 p.6  — SPT: Storyboard Programming Tool⋆ Rishabh Singh and Armando Sola
+  #7 0.154  DBLP_conf_vmcai_SinghSXKS14 p.1  — Modular Synthesis of Sketches Using Models Rohit Singh, Rishabh 
+  #8 0.119  DBLP_conf_sigsoft_SinghS11 p.10  — Synthesizing Data-structure Manipulations from Storyboards Risha
+  #9 0.117  DBLP_conf_sigsoft_JeonQFS15 p.1  — JSKETCH: Sketching for Java Jinseong Jeon† Xiaokang Qiu‡ Jeffrey
+  #10 0.116  DBLP_conf_sigsoft_SinghS11 p.11  — Synthesizing Data-structure Manipulations from Storyboards Risha
+
+answer:
+The first sentence of the abstract is:
+
+“Sketching is a new form of localized software synthesis that aims to bridge the gap between a programmer’s high-level insights about a problem and the computer’s ability to manage low-level details.” [DBLP_conf_aplas_Solar-Lezama09 p.1]
+------------------------------------------------------------------------
+[2026-08-31T22:24:52] QUERY 3 (k=10): How do different papers in this collection define the program synthesis problem, and where do their definitions disagree?
+retrieved:
+  #1 0.500  DBLP_journals_corr_abs-2302-01976 p.4  — SPARLING: END-TO-END SPATIAL CONCEPT LEARNING VIA EXTREMELY SPAR
+  #2 0.500  conf_iclr_gupta2025sparling p.4  — SPARLING: END-TO-END SPATIAL CONCEPT LEARNING VIA EXTREMELY SPAR
+  #3 0.500  DBLP_journals_fmsd_JeonQSF17 p.2  — Form Methods Syst Des (2017) 50:75–95 DOI 10.1007/s10703-017-026
+  #4 0.474  DBLP_conf_sigsoft_SinghS11 p.11  — Synthesizing Data-structure Manipulations from Storyboards Risha
+  #5 0.371  DBLP_conf_pldi_PolikarpovaKS16 p.14  — Program Synthesis from Polymorphic Refinement Types Extended Ver
+  #6 0.366  DBLP_conf_icml_PuMSK18 p.1  — Selecting Representative Examples for Program Synthesis Yewen Pu
+  #7 0.360  DBLP_journals_fmsd_FismanSS21 p.1  — Formal Methods in System Design (2021) 58:469–470 https://doi.or
+  #8 0.268  DBLP_conf_nips_PuEK0S20 p.1  — Thanks for the engaging comments. We will first address two comm
+  #9 0.261  DBLP_conf_nips_EllisRST18 p.5  — Learning to Infer Graphics Programs from Hand-Drawn Images Kevin
+  #10 0.212  DBLP_journals_fmsd_FismanSS21 p.2  — Formal Methods in System Design (2021) 58:469–470 https://doi.or
+
+answer:
+The excerpts define program synthesis in a few related but not identical ways:
+
+- **As constructing a program that satisfies a specification.**  
+  One paper says: “**Program synthesis aims to construct a program satisfying a given specification**” [DBLP_journals_fmsd_JeonQSF17 p.2].  
+  Another says synthesis is “**a special class of regression problems where rather than minimizing the error on an example dataset, one seeks an exact fit of the examples in the form of a program**” [DBLP_conf_icml_PuMSK18 p.1].
+
+- **As a search problem over candidate programs.**  
+  The same Jeon et al. excerpt describes syntax-guided synthesis as starting with “**a structural hypothesis describing the shape of possible programs, and then searches through the space of candidates until it finds a solution**” [DBLP_journals_fmsd_JeonQSF17 p.2].  
+  Ellis et al. similarly frame it as a constrained optimization / search problem, saying “**The constrained optimization problem in Eq. 2 is intractable in general**” and that Sketch “**translates the synthesis problem into a constraint satisfaction problem**” [DBLP_conf_nips_EllisRST18 p.5].
+
+- **As exact fitting of examples with a DSL plus specification.**  
+  Pu et al. say: “**There are two key ingredients to a synthesis problem: a domain specific language (DSL for short) and a specification. The DSL defines a space of candidate programs which serve as the model class. The specification is commonly expressed as a set of input-output examples**” [DBLP_conf_icml_PuMSK18 p.1]. This is a more concrete characterization than the generic “satisfying a given specification” view.
+
+Where they differ:
+
+1. **Specification form**  
+   - Jeon et al.: generic “given specification” [DBLP_journals_fmsd_JeonQSF17 p.2].  
+   - Pu et al.: specifically “**a set of input-output examples**” [DBLP_conf_icml_PuMSK18 p.1].  
+   So the excerpts disagree in emphasis: one is general, the other narrows the specification to examples.
+
+2. **Problem framing**  
+   - Pu et al. explicitly call synthesis “**a special class of regression problems**” [DBLP_conf_icml_PuMSK18 p.1].  
+   - Jeon et al. instead frame it as “**construct[ing] a program satisfying a given specification**” [DBLP_journals_fmsd_JeonQSF17 p.2] and as search over candidate programs.  
+   These are not contradictory, but they are different conceptual framings.
+
+3. **Search vs. optimization/constraint solving**  
+   - Jeon et al. emphasize “**searches through the space of candidates**” [DBLP_journals_fmsd_JeonQSF17 p.2].  
+   - Ellis et al. emphasize that the problem can be turned into “**a constraint satisfaction problem**” and solved by SAT-based tools [DBLP_conf_nips_EllisRST18 p.5].  
+   So the excerpts differ in how operationally they describe synthesis: candidate search vs. constraint-based optimization.
+
+What the excerpts do **not** show is any fundamental disagreement about the core goal: all of them agree that synthesis is about finding a program that meets some specification. The main differences are in **how specific the specification is** and **whether synthesis is presented as search, regression, or constraint solving**.
+------------------------------------------------------------------------
+[2026-08-31T22:24:55] QUERY 4 (k=10): Which work lets a programmer leave blanks in an unfinished program for a machine to fill in automatically?
+retrieved:
+  #1 0.500  DBLP_conf_iclr_NyePBATS21 p.2  — REPRESENTING PARTIAL PROGRAMS WITH BLENDED
+  #2 0.500  DBLP_conf_mapl_GottschlichSTCR18 p.9  — The Three Pillars of Machine Programming Justin Gottschlich Inte
+  #3 0.435  DBLP_conf_nips_EllisMSST18 p.1  — Library Learning for Neurally-Guided Bayesian Program Induction 
+  #4 0.414  DBLP_journals_corr_GaneshMSR13 p.5  — (Un)Decidability Results for Word Equations with Length and Regu
+  #5 0.399  DBLP_journals_corr_GaneshMSR13 p.5  — (Un)Decidability Results for Word Equations with Length and Regu
+  #6 0.385  DBLP_conf_mapl_GottschlichSTCR18 p.6  — The Three Pillars of Machine Programming Justin Gottschlich Inte
+  #7 0.346  DBLP_conf_mapl_GottschlichSTCR18 p.1  — The Three Pillars of Machine Programming Justin Gottschlich Inte
+  #8 0.341  DBLP_conf_iclr_NyePBATS21 p.2  — REPRESENTING PARTIAL PROGRAMS WITH BLENDED
+  #9 0.296  DBLP_journals_corr_PolikarpovaYIS16 p.8  — 105 Liquid Information Flow Control Extended Version
+  #10 0.247  DBLP_journals_corr_abs-1906-04604 p.1  — Write, Execute, Assess: Program Synthesis with a REPL Kevin Elli
+
+answer:
+The excerpt that matches this idea is **“Representing Partial Programs with Blended”** [DBLP_conf_iclr_NyePBATS21 p.2]. It says:
+
+- “**How might we represent the semantics of unfinished code?**” [DBLP_conf_iclr_NyePBATS21 p.2]
+- It also describes “**partially written code**” and “**partial programs**” [DBLP_conf_iclr_NyePBATS21 p.2]
+
+However, the excerpt does **not** explicitly say that a programmer “leaves blanks” for a machine to fill in automatically. What it does say is that the work is about “**represent[ing] partial programs**” and handling “**unfinished code**” [DBLP_conf_iclr_NyePBATS21 p.2].
+
+A different excerpt, **“Write, Execute, Assess: Program Synthesis with a REPL”** [DBLP_journals_corr_abs-1906-04604 p.1], says the system “**immediately executes partially written programs**” and supports “**states of writing, executing, and assessing the code**” [DBLP_journals_corr_abs-1906-04604 p.1]. But it also does not mention blanks being filled in automatically.
+------------------------------------------------------------------------
+[2026-08-31T22:24:57] QUERY 5 (k=10): How did the stated motivation for program synthesis change between the earliest and the most recent work in this collection?
+retrieved:
+  #1 0.500  DBLP_journals_corr_abs-2102-11137 p.19  — Program Synthesis Guided Reinforcement Learning for Partially Ob
+  #2 0.500  DBLP_journals_fmsd_JeonQSF17 p.2  — Form Methods Syst Des (2017) 50:75–95 DOI 10.1007/s10703-017-026
+  #3 0.350  DBLP_journals_pacmpl_KoppelKS22 p.27  — Automatically Deriving Control-Flow Graph Generators from Operat
+  #4 0.262  DBLP_conf_pldi_PolikarpovaKS16 p.16  — Program Synthesis from Polymorphic Refinement Types Extended Ver
+  #5 0.246  DBLP_journals_fmsd_FismanSS21 p.1  — Formal Methods in System Design (2021) 58:469–470 https://doi.or
+  #6 0.238  DBLP_journals_fmsd_FismanSS21 p.2  — Formal Methods in System Design (2021) 58:469–470 https://doi.or
+  #7 0.195  DBLP_conf_pldi_PolikarpovaKS16 p.14  — Program Synthesis from Polymorphic Refinement Types Extended Ver
+  #8 0.176  DBLP_conf_mapl_GottschlichSTCR18 p.4  — The Three Pillars of Machine Programming Justin Gottschlich Inte
+  #9 0.155  DBLP_conf_sigsoft_SinghS11 p.11  — Synthesizing Data-structure Manipulations from Storyboards Risha
+  #10 0.140  DBLP_conf_iclr_OlaussonIW0S24 p.45  — IS SELF-REPAIR A SILVER BULLET FOR CODE GENERATION?
+
+answer:
+The excerpts show an evolution from program synthesis as a way to **construct programs that satisfy a specification** to a broader, more applied role in **guiding or enabling other tasks**.
+
+In the older synthesis paper, the motivation is stated very directly: “**Program synthesis aims to construct a program satisfying a given specification**” [DBLP_journals_fmsd_JeonQSF17 p.2]. It also frames synthesis as a search procedure over candidate programs: “**syntax-guided synthesis, which starts with a structural hypothesis describing the shape of possible programs, and then searches through the space of candidates until it finds a solution**” [DBLP_journals_fmsd_JeonQSF17 p.2].
+
+In the most recent excerpt, synthesis is described more as a tool used within another system: “**our work uses program synthesis to guide reinforcement learning**” [DBLP_journals_corr_abs-2102-11137 p.19]. The same excerpt contrasts this with related planning work and emphasizes a more practical, task-driven goal: “**our approach learns a simple straight line program that is most likely to solve the task and then replans if needed**” [DBLP_journals_corr_abs-2102-11137 p.19].
+
+So, the change is from synthesis as a method for **directly producing correct programs from specifications** [DBLP_journals_fmsd_JeonQSF17 p.2] to synthesis as a **supporting mechanism inside larger learning/planning systems** [DBLP_journals_corr_abs-2102-11137 p.19].
+------------------------------------------------------------------------

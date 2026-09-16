@@ -13,6 +13,7 @@ __pycache__/
 *.faiss
 *.index
 chroma/
+chroma_db/
 .chroma/
 vectorstore/
 *.sqlite3
