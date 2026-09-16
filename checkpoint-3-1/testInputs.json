@@ -1,0 +1,591 @@
+[
+ {
+  "id": "S1",
+  "category": "specific_paper",
+  "question": "In the ENCOMPASS paper, what does PAN stand for and what two concerns does the programming model separate?",
+  "grading_notes": "Must state that PAN is probabilistic angelic nondeterminism, and that it separates the agent's core workflow logic from the inference-time strategy such as tree search.",
+  "source": "conf_nips_li2025encompass",
+  "page": 1,
+  "expected": "pass",
+  "expected_basis": "Verified correct at Checkpoint 2.1; all 6 retrieved chunks came from the right paper at k=3, 6 and 10.",
+  "generate_variants": true
+ },
+ {
+  "id": "S2",
+  "category": "specific_paper",
+  "question": "How many Python functions are in the CRUXEval benchmark, and what two tasks does each function support?",
+  "grading_notes": "Must state 800 Python functions, and that each comes with an input-output pair supporting input prediction and output prediction.",
+  "source": "DBLP_conf_icml_GuRLSS024",
+  "page": 1,
+  "expected": "pass",
+  "expected_basis": "Fact is on page 1 of a well-attributed paper. Note: this paper has a near-duplicate twin (abs-2401-03065, Jaccard 0.903) which may consume a context slot.",
+  "generate_variants": true
+ },
+ {
+  "id": "S3",
+  "category": "specific_paper",
+  "question": "What does LINC stand for, and what role does the language model play in it?",
+  "grading_notes": "Must state Logical Inference via Neurosymbolic Computation, and that the LLM acts as a semantic parser translating premises and conclusions into first-order logic, which is then passed to an external theorem prover.",
+  "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+  "page": 1,
+  "expected": "pass",
+  "expected_basis": "Both facts are in the page-1 abstract.",
+  "generate_variants": true
+ },
+ {
+  "id": "S4",
+  "category": "specific_paper",
+  "question": "What are the three pillars of machine programming, and what does each emphasize?",
+  "grading_notes": "Must name intention, invention and adaptation, and describe intention as human-to-computer and computer-to-machine-learning interfaces, invention as creating or refining algorithms or building blocks through ML, and adaptation as using ML-based constructs to autonomously evolve software.",
+  "source": "DBLP_conf_mapl_GottschlichSTCR18",
+  "page": 1,
+  "expected": "pass_balanced_risk_strict",
+  "expected_basis": "Six required elements. A partial answer should pass balanced and fail strict; this row is a candidate for the disagreement set.",
+  "generate_variants": true
+ },
+ {
+  "id": "S5",
+  "category": "specific_paper",
+  "question": "Besides the sketch itself, what must a programmer supply to the Sketch synthesizer?",
+  "grading_notes": "Must state that the programmer provides either a reference implementation or a set of test routines that the synthesized code must pass.",
+  "source": "DBLP_conf_aplas_Solar-Lezama09",
+  "page": 1,
+  "expected": "pass",
+  "expected_basis": "Single fact, page 1. Note: this paper is only 6 chunks of 8,092 - the smallest real target in the set.",
+  "generate_variants": true
+ },
+ {
+  "id": "S6",
+  "category": "specific_paper",
+  "question": "In 'Selecting Representative Examples for Program Synthesis', how is the subset of examples chosen?",
+  "grading_notes": "Must state the subset is constructed iteratively, using a neural network to predict the probability of unchosen examples conditioned on those already chosen, and greedily adding the least probable example.",
+  "source": "DBLP_conf_icml_PuMSK18",
+  "page": 1,
+  "expected": "pass",
+  "expected_basis": "Page-1 abstract. Near-duplicate twin abs-1711-03243 at Jaccard 0.999 will likely occupy a second context slot.",
+  "generate_variants": true
+ },
+ {
+  "id": "S7",
+  "category": "specific_paper",
+  "question": "In 'The Counterfeit Conundrum', what two properties define a counterfeit sample?",
+  "grading_notes": "Must state that a counterfeit has a high enough log-probability to be generated at a moderate temperature, and that it passes weak correctness checks such as compiling.",
+  "source": "DBLP_conf_acl_GuLJOLSS24",
+  "page": 1,
+  "expected": "pass_balanced_risk_strict",
+  "expected_basis": "Two required elements. Near-duplicate twin abs-2402-19475 at Jaccard 0.902.",
+  "generate_variants": true
+ },
+ {
+  "id": "N2",
+  "category": "specific_paper",
+  "question": "In the Lynx paper, what problem is the programmatic SAT solver applied to?",
+  "grading_notes": "Must state the RNA-folding problem.",
+  "source": "DBLP_conf_sat_GaneshOSDRS12",
+  "page": 1,
+  "expected": "uncertain",
+  "expected_basis": "LONG-TAIL TEST. Target is 6 chunks of 8,092 (0.07% of the index) versus a maximum of 251 chunks for the largest paper. Tests whether small papers are retrievable at all.",
+  "generate_variants": false
+ },
+ {
+  "id": "N3",
+  "category": "specific_paper",
+  "question": "What does the SPARLING method learn, and what does its main theorem state?",
+  "grading_notes": "Must state that SPARLING learns sparse and local latent intermediate variables called motifs via extremely sparse activations, and that the Motif Identifiability Theorem states these motifs can be precisely identified by reducing end-to-end error under certain assumptions.",
+  "source": "conf_iclr_gupta2025sparling",
+  "page": 1,
+  "expected": "pass_coverage_inflated",
+  "expected_basis": "NEAR-DUPLICATE TEST. Twin abs-2302-01976 at Jaccard 1.000. Expect the answer to be correct but two of six context slots consumed by the same work under two filenames; coverage will overcount distinct works.",
+  "generate_variants": false
+ },
+ {
+  "id": "N4",
+  "category": "specific_paper",
+  "question": "In the LINC paper, what limits the setting the authors consider, and what effect does that limitation have?",
+  "grading_notes": "Must state that the premises and conclusion are expressed in relatively short statements, and that this makes the formalization task tractable.",
+  "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+  "page": 9,
+  "expected": "fail",
+  "expected_basis": "PAGE-BOUNDARY TEST. The claim is severed: page 9 ends '...we consider a setting where the' and the qualification 'premises and conclusion are expressed in relatively short statements, which makes the formalization task tractable' is on page 10. Chunks never cross a page boundary by design, so both chunks must be retrieved for a complete answer.",
+  "generate_variants": false,
+  "sources": [
+   {
+    "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+    "page": 9
+   },
+   {
+    "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+    "page": 10
+   }
+  ]
+ },
+ {
+  "id": "C1",
+  "category": "cross_paper",
+  "question": "How do different papers in this collection define the program synthesis problem, and where do their definitions disagree?",
+  "grading_notes": "Must give at least two distinct definitions drawn from at least two different named papers, for example synthesis as a constraint-satisfaction problem over input-output examples and synthesis as a regression problem mapping inputs to outputs exactly.",
+  "source": "DBLP_conf_icml_PuMSK18",
+  "page": 1,
+  "expected": "fail",
+  "expected_basis": "Checkpoint 2.1 returned one definition at k=6 and three definitions from three papers only at k=10. Baseline k is 6.",
+  "generate_variants": true,
+  "sources": [
+   {
+    "source": "DBLP_conf_icml_PuMSK18",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "id": "C2",
+  "category": "cross_paper",
+  "question": "What different strategies do these papers use to combine language models with formal verification or symbolic reasoning?",
+  "grading_notes": "Must describe at least two distinct approaches from at least two different papers, for example translating natural language into first-order logic for an external theorem prover, and searching over program execution paths.",
+  "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+  "page": 1,
+  "expected": "uncertain",
+  "expected_basis": "Requires breadth across papers; 2.1 showed breadth is the binding constraint at k=6.",
+  "generate_variants": true,
+  "sources": [
+   {
+    "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+    "page": 1
+   },
+   {
+    "source": "conf_nips_li2025encompass",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "id": "C3",
+  "category": "cross_paper",
+  "question": "What benchmarks for evaluating code-generating language models appear in this collection, and what does each measure?",
+  "grading_notes": "Must name at least two benchmarks from at least two different papers and say what each measures, for example CRUXEval measuring input and output prediction over 800 Python functions, and the Counterfeit Conundrum's counterfeit samples.",
+  "source": "DBLP_conf_icml_GuRLSS024",
+  "page": 1,
+  "expected": "uncertain",
+  "expected_basis": "Breadth question; both target papers also have near-duplicate twins that may consume slots.",
+  "generate_variants": true,
+  "sources": [
+   {
+    "source": "DBLP_conf_icml_GuRLSS024",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_acl_GuLJOLSS24",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "id": "C4",
+  "category": "cross_paper",
+  "question": "Across these papers, what reasons are given for why program synthesis is computationally hard?",
+  "grading_notes": "Must cite at least two papers and name at least two distinct causes, for example that generating expressions beyond a few nodes requires searching an exponentially large space, and that constraint solving becomes costly in time and memory once the example set is large.",
+  "source": "DBLP_conf_icml_NyeHTS19",
+  "page": 4,
+  "expected": "uncertain",
+  "expected_basis": "Twelve files contain a definitional passage; the question is whether two distinct causes surface within 6 chunks.",
+  "generate_variants": true,
+  "sources": [
+   {
+    "source": "DBLP_conf_icml_NyeHTS19",
+    "page": 4
+   },
+   {
+    "source": "DBLP_conf_icml_PuMSK18",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "id": "C5",
+  "category": "cross_paper",
+  "question": "How do papers in this collection use reinforcement learning in connection with programs or policies?",
+  "grading_notes": "Must draw on at least two papers and describe two distinct uses, for example extracting verifiable decision-tree policies from deep RL, synthesizing programmatic policies that generalize to novel environments, or enforcing formal safety constraints during exploration.",
+  "source": "DBLP_conf_nips_BastaniPS18",
+  "page": 1,
+  "expected": "uncertain",
+  "expected_basis": "44 files mention reinforcement learning, so retrieval has ample material; the risk is redundancy rather than absence.",
+  "generate_variants": true,
+  "sources": [
+   {
+    "source": "DBLP_conf_nips_BastaniPS18",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_iclr_InalaBTS20",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_hybrid_HuntFMHDS21",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "id": "C6",
+  "category": "cross_paper",
+  "question": "What roles do partial or incomplete programs play across these papers?",
+  "grading_notes": "Must draw on at least two papers, for example a sketch as a partial program with holes that a synthesizer fills, and blended abstract semantics as a representation for partial programs during search.",
+  "source": "DBLP_conf_iclr_NyePBATS21",
+  "page": 1,
+  "expected": "uncertain",
+  "expected_basis": "One target (the Sketching paper) is only 6 chunks and was outranked at 2.1 on a related query.",
+  "generate_variants": true,
+  "sources": [
+   {
+    "source": "DBLP_conf_aplas_Solar-Lezama09",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_iclr_NyePBATS21",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "id": "C7",
+  "category": "cross_paper",
+  "question": "What different ways do these papers evaluate whether a synthesized program is correct?",
+  "grading_notes": "Must name at least two distinct methods from different papers, for example checking against a reference implementation or test routines the code must pass, predicting function inputs and outputs scored by pass@1, or weak checks such as whether the program compiles.",
+  "source": "DBLP_conf_aplas_Solar-Lezama09",
+  "page": 1,
+  "expected": "uncertain",
+  "expected_basis": "Three verified sources exist; question is whether two surface within 6 chunks.",
+  "generate_variants": true,
+  "sources": [
+   {
+    "source": "DBLP_conf_aplas_Solar-Lezama09",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_icml_GuRLSS024",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_acl_GuLJOLSS24",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "id": "C8",
+  "category": "cross_paper",
+  "question": "Where do these papers disagree about whether language models genuinely understand the code they produce?",
+  "grading_notes": "Must draw on at least two papers and represent a genuine tension, for example that models show a very shallow understanding of their own incorrect generations, set against benchmark results where a leading model dominates yet still fails on surprisingly simple programs.",
+  "source": "DBLP_conf_acl_GuLJOLSS24",
+  "page": 1,
+  "expected": "uncertain",
+  "expected_basis": "Requires the system to surface disagreement rather than pick one side.",
+  "generate_variants": true,
+  "sources": [
+   {
+    "source": "DBLP_conf_acl_GuLJOLSS24",
+    "page": 1
+   },
+   {
+    "source": "DBLP_conf_icml_GuRLSS024",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "id": "T1",
+  "category": "trend",
+  "question": "How did the stated motivation for program synthesis change between the earliest and the most recent work in this collection?",
+  "grading_notes": "Passes only if the answer identifies the earliest and most recent works with supporting date evidence from the excerpts, or states that the excerpts do not establish publication dates. Asserting an ordering without date evidence is a fail.",
+  "source": null,
+  "page": null,
+  "expected": "fail",
+  "expected_basis": "Verified failure at Checkpoint 2.1: called a 2017 paper 'the earliest work in the collection' when the corpus contains work from at least 2005. Chunk metadata carries source, title and page but no publication date.",
+  "generate_variants": false
+ },
+ {
+  "id": "T2",
+  "category": "trend",
+  "question": "Which came first in this collection: work on sketching, or work on neurosymbolic methods?",
+  "grading_notes": "Passes only if the answer establishes the ordering from date evidence in the excerpts, or states that the excerpts do not establish publication dates.",
+  "source": null,
+  "page": null,
+  "expected": "fail",
+  "expected_basis": "Structurally unanswerable: no chunk carries the publication date of its own paper.",
+  "generate_variants": false
+ },
+ {
+  "id": "T3",
+  "category": "trend",
+  "question": "How has the role of large language models in program synthesis changed over the period covered by this collection?",
+  "grading_notes": "Passes only if change over time is supported by date evidence in the excerpts, or the answer states that the excerpts do not establish publication dates.",
+  "source": null,
+  "page": null,
+  "expected": "fail",
+  "expected_basis": "Same structural gap. 37.7% of chunks contain a four-digit year, but those are citations to other works, not the date of the containing paper.",
+  "generate_variants": false
+ },
+ {
+  "id": "T4",
+  "category": "trend",
+  "question": "What is the most recent work in this collection on code benchmarks, and how does it differ from earlier benchmarks?",
+  "grading_notes": "Passes only if recency is established from date evidence in the excerpts, or the answer states that the excerpts do not establish publication dates.",
+  "source": null,
+  "page": null,
+  "expected": "fail",
+  "expected_basis": "Filename years name the venue, not the work, and 16 filenames name the wrong paper entirely.",
+  "generate_variants": false
+ },
+ {
+  "id": "T5",
+  "category": "trend",
+  "question": "Over time, have the papers in this collection moved toward or away from requiring formal specifications?",
+  "grading_notes": "Passes only if a temporal direction is supported by date evidence in the excerpts, or the answer states that the excerpts do not establish publication dates.",
+  "source": null,
+  "page": null,
+  "expected": "fail",
+  "expected_basis": "Requires ordering the whole corpus, which the index cannot support.",
+  "generate_variants": false
+ },
+ {
+  "id": "Q1",
+  "category": "quote_verification",
+  "question": "Quote the first sentence of the abstract of 'The Sketching Approach to Program Synthesis'.",
+  "grading_notes": "Must reproduce verbatim: 'Sketching is a new form of localized software synthesis that aims to bridge the gap between a programmer's high-level insights about a problem and the computer's ability to manage low-level details.' with a page citation.",
+  "source": "DBLP_conf_aplas_Solar-Lezama09",
+  "page": 1,
+  "expected": "pass",
+  "expected_basis": "Verified at Checkpoint 2.1: returned rank #1 with a fused score of 1.000, matching the ground truth word for word.",
+  "generate_variants": false
+ },
+ {
+  "id": "Q2",
+  "category": "quote_verification",
+  "question": "Quote the opening sentence of the abstract of the ENCOMPASS paper.",
+  "grading_notes": "Must reproduce verbatim: 'We introduce a new approach to agent programming, the development of LLM-based agents.' with a page citation.",
+  "source": "conf_nips_li2025encompass",
+  "page": 1,
+  "expected": "pass",
+  "expected_basis": "Single-paper retrieval on this target was saturated at 2.1.",
+  "generate_variants": false
+ },
+ {
+  "id": "Q3",
+  "category": "quote_verification",
+  "question": "Quote the sentence in which the CRUXEval paper introduces the benchmark.",
+  "grading_notes": "Must reproduce verbatim: 'We present CRUXEVAL (Code Reasoning, Understanding, and eXecution Evaluation), a benchmark consisting of 800 Python functions (3-13 lines).' with a page citation.",
+  "source": "DBLP_conf_icml_GuRLSS024",
+  "page": 1,
+  "expected": "pass",
+  "expected_basis": "Page-1 abstract sentence.",
+  "generate_variants": false
+ },
+ {
+  "id": "Q4",
+  "category": "quote_verification",
+  "question": "Quote the first sentence of the abstract of 'The Three Pillars of Machine Programming'.",
+  "grading_notes": "Must reproduce verbatim: 'In this position paper, we describe our vision of the future of machine programming through a categorical examination of three pillars of research.' with a page citation.",
+  "source": "DBLP_conf_mapl_GottschlichSTCR18",
+  "page": 1,
+  "expected": "pass",
+  "expected_basis": "Page-1 abstract sentence.",
+  "generate_variants": false
+ },
+ {
+  "id": "Q5",
+  "category": "quote_verification",
+  "question": "Quote the sentence in which 'Selecting Representative Examples for Program Synthesis' defines program synthesis.",
+  "grading_notes": "Must reproduce verbatim: 'Program synthesis is a class of regression problems where one seeks a solution, in the form of a source-code program, mapping the inputs to their corresponding outputs exactly.' with a page citation.",
+  "source": "DBLP_conf_icml_PuMSK18",
+  "page": 1,
+  "expected": "pass",
+  "expected_basis": "Page-1 abstract sentence.",
+  "generate_variants": false
+ },
+ {
+  "id": "Q6",
+  "category": "quote_verification",
+  "question": "Quote the sentence in the LINC paper that describes the role of the language model.",
+  "grading_notes": "Must reproduce verbatim: 'In LINC, the LLM acts as a semantic parser, translating premises and conclusions from natural language to expressions in first-order logic.' with a page citation.",
+  "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+  "page": 1,
+  "expected": "pass",
+  "expected_basis": "Page-1 abstract sentence.",
+  "generate_variants": false
+ },
+ {
+  "id": "Q7",
+  "category": "quote_verification",
+  "question": "Quote the opening sentence of the abstract of 'The Counterfeit Conundrum'.",
+  "grading_notes": "Must reproduce verbatim: 'While language models are increasingly more proficient at code generation, they still frequently generate incorrect programs.' with a page citation.",
+  "source": "DBLP_conf_acl_GuLJOLSS24",
+  "page": 1,
+  "expected": "pass",
+  "expected_basis": "Page-1 abstract sentence.",
+  "generate_variants": false
+ },
+ {
+  "id": "Q8",
+  "category": "quote_verification",
+  "question": "Quote the first sentence of the abstract of 'Smoothing a Program Soundly and Robustly'.",
+  "grading_notes": "Must reproduce verbatim: 'We study the foundations of smooth interpretation, a recently-proposed program approximation scheme that facilitates the use of local numerical search techniques (e.g., gradient descent) in program analysis and synthesis.' with a page citation.",
+  "source": "DBLP_conf_cav_ChaudhuriS11",
+  "page": 1,
+  "expected": "pass_if_normalized",
+  "expected_basis": "NORMALIZATION TEST. The cached text reads 'recently- proposed' and 'analy- sis' with hyphenated line breaks. Quote verification will reject a correct answer unless the matcher rejoins hyphenated line breaks.",
+  "generate_variants": false
+ },
+ {
+  "id": "V1",
+  "category": "source_verification",
+  "question": "What does RVISmith fuzz, and what does it target?",
+  "grading_notes": "Must state that RVISmith is a fuzzer for compilers, targeting RISC-V vector (RVV) intrinsics.",
+  "source": "DBLP_journals_cacm_WangZKS16",
+  "page": 1,
+  "expected": "judge_pass_source_fail",
+  "expected_basis": "MISATTRIBUTION. Content is real and retrievable but the filename claims Wang et al. CACM 2016. The same wrong paper also sits under DBLP_journals_tocs_WangZKS15, so both citations are false and they duplicate each other.",
+  "generate_variants": true
+ },
+ {
+  "id": "V2",
+  "category": "source_verification",
+  "question": "What is MANTRA, and what does it validate?",
+  "grading_notes": "Must state that MANTRA synthesizes SMT-validated compliance benchmarks for tool-using LLM agents.",
+  "source": "DBLP_conf_icse_JeonQFFS16",
+  "page": 1,
+  "expected": "judge_pass_source_fail",
+  "expected_basis": "MISATTRIBUTION. Filename claims Jeon et al. ICSE 2016; the PDF contains an arXiv paper from May 2026 by authors at Max Planck.",
+  "generate_variants": true
+ },
+ {
+  "id": "V3",
+  "category": "source_verification",
+  "question": "In the work on knowledge graphs for agentic AI formal verification, what is generated?",
+  "grading_notes": "Must state that the workflow generates SystemVerilog Assertions (SVAs) from natural language.",
+  "source": "DBLP_conf_fmcad_AlurBJMRSSSTU13",
+  "page": 1,
+  "expected": "judge_pass_source_fail",
+  "expected_basis": "MISATTRIBUTION. Filename claims Alur et al. FMCAD 2013; the PDF is an Infineon paper for ICICDT 2026.",
+  "generate_variants": true
+ },
+ {
+  "id": "V4",
+  "category": "source_verification",
+  "question": "What is NeSyCat?",
+  "grading_notes": "Must state that NeSyCat is a monad-based categorical semantics of the neurosymbolic ULLER framework.",
+  "source": "DBLP_journals_ftpl_ChaudhuriEPSSY21",
+  "page": 1,
+  "expected": "judge_pass_source_fail",
+  "expected_basis": "MISATTRIBUTION. Filename claims Chaudhuri et al. FTPL 2021.",
+  "generate_variants": true
+ },
+ {
+  "id": "V5",
+  "category": "source_verification",
+  "question": "What does 'Beyond the Training Distribution' map?",
+  "grading_notes": "Must state that it maps generalization boundaries in neural program synthesis.",
+  "source": "DBLP_journals_cacm_AlurSFS18",
+  "page": 1,
+  "expected": "judge_pass_source_fail",
+  "expected_basis": "MISATTRIBUTION, ON-DOMAIN. Filename claims Alur et al. CACM 2018. This one is genuinely about program synthesis, so it will also be retrieved for unrelated on-topic queries.",
+  "generate_variants": true
+ },
+ {
+  "id": "V6",
+  "category": "source_verification",
+  "question": "What does BLK-Assist propose?",
+  "grading_notes": "Must state that BLK-Assist is a methodological framework for artist-led co-creation with generative AI models.",
+  "source": "DBLP_conf_pldi_Solar-LezamaATBSS07",
+  "page": 1,
+  "expected": "judge_pass_source_fail",
+  "expected_basis": "MISATTRIBUTION. Filename claims Solar-Lezama et al. PLDI 2007.",
+  "generate_variants": false
+ },
+ {
+  "id": "V7",
+  "category": "source_verification",
+  "question": "What is Bench-Push benchmarking?",
+  "grading_notes": "Must state that Bench-Push benchmarks pushing-based navigation and manipulation tasks for mobile robots.",
+  "source": "DBLP_conf_icra_CamposISK19",
+  "page": 1,
+  "expected": "judge_pass_source_fail",
+  "expected_basis": "MISATTRIBUTION, OFF-DOMAIN. Filename claims Campos et al. ICRA 2019. Robotics content in a program-synthesis corpus.",
+  "generate_variants": false
+ },
+ {
+  "id": "V8",
+  "category": "source_verification",
+  "question": "What does the Advanced Encryption Standard specify?",
+  "grading_notes": "Must state that FIPS PUB 197 announces and specifies the Advanced Encryption Standard, a computer security and cryptography standard issued by NIST.",
+  "source": "DBLP_journals_sttt_Solar-Lezama13",
+  "page": 1,
+  "expected": "judge_pass_source_fail",
+  "expected_basis": "MISATTRIBUTION, MOST EXTREME CASE. Filename claims Solar-Lezama STTT 2013 (program sketching); the PDF is the 2001 NIST federal cryptography standard. Verified at the PDF via PDFKit, not only in the text cache.",
+  "generate_variants": false
+ },
+ {
+  "id": "U1",
+  "category": "unsupported",
+  "question": "What do these papers say about using CRISPR gene editing to optimize code?",
+  "grading_notes": "Must decline, stating that the retrieved excerpts do not cover this topic. Any substantive answer is a fail.",
+  "source": null,
+  "page": null,
+  "expected": "pass",
+  "expected_basis": "Verified absent: 0 of 153 files mention CRISPR. False premise plus absent topic.",
+  "generate_variants": false
+ },
+ {
+  "id": "U2",
+  "category": "unsupported",
+  "question": "How many papers in this collection use reinforcement learning?",
+  "grading_notes": "Must decline to give a corpus-wide count, or state explicitly that it can only speak to the excerpts retrieved. Reporting a number as a fact about the collection is a fail.",
+  "source": null,
+  "page": null,
+  "expected": "fail",
+  "expected_basis": "COUNTING TEST. The model sees 6 chunks and cannot count 123 papers. Same failure family as the Module 1 hurricane count, where the model described its own context window as a property of the corpus. Ground truth: 44 files mention reinforcement learning.",
+  "generate_variants": false
+ },
+ {
+  "id": "U3",
+  "category": "unsupported",
+  "question": "What does this collection say about randomized controlled trial design?",
+  "grading_notes": "Must decline, stating the retrieved excerpts do not cover this topic. Any substantive answer is a fail.",
+  "source": null,
+  "page": null,
+  "expected": "pass",
+  "expected_basis": "Verified absent: 0 of 153 files mention randomized controlled trials.",
+  "generate_variants": false
+ },
+ {
+  "id": "U4",
+  "category": "unsupported",
+  "question": "Which paper in this collection reports the highest accuracy on protein folding prediction?",
+  "grading_notes": "Must decline and reject the false premise, stating that no paper in the excerpts reports protein folding results. Naming a paper is a fail.",
+  "source": null,
+  "page": null,
+  "expected": "pass",
+  "expected_basis": "Verified absent: 0 of 153 files mention protein folding. False premise.",
+  "generate_variants": false
+ },
+ {
+  "id": "N1",
+  "category": "unsupported",
+  "question": "Which papers in this collection do not use neural networks?",
+  "grading_notes": "Must decline, or state that it can only speak to the retrieved excerpts and cannot enumerate what is absent across the collection. Listing papers as not using neural networks is a fail.",
+  "source": null,
+  "page": null,
+  "expected": "fail",
+  "expected_basis": "NEGATION TEST. Retrieval cannot express absence: the query matches on 'neural networks' and returns papers that do use them. Classic retrieval failure and a real user behaviour.",
+  "generate_variants": false
+ },
+ {
+  "id": "N5",
+  "category": "unsupported",
+  "question": "What about sketching?",
+  "grading_notes": "Must ask for clarification or state that the question is too vague to answer. Producing a confident interpretation without flagging the ambiguity is a fail.",
+  "source": null,
+  "page": null,
+  "expected": "fail",
+  "expected_basis": "UNDERSPECIFIED QUERY TEST. No verb, no question. Tests whether the system requests clarification or invents an interpretation.",
+  "generate_variants": false
+ }
+]
