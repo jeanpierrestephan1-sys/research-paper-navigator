@@ -1,0 +1,185 @@
+
+=== M7|baseline|run1 ===
+How does Stitch's approach to library learning differ from DreamCoder's?
+
+=== M7|agent_v1|run1 ===
+How does Stitch's approach to library learning differ from DreamCoder's?
+  [plan] action=search_all paper='' queries=['Stitch library learning DreamCoder difference', 'Stitch system library learning reusable abstractions compare DreamCoder', 'DreamCoder Stitch program synthesis library learning']
+         reasoning='No excerpts have been retrieved yet, so I need to search the collection broadly for papers discussing Stitch and DreamCoder and their library-learning approaches before answering.'
+  [search_all] 'Stitch library learning DreamCoder difference' -> 6 new excerpt(s)
+  [search_all] 'Stitch system library learning reusable abstractions compare DreamCoder' -> 1 new excerpt(s)
+  [search_all] 'DreamCoder Stitch program synthesis library learning' -> 1 new excerpt(s)
+  [plan] action=answer paper='' queries=[]
+         reasoning='We have enough to explain the distinction: DreamCoder learns libraries iteratively via alternating synthesis and library update, using a probabilistic Bayesian objective and sometimes higher-order abstractions; Stitch instead does top-down branch-and-bound synthesis focused on efficiently finding the maximally compressive abstraction, without higher-order abstractions in its core form, though it can be layered on version spaces/DreamCoder-style setups.'
+  [answer] from 8 excerpt(s), 1 tool call(s)
+
+=== M7|baseline_matched|run1 ===
+How does Stitch's approach to library learning differ from DreamCoder's?
+
+=== M5|baseline|run1 ===
+What do papers in this collection use refinement types for?
+
+=== M5|agent_v1|run1 ===
+What do papers in this collection use refinement types for?
+  [plan] action=search_all paper='' queries=['refinement types used for in papers collection', 'refinement types applications systems verification']
+         reasoning='We need an initial broad search across the collection to identify which papers mention refinement types and for what purposes, since no excerpts have been retrieved yet.'
+  [search_all] 'refinement types used for in papers collection' -> 6 new excerpt(s)
+  [search_all] 'refinement types applications systems verification' -> 3 new excerpt(s)
+  [plan] action=answer paper='' queries=[]
+         reasoning='The excerpts are enough to answer at a high level: the collection uses refinement types mainly for expressing precise program specifications/invariants, enabling verification and type checking, and also for program synthesis/code completion. The Synquid and Liquid/Haskell/Liquid IFC excerpts show these roles clearly.'
+  [answer] from 9 excerpt(s), 1 tool call(s)
+
+=== M5|baseline_matched|run1 ===
+What do papers in this collection use refinement types for?
+
+=== M5|baseline|run2 ===
+What do papers in this collection use refinement types for?
+
+=== M5|agent_v1|run2 ===
+What do papers in this collection use refinement types for?
+  [plan] action=search_all paper='' queries=['refinement types used for in papers collection', 'papers using refinement types purpose applications', 'refinement types examples safety verification paper collection']
+         reasoning='Need to identify relevant papers first, since no excerpts have been retrieved yet. Broad collection-wide search should reveal how refinement types are used across papers.'
+  [search_all] 'refinement types used for in papers collection' -> 6 new excerpt(s)
+  [search_all] 'papers using refinement types purpose applications' -> 2 new excerpt(s)
+  [search_all] 'refinement types examples safety verification paper collection' -> 3 new excerpt(s)
+  [plan] action=answer paper='' queries=[]
+         reasoning='The excerpts already show the main uses of refinement types across the collection: they are used as precise specifications for synthesis, as a basis for type-directed verification/inference, and for expressing safety/security/data policies. Enough evidence is present to answer at a high level.'
+  [answer] from 11 excerpt(s), 1 tool call(s)
+
+=== M5|baseline_matched|run2 ===
+What do papers in this collection use refinement types for?
+
+=== M7|baseline|run2 ===
+How does Stitch's approach to library learning differ from DreamCoder's?
+
+=== M7|agent_v1|run2 ===
+How does Stitch's approach to library learning differ from DreamCoder's?
+  [plan] action=search_all paper='' queries=['Stitch library learning DreamCoder difference', 'Stitch vs DreamCoder library learning', 'Stitch program synthesis library learning']
+         reasoning="Need to locate excerpts comparing Stitch and DreamCoder, since no search has been run yet and we don't have enough information to answer."
+  [search_all] 'Stitch library learning DreamCoder difference' -> 6 new excerpt(s)
+  [search_all] 'Stitch vs DreamCoder library learning' -> 1 new excerpt(s)
+  [search_all] 'Stitch program synthesis library learning' -> 5 new excerpt(s)
+  [plan] action=answer paper='' queries=[]
+         reasoning='We have enough to answer from the excerpts: Stitch is a corpus-guided top-down search algorithm that builds abstractions directly from the initial DSL primitives using syntactic pattern matching and branch-and-bound pruning. DreamCoder, by contrast, learns libraries iteratively: it alternates between synthesizing programs for tasks with neurally guided enumerative search and updating the library, using a compression/Bayesian objective. Stitch is also much faster and less memory-hungry, but the core methodological difference is top-down corpus-guided search vs iterative inductive library refinement.'
+  [answer] from 12 excerpt(s), 1 tool call(s)
+
+=== M7|baseline_matched|run2 ===
+How does Stitch's approach to library learning differ from DreamCoder's?
+
+=== M9|baseline|run1 ===
+What do the Fusion 360 Gallery paper and JoinABLe each contribute to learning from CAD designs?
+
+=== M9|agent_v1|run1 ===
+What do the Fusion 360 Gallery paper and JoinABLe each contribute to learning from CAD designs?
+  [plan] action=search_all paper='' queries=['Fusion 360 Gallery paper contribution learning from CAD designs', 'JoinABLe contribution learning from CAD designs', 'Fusion 360 Gallery JoinABLe CAD design learning']
+         reasoning='No excerpts have been retrieved yet, so I need to search the collection for both papers and their stated contributions before answering.'
+  [search_all] 'Fusion 360 Gallery paper contribution learning from CAD designs' -> 6 new excerpt(s)
+  [search_all] 'JoinABLe contribution learning from CAD designs' -> 5 new excerpt(s)
+  [search_all] 'Fusion 360 Gallery JoinABLe CAD design learning' -> 1 new excerpt(s)
+  [plan] action=answer paper='' queries=[]
+         reasoning='The excerpts already state the main contributions of both papers. Fusion 360 Gallery contributes a large dataset of real human CAD construction sequences plus a simplified sketch/extrude DSL and the Fusion 360 Gym environment/benchmark for learning to reconstruct CAD programs from target geometry. JoinABLe contributes a weakly supervised, learning-based method for bottom-up assembly of parametric CAD joints, using graph-based predictions and a search procedure to assemble parts without class labels or human guidance, plus the Fusion 360 Gallery assembly dataset with joint annotations. '
+  [answer] from 12 excerpt(s), 1 tool call(s)
+
+=== M9|baseline_matched|run1 ===
+What do the Fusion 360 Gallery paper and JoinABLe each contribute to learning from CAD designs?
+
+=== M9|baseline|run2 ===
+What do the Fusion 360 Gallery paper and JoinABLe each contribute to learning from CAD designs?
+
+=== M9|agent_v1|run2 ===
+What do the Fusion 360 Gallery paper and JoinABLe each contribute to learning from CAD designs?
+  [plan] action=search_all paper='' queries=['Fusion 360 Gallery paper learning from CAD designs contribution JoinABLe contribution', 'Fusion 360 Gallery dataset paper CAD design learning sketch assembly', 'JoinABLe CAD designs paper contribution learning from CAD']
+         reasoning='No excerpts have been retrieved yet, so I need to search the collection broadly for the two papers and their stated contributions.'
+  [search_all] 'Fusion 360 Gallery paper learning from CAD designs contribution JoinABLe contribution' -> 6 new excerpt(s)
+  [search_all] 'Fusion 360 Gallery dataset paper CAD design learning sketch assembly' -> 2 new excerpt(s)
+  [search_all] 'JoinABLe CAD designs paper contribution learning from CAD' -> 5 new excerpt(s)
+  [plan] action=answer paper='' queries=[]
+         reasoning='We have enough excerpts to answer from each paper’s abstract/introduction and contributions: Fusion 360 Gallery provides a real-world dataset plus a DSL and Gym for programmatic CAD reconstruction from human design sequences, enabling learning-based reverse engineering; JoinABLe provides a weakly supervised bottom-up method for assembling CAD parts into joints, plus the Fusion 360 Gallery assembly dataset with joint/contact/graph annotations to support assembly-aware learning.'
+  [answer] from 13 excerpt(s), 1 tool call(s)
+
+=== M9|baseline_matched|run2 ===
+What do the Fusion 360 Gallery paper and JoinABLe each contribute to learning from CAD designs?
+
+=== M5|agent_v2|run1 ===
+What do papers in this collection use refinement types for?
+  [plan] action=search_all paper='' queries=['refinement types used for in these papers', 'use of refinement types in paper collection', 'refinement types applications examples']
+         reasoning='No excerpts yet, so I need a broad semantic search to identify which papers discuss refinement types and what they are used for.'
+  [search_all] 'refinement types used for in these papers' -> 6 new excerpt(s)
+  [search_all] 'use of refinement types in paper collection' -> 1 new excerpt(s)
+  [search_all] 'refinement types applications examples' -> 1 new excerpt(s)
+  [plan] action=answer paper='' queries=[]
+         reasoning='All named papers in the collection have excerpts. The papers use refinement types for different purposes: Program Synthesis from Polymorphic Refinement Types uses them as decidable, expressive specifications to drive and decompose synthesis of recursive functions, prune the search space, and infer component behavior; 105 Liquid Information Flow Control uses them to express and verify information-flow/security policies, including label-based and dependent specifications for data-centric applications. So, in this collection, refinement types are mainly used for program specification and synthesis, and for enforcing/verifying security and information-flow policies.'
+  [answer] from 8 excerpt(s), 1 tool call(s)
+
+=== M5|baseline_matched_v2|run1 ===
+What do papers in this collection use refinement types for?
+
+=== M5|agent_v2|run2 ===
+What do papers in this collection use refinement types for?
+  [plan] action=search_all paper='' queries=['refinement types used for in these papers', 'refinement types paper use cases', 'what do these papers use refinement types for']
+         reasoning='No excerpts have been gathered yet, so I need a broad semantic search across the collection to find papers discussing refinement types and their purpose.'
+  [search_all] 'refinement types used for in these papers' -> 6 new excerpt(s)
+  [search_all] 'refinement types paper use cases' -> 1 new excerpt(s)
+  [search_all] 'what do these papers use refinement types for' -> 1 new excerpt(s)
+  [plan] action=answer paper='' queries=[]
+         reasoning='We have enough evidence from the excerpts. The papers use refinement types mainly as specifications/interfaces for program synthesis and type checking, especially to express precise properties and invariants of recursive/data-structure-manipulating programs, enabling verification, early error detection, and search-space reduction. One paper also uses them to specify information-flow/security policies (labels) and data-centric policies.'
+  [answer] from 8 excerpt(s), 1 tool call(s)
+
+=== M5|baseline_matched_v2|run2 ===
+What do papers in this collection use refinement types for?
+
+=== M7|agent_v2|run1 ===
+How does Stitch's approach to library learning differ from DreamCoder's?
+  [plan] action=search_all paper='' queries=['Stitch library learning DreamCoder comparison', 'Stitch library learning approach', 'DreamCoder library learning primitives']
+         reasoning='No excerpts have been gathered yet, so I need broad search across the collection to find papers discussing Stitch and DreamCoder and their library learning approaches before answering.'
+  [search_all] 'Stitch library learning DreamCoder comparison' -> 6 new excerpt(s)
+  [search_all] 'Stitch library learning approach' -> 5 new excerpt(s)
+  [search_all] 'DreamCoder library learning primitives' -> 6 new excerpt(s)
+  [plan] action=answer paper='' queries=[]
+         reasoning='We have excerpts from both named papers: Stitch (Top-Down Synthesis for Library Learning) and DreamCoder. The Stitch paper explicitly contrasts its library learning with DreamCoder’s iterative wake-sleep approach. Stitch does top-down, corpus-guided synthesis: it directly searches for the best abstraction for the current corpus using branch-and-bound, and can operate anytime/early-stop. DreamCoder, by contrast, learns libraries iteratively in wake-sleep cycles: it alternates between synthesizing programs for tasks and updating the abstraction library, using neurally guided enumeration and a probabilistic Bayesian objective. Stitch also emphasizes efficiency and compressivity, whereas DreamCoder’s process is more iterative and resource-intensive.'
+  [answer] from 17 excerpt(s), 1 tool call(s)
+
+=== M7|baseline_matched_v2|run1 ===
+How does Stitch's approach to library learning differ from DreamCoder's?
+
+=== M7|agent_v2|run2 ===
+How does Stitch's approach to library learning differ from DreamCoder's?
+  [plan] action=search_all paper='' queries=['Stitch library learning DreamCoder comparison', 'Stitch approach to library learning', 'DreamCoder library learning']
+         reasoning='No excerpts yet. Need broad search to find the relevant papers and any passages comparing Stitch’s library learning with DreamCoder’s.'
+  [search_all] 'Stitch library learning DreamCoder comparison' -> 6 new excerpt(s)
+  [search_all] 'Stitch approach to library learning' -> 4 new excerpt(s)
+  [search_all] 'DreamCoder library learning' -> 3 new excerpt(s)
+  [plan] action=answer paper='' queries=[]
+         reasoning='We have excerpts from both papers named in the question: Stitch (Top-Down Synthesis for Library Learning) and DreamCoder. The Stitch paper explicitly compares its library-learning method to DreamCoder: DreamCoder learns libraries iteratively in a wake-sleep / neurally guided enumerative loop, alternating synthesis and library updates, while Stitch uses corpus-guided top-down search with branch-and-bound to directly synthesize a maximally compressive abstraction from a corpus. Stitch also emphasizes efficiency and anytime behavior, whereas DreamCoder is more iterative and resource-heavy. No additional search is needed.'
+  [answer] from 13 excerpt(s), 1 tool call(s)
+
+=== M7|baseline_matched_v2|run2 ===
+How does Stitch's approach to library learning differ from DreamCoder's?
+
+=== M9|agent_v2|run1 ===
+What do the Fusion 360 Gallery paper and JoinABLe each contribute to learning from CAD designs?
+  [plan] action=search_all paper='' queries=['Fusion 360 Gallery learning from CAD designs contribution', 'JoinABLe learning from CAD designs contribution', '"Fusion 360 Gallery" JoinABLe CAD design learning']
+         reasoning='No excerpts are available yet. Need to find the relevant passages for both named papers across the collection.'
+  [search_all] 'Fusion 360 Gallery learning from CAD designs contribution' -> 6 new excerpt(s)
+  [search_all] 'JoinABLe learning from CAD designs contribution' -> 5 new excerpt(s)
+  [search_all] '"Fusion 360 Gallery" JoinABLe CAD design learning' -> 1 new excerpt(s)
+  [plan] action=answer paper='' queries=[]
+         reasoning='Both named papers have excerpts available. Fusion 360 Gallery contributes a real-world dataset and environment for programmatic CAD construction from human design sequences, along with a simplified sketch-and-extrude DSL, benchmark, and the Fusion 360 Gym for learning-based CAD reconstruction from target geometry. JoinABLe contributes a learning-based bottom-up method for assembling CAD parts into joints using weak supervision from parametric CAD files, plus the Fusion 360 Gallery assembly dataset with joint and assembly metadata to support future research. '
+  [answer] from 12 excerpt(s), 1 tool call(s)
+
+=== M9|baseline_matched_v2|run1 ===
+What do the Fusion 360 Gallery paper and JoinABLe each contribute to learning from CAD designs?
+
+=== M9|agent_v2|run2 ===
+What do the Fusion 360 Gallery paper and JoinABLe each contribute to learning from CAD designs?
+  [plan] action=search_all paper='' queries=['Fusion 360 Gallery paper contribution learning from CAD designs', 'JoinABLe contribution learning from CAD designs', 'Fusion 360 Gallery JoinABLe CAD designs learning']
+         reasoning='No excerpts yet, and the question asks about two papers. I need search results to identify each paper’s stated contribution before answering.'
+  [search_all] 'Fusion 360 Gallery paper contribution learning from CAD designs' -> 6 new excerpt(s)
+  [search_all] 'JoinABLe contribution learning from CAD designs' -> 5 new excerpt(s)
+  [search_all] 'Fusion 360 Gallery JoinABLe CAD designs learning' -> 0 new excerpt(s)
+  [plan] action=answer paper='' queries=[]
+         reasoning='We have excerpts from both named papers. The Fusion 360 Gallery paper contributes a realistic dataset and environment for programmatic CAD reconstruction from human design sequences, plus a benchmark and learning-based reconstruction framework. JoinABLe contributes a weakly supervised bottom-up method for assembling CAD parts by learning joints, along with the Fusion 360 Gallery assembly dataset for training/evaluation.'
+  [answer] from 11 excerpt(s), 1 tool call(s)
+
+=== M9|baseline_matched_v2|run2 ===
+What do the Fusion 360 Gallery paper and JoinABLe each contribute to learning from CAD designs?

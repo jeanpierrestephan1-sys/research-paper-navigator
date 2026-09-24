@@ -1,0 +1,30 @@
+45 originals, run 1: 45 answers, 224 quotes
+  own_page          201
+  no_citation       0
+  other_cited_page  6
+  wrong_page        6
+  in_context_only   4
+  not_found         7
+
+Passed (balanced judge): 33
+  clean, old checker: 16  ['C1', 'C5', 'C8', 'N2', 'N3', 'Q1', 'Q3', 'Q4', 'Q5', 'Q7', 'S1', 'S2', 'S3', 'S5', 'S6', 'U2']
+  clean, new checker: 21  ['C1', 'C2', 'C4', 'C5', 'C7', 'C8', 'N2', 'N3', 'Q1', 'Q3', 'Q4', 'Q5', 'Q7', 'Q8', 'S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'U2']
+  now clean: ['C2', 'C4', 'C7', 'Q8', 'S4']
+  no longer clean: []
+
+Answers whose quote score changed: 15
+  C2    old 0.8888888888888888  new 1.0
+  C4    old 0.7142857142857143  new 1.0
+  C7    old 0.8571428571428571  new 1.0
+  N4    old 0.8333333333333334  new 1.0
+  N5    old 0.8571428571428571  new 1.0
+  Q8    old 0.0  new 1.0
+  S4    old 0.8571428571428571  new 1.0
+  S7    old 0.75  new 0.5
+  U1    old 0.5  new 0.75
+  V2    old 0.5  new 0.6666666666666666
+  V3    old 0.5  new 1.0
+  V4    old 0.3333333333333333  new 0.6666666666666666
+  V5    old 0.75  new 0.875
+  V6    old 0.6  new 0.0
+  V8    old 0.75  new 1.0
