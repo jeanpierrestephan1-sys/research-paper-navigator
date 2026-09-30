@@ -1,0 +1,61 @@
+source,id,system,run,llm_calls,planner_calls,tool_calls,in_tokens,out_tokens,seconds,usd
+5.1 run,M7,baseline,1,1,0,1,2177,281,2.29,0.002897
+5.1 run,M7,agent_v1,1,3,2,1,6303,561,7.54,0.007252
+5.1 run,M7,baseline_matched,1,1,0,1,2910,364,2.93,0.003821
+5.1 run,M5,baseline,1,1,0,1,2749,418,3.23,0.003943
+5.1 run,M5,agent_v1,1,3,2,1,7626,740,6.24,0.00905
+5.1 run,M5,baseline_matched,1,1,0,1,3631,414,5.03,0.004586
+5.1 run,M5,baseline,2,1,0,1,2749,439,2.82,0.004037
+5.1 run,M5,agent_v1,2,3,2,1,8716,762,6.55,0.009966
+5.1 run,M5,baseline_matched,2,1,0,1,4312,395,2.95,0.005012
+5.1 run,M7,baseline,2,1,0,1,2177,259,1.93,0.002798
+5.1 run,M7,agent_v1,2,3,2,1,9246,502,5.49,0.009194
+5.1 run,M7,baseline_matched,2,1,0,1,4082,417,3.49,0.004938
+5.1 run,M9,baseline,1,1,0,1,1978,256,2.28,0.002635
+5.1 run,M9,agent_v1,1,3,2,1,8623,639,6.16,0.009343
+5.1 run,M9,baseline_matched,1,1,0,1,4176,436,3.15,0.005094
+5.1 run,M9,baseline,2,1,0,1,1978,362,3.06,0.003112
+5.1 run,M9,agent_v1,2,3,2,1,9426,776,6.94,0.010561
+5.1 run,M9,baseline_matched,2,1,0,1,4532,473,3.58,0.005527
+5.1 run,M5,agent_v2,1,3,2,1,7520,696,7.11,0.008772
+5.1 run,M5,baseline_matched_v2,1,1,0,1,3296,385,2.66,0.004204
+5.1 run,M5,agent_v2,2,3,2,1,7532,532,6.16,0.008043
+5.1 run,M5,baseline_matched_v2,2,1,0,1,3296,477,4.31,0.004618
+5.1 run,M7,agent_v2,1,3,2,1,12913,517,5.46,0.012011
+5.1 run,M7,baseline_matched_v2,1,1,0,1,5916,424,2.65,0.006345
+5.1 run,M7,agent_v2,2,3,2,1,10141,696,5.99,0.010738
+5.1 run,M7,baseline_matched_v2,2,1,0,1,4423,329,2.27,0.004798
+5.1 run,M9,agent_v2,1,3,2,1,9051,556,5.12,0.00929
+5.1 run,M9,baseline_matched_v2,1,1,0,1,4176,411,2.24,0.004981
+5.1 run,M9,agent_v2,2,3,2,1,8042,551,5.44,0.008511
+5.1 run,M9,baseline_matched_v2,2,1,0,1,3838,401,2.2,0.004683
+replication,M5,baseline,1,1,0,1,2749,418,6.17,0.003943
+replication,M5,agent_v1,1,3,2,1,7915,651,10.8,0.008866
+replication,M5,baseline_matched,1,1,0,1,3631,304,3.53,0.004091
+replication,M5,agent_v2,1,3,2,1,8038,704,8.6,0.009196
+replication,M5,baseline_matched_v2,1,1,0,1,3631,375,7.63,0.004411
+replication,M5,baseline,2,1,0,1,2749,428,4.4,0.003988
+replication,M5,agent_v1,2,3,2,1,8282,612,9.11,0.008965
+replication,M5,baseline_matched,2,1,0,1,3978,372,3.5,0.004658
+replication,M5,agent_v2,2,3,2,1,7728,569,9.68,0.008356
+replication,M5,baseline_matched_v2,2,1,0,1,3296,379,3.76,0.004177
+replication,M7,baseline,1,1,0,1,2177,396,3.84,0.003415
+replication,M7,agent_v1,1,3,2,1,8680,555,8.58,0.009007
+replication,M7,baseline_matched,1,1,0,1,3835,252,3.27,0.00401
+replication,M7,agent_v2,1,3,2,1,7314,627,7.91,0.008307
+replication,M7,baseline_matched_v2,1,1,0,1,3271,389,4.87,0.004204
+replication,M7,baseline,2,1,0,1,2177,296,3.52,0.002965
+replication,M7,agent_v1,2,3,2,1,6302,544,8.03,0.007175
+replication,M7,baseline_matched,2,1,0,1,2910,301,12.5,0.003537
+replication,M7,agent_v2,2,3,2,1,9523,626,8.87,0.009959
+replication,M7,baseline_matched_v2,2,1,0,1,4082,344,4.71,0.004609
+replication,M9,baseline,1,1,0,1,1978,312,4.53,0.002887
+replication,M9,agent_v1,1,3,2,1,8061,583,10.84,0.008669
+replication,M9,baseline_matched,1,1,0,1,3838,432,3.63,0.004823
+replication,M9,agent_v2,1,3,2,1,8981,561,8.15,0.00926
+replication,M9,baseline_matched_v2,1,1,0,1,4176,398,4.3,0.004923
+replication,M9,baseline,2,1,0,1,1978,513,4.62,0.003792
+replication,M9,agent_v1,2,3,2,1,8624,664,8.3,0.009456
+replication,M9,baseline_matched,2,1,0,1,4176,418,3.65,0.005013
+replication,M9,agent_v2,2,3,2,1,10088,535,6.22,0.009973
+replication,M9,baseline_matched_v2,2,1,0,1,4908,370,4.91,0.005346
