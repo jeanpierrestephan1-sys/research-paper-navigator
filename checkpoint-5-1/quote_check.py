@@ -178,7 +178,7 @@ def old_check(rec: dict) -> dict:
 
 def validate() -> None:
     """Re-check the 45 original 3.1 questions, run 1, old checker vs new. The 3.1 hand
-    analysis (SESSION-LOG, 2026-09-15) says what a correct checker should find."""
+    analysis of 2026-09-15 says what a correct checker should find."""
     answers = json.loads((HERE.parent / "checkpoint-3-1" / "checkpoint_3_1_answers.json").read_text())
     rows = list(csv.DictReader((HERE.parent / "checkpoint-3-1" / "checkpoint_3_1_results.csv").open()))
     passed = {r["id"] for r in rows if r["run"] == "1" and not r["variant_of"]

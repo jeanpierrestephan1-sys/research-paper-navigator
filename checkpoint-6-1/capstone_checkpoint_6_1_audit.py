@@ -3,7 +3,7 @@ r"""Checkpoint 6.1: security, reliability and cost audit of the 5.1 Research Pap
 This diagnoses; it changes nothing. It reuses, unchanged, the 5.1 agent (agent_v2), the
 2.1 pipeline (baseline) and the 5.1 quote checker. Nothing in checkpoint-5-1 is written.
 
-JP's choices, 2026-09-29: two issues, each probe run twice on the Navigator's own model
+Choices made 2026-09-29: two issues, each probe run twice on the Navigator's own model
 (openai/gpt-5.4-mini).
 
 Issue A, a pasted fake quotation (information flow).
