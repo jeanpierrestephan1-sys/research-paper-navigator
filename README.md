@@ -45,6 +45,15 @@ result files that the worksheet's numbers come from.
   the whole collection, search inside one named paper, or answer) until it
   answers or reaches 5 tool calls. Includes `quote_check.py`, a corrected
   version of the 3.1 quote check.
+- `checkpoint-6-1/` — the security, reliability and cost audit. Nothing is
+  changed here; the 5.1 agent and the 2.1 pipeline are probed as they are. Two
+  probes: a forged excerpt pasted into the question in the system's own
+  `[file p.N]` format, and a question whose answer comes from a file named for
+  the wrong paper. Calls, tokens, seconds and cost per question are re-derived
+  from the 60 answers saved in 5.1. `rerun-2026-09-30/` holds the same probes
+  run again a day later.
+- `tools/` — the three Swift scripts that build the text cache and the paper
+  index from the PDFs, plus a copy of `paper-index.tsv`. See Corpus below.
 
 ## Setup
 
@@ -77,10 +86,20 @@ The code expects this layout, one level above the repo:
     paper-index.tsv      one line per PDF: filename, tab, title
 ```
 
-`text-cache/` is built from the PDFs with `extract_all.swift` (Apple PDFKit, so
-macOS), and `paper-index.tsv` with `index.swift`. Both scripts live beside the
-corpus, outside this repository. The checkpoints read only the text cache and
-the index; they never open a PDF.
+`text-cache/` is built from the PDFs with `tools/extract_all.swift`, and
+`paper-index.tsv` with `tools/index.swift`. Both use Apple PDFKit, so they need
+macOS. A copy of `paper-index.tsv` is kept in `tools/`, so only the text cache
+has to be built. With `$REPO` set to the path of this repository:
+
+```
+cd ../data/capstone-corpus
+swift $REPO/tools/extract_all.swift ResearchPapers text-cache
+cp $REPO/tools/paper-index.tsv .        # or rebuild it: swift $REPO/tools/index.swift ResearchPapers > paper-index.tsv
+```
+
+`tools/pdftext.swift` prints one PDF's text and was used for spot checks, such
+as comparing a file's first page against its name in 3.1. The checkpoints read
+only the text cache and the index; they never open a PDF.
 
 The vector index (`checkpoint-2-1/chroma_db/`) is built on the first 2.1 run and
 is not committed. Building it embeds every chunk, which costs credits. Every
@@ -94,7 +113,7 @@ the `--report` commands cost nothing.
 
 ```
 cd checkpoint-1-1
-python capstone_checkpoint_1_1_baseline.py
+python capstone_checkpoint_1_1_baseline.py                        # runs the questions; this one has no free mode
 
 cd checkpoint-2-1
 python capstone_checkpoint_2_1_baseline_retrieval.py --stats      # index stats, no API calls
@@ -119,6 +138,12 @@ python capstone_checkpoint_5_1_agent_rag.py --judge
 python capstone_checkpoint_5_1_agent_rag.py --report
 python capstone_checkpoint_5_1_agent_rag.py --show M7 agent_v2 1  # one run, step by step
 python quote_check.py --validate                                  # the fixed quote check against the 3.1 answers
+
+cd checkpoint-6-1
+python capstone_checkpoint_6_1_audit.py cost                      # free: cost, calls and latency from the 5.1 answers
+python capstone_checkpoint_6_1_audit.py report                    # free: the saved probe answers and their checks
+python capstone_checkpoint_6_1_audit.py probes                    # runs the 10 probe answers, skipping any already saved
+cd rerun-2026-09-30 && python rerun_audit.py report               # the next-day re-run, same commands
 ```
 
 Every checkpoint's solution file has a docstring at the top that lists its
