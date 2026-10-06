@@ -1,0 +1,69 @@
+{
+ "chosen": "v2_default",
+ "expected": "cross_paper and trend -> agent; all else -> direct",
+ "computed": "2026-10-06T15:36:45",
+ "configs": {
+  "v1_default": {
+   "correct": 44,
+   "of": 59,
+   "wrong": [
+    "S1v3:agent",
+    "S2v1:agent",
+    "S3v3:agent",
+    "S4v1:agent",
+    "S4v2:agent",
+    "S4v3:agent",
+    "S7v3:agent",
+    "V2v2:agent",
+    "V2v3:agent",
+    "V3v1:agent",
+    "V3v3:agent",
+    "V4v1:agent",
+    "V4v3:agent",
+    "V5v2:agent",
+    "V5v3:agent"
+   ],
+   "cost_usd": 0.01785,
+   "median_output_tokens": 692,
+   "median_seconds": 8.26
+  },
+  "v1_minimal": {
+   "correct": 50,
+   "of": 59,
+   "wrong": [
+    "C3v1:direct",
+    "S1v2:agent",
+    "S2v1:agent",
+    "S4v1:agent",
+    "V2v2:agent",
+    "V3v1:agent",
+    "V3v3:agent",
+    "V4v2:agent",
+    "V5v3:agent"
+   ],
+   "cost_usd": 0.00226,
+   "median_output_tokens": 74,
+   "median_seconds": 1.47
+  },
+  "v2_default": {
+   "correct": 59,
+   "of": 59,
+   "wrong": [],
+   "cost_usd": 0.01375,
+   "median_output_tokens": 497,
+   "median_seconds": 6.49
+  },
+  "v2_minimal": {
+   "correct": 56,
+   "of": 59,
+   "wrong": [
+    "C3v2:direct",
+    "C7v1:direct",
+    "S2v1:agent"
+   ],
+   "cost_usd": 0.00203,
+   "median_output_tokens": 63,
+   "median_seconds": 1.23
+  }
+ }
+}

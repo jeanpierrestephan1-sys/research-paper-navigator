@@ -32,3 +32,6 @@ Wikipedia/
 CapstoneDatasets/
 *.pdf
 *.zip
+
+# Checkpoint 7.1 semantic cache (runtime state, rebuilt on use)
+semantic_cache/

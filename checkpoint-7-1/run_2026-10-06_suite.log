@@ -1,0 +1,236 @@
+##### suite 15:36:57
+Loading existing vector DB from chroma_db/
+
+Pass 1
+  S1|pass1   direct 10.28s  $0.0027  quotes 1.0  stored=True
+  S2|pass1   direct  10.1s  $0.0029  quotes 1.0  stored=True
+  S3|pass1   direct 52.46s  $0.0026  quotes 1.0  stored=True
+  S4|pass1   direct 12.07s  $0.0033  quotes 1.0  stored=True
+  S5|pass1   direct  8.18s  $0.0023  quotes 1.0  stored=True
+  S6|pass1   direct 15.85s  $0.0031  quotes 1.0  stored=True
+  S7|pass1   direct  7.48s  $0.0024  quotes 0.6666666666666666  stored=False
+  N2|pass1   direct 10.16s  $0.0023  quotes 1.0  stored=True
+  N3|pass1   direct  9.58s  $0.0030  quotes 1.0  stored=True
+  N4|pass1   direct 14.37s  $0.0027  quotes 1.0  stored=True
+  C1|pass1   agent  15.79s  $0.0142  quotes 0.9375  stored=False
+  C2|pass1   agent  16.43s  $0.0160  quotes 0.9473684210526315  stored=False
+  C3|pass1   agent  21.27s  $0.0260  quotes 0.9655172413793104  stored=False
+  C4|pass1   agent  13.63s  $0.0103  quotes 1.0  stored=True
+  C5|pass1   agent  14.36s  $0.0128  quotes 0.9444444444444444  stored=False
+  C6|pass1   agent  13.79s  $0.0134  quotes 1.0  stored=True
+  C7|pass1   agent  19.83s  $0.0150  quotes 0.88  stored=False
+  C8|pass1   agent  14.13s  $0.0117  quotes 0.7777777777777778  stored=False
+  T1|pass1   agent  11.19s  $0.0098  quotes 0.8  stored=False
+  T2|pass1   agent  23.29s  $0.0090  quotes 0.6  stored=False
+  T3|pass1   agent  13.51s  $0.0140  quotes 0.875  stored=False
+  T4|pass1   agent  16.13s  $0.0147  quotes 1.0  stored=True
+  T5|pass1   agent  12.66s  $0.0104  quotes 0.6666666666666666  stored=False
+  Q1|pass1   direct  6.77s  $0.0026  quotes 1.0  stored=True
+  Q2|pass1   direct  7.07s  $0.0022  quotes 1.0  stored=True
+  Q3|pass1   direct  6.92s  $0.0024  quotes 1.0  stored=True
+  Q4|pass1   direct  4.34s  $0.0021  quotes 1.0  stored=True
+  Q5|pass1   direct   7.2s  $0.0025  quotes 1.0  stored=True
+  Q6|pass1   direct  6.57s  $0.0026  quotes 0.5  stored=False
+  Q7|pass1   direct   7.9s  $0.0025  quotes 1.0  stored=True
+  Q8|pass1   direct   6.1s  $0.0023  quotes 1.0  stored=True
+  V1|pass1   direct  8.76s  $0.0029  quotes 0.5  stored=False
+  V2|pass1   direct  9.07s  $0.0025  quotes 0.8  stored=False
+  V3|pass1   direct 11.21s  $0.0026  quotes 0.6666666666666666  stored=False
+  V4|pass1   direct  7.99s  $0.0032  quotes 0.8  stored=False
+  V5|pass1   direct 10.66s  $0.0026  quotes 0.8571428571428571  stored=False
+  V6|pass1   direct  8.48s  $0.0028  quotes 0.8333333333333334  stored=False
+  V7|pass1   direct  6.57s  $0.0029  quotes 0.8333333333333334  stored=False
+  V8|pass1   direct  9.19s  $0.0023  quotes 1.0  stored=True
+  U1|pass1   agent  15.76s  $0.0106  quotes 1.0  stored=True
+  U2|pass1   agent  10.52s  $0.0134  quotes 0.5  stored=False
+  U3|pass1   agent  10.14s  $0.0095  quotes 0.8333333333333334  stored=False
+  U4|pass1   agent  10.14s  $0.0108  quotes 0.6666666666666666  stored=False
+  N1|pass1   agent  13.19s  $0.0122  quotes 1.0  stored=True
+  N5|pass1   direct 14.81s  $0.0040  quotes 1.0  stored=True
+  M1|pass1   agent  14.37s  $0.0082  quotes 1.0  stored=True
+  M2|pass1   agent  12.82s  $0.0115  quotes 0.7692307692307693  stored=False
+  M3|pass1   agent  11.59s  $0.0090  quotes 1.0  stored=True
+  M4|pass1   agent  13.04s  $0.0087  quotes 0.7777777777777778  stored=False
+  M5|pass1   agent  21.92s  $0.0101  quotes 0.7  stored=False
+  M6|pass1   agent  20.66s  $0.0137  quotes 1.0  stored=True
+  M7|pass1   agent  12.13s  $0.0095  quotes 1.0  stored=True
+  M8|pass1   agent  12.27s  $0.0103  quotes 1.0  stored=True
+  M9|pass1   agent  12.75s  $0.0098  quotes 1.0  stored=True
+  M10|pass1  agent  10.75s  $0.0111  quotes 0.8571428571428571  stored=False
+  M11|pass1  agent  11.96s  $0.0105  quotes 1.0  stored=True
+  M12|pass1  agent  14.03s  $0.0121  quotes 1.0  stored=True
+
+Pass 2
+  S1|pass2   cache    0.3s  $0.0000  quotes -  stored=False
+  S2|pass2   cache   0.23s  $0.0000  quotes -  stored=False
+  S3|pass2   cache    0.2s  $0.0000  quotes -  stored=False
+  S4|pass2   cache    0.2s  $0.0000  quotes -  stored=False
+  S5|pass2   cache    0.2s  $0.0000  quotes -  stored=False
+  S6|pass2   cache   0.23s  $0.0000  quotes -  stored=False
+  S7|pass2   direct  8.58s  $0.0025  quotes 1.0  stored=True
+  N2|pass2   cache   0.38s  $0.0000  quotes -  stored=False
+  N3|pass2   cache   0.26s  $0.0000  quotes -  stored=False
+  N4|pass2   cache   0.22s  $0.0000  quotes -  stored=False
+  C1|pass2   agent  16.46s  $0.0157  quotes 1.0  stored=True
+  C2|pass2   agent  18.22s  $0.0161  quotes 1.0  stored=True
+  C3|pass2   agent  18.82s  $0.0149  quotes 0.9642857142857143  stored=False
+  C4|pass2   cache   0.36s  $0.0000  quotes -  stored=False
+  C5|pass2   agent  13.31s  $0.0119  quotes 0.9166666666666666  stored=False
+  C6|pass2   cache   0.29s  $0.0000  quotes -  stored=False
+  C7|pass2   agent  18.08s  $0.0228  quotes 1.0  stored=True
+  C8|pass2   agent   12.9s  $0.0113  quotes 0.42857142857142855  stored=False
+  T1|pass2   agent  12.62s  $0.0113  quotes 1.0  stored=True
+  T2|pass2   agent  13.19s  $0.0117  quotes 0.8  stored=False
+  T3|pass2   agent  16.05s  $0.0143  quotes 0.9  stored=False
+  T4|pass2   cache   0.32s  $0.0000  quotes -  stored=False
+  T5|pass2   agent   10.5s  $0.0109  quotes 1.0  stored=True
+  Q1|pass2   cache   0.27s  $0.0000  quotes -  stored=False
+  Q2|pass2   cache   0.27s  $0.0000  quotes -  stored=False
+  Q3|pass2   cache   0.22s  $0.0000  quotes -  stored=False
+  Q4|pass2   cache   0.22s  $0.0000  quotes -  stored=False
+  Q5|pass2   cache   0.23s  $0.0000  quotes -  stored=False
+  Q6|pass2   direct  9.99s  $0.0028  quotes 0.6666666666666666  stored=False
+  Q7|pass2   cache   0.31s  $0.0000  quotes -  stored=False
+  Q8|pass2   cache   0.23s  $0.0000  quotes -  stored=False
+  V1|pass2   direct 10.59s  $0.0029  quotes 0.8  stored=False
+  V2|pass2   direct 10.84s  $0.0027  quotes 0.625  stored=False
+  V3|pass2   direct  7.52s  $0.0024  quotes 1.0  stored=True
+  V4|pass2   direct  9.76s  $0.0027  quotes 0.6666666666666666  stored=False
+  V5|pass2   direct 17.97s  $0.0029  quotes 1.0  stored=True
+  V6|pass2   direct  7.28s  $0.0026  quotes 0.8333333333333334  stored=False
+  V7|pass2   direct  11.4s  $0.0030  quotes 1.0  stored=True
+  V8|pass2   cache   0.24s  $0.0000  quotes -  stored=False
+  U1|pass2   cache    0.2s  $0.0000  quotes -  stored=False
+  U2|pass2   agent   9.74s  $0.0129  quotes 1.0  stored=True
+  U3|pass2   agent  13.37s  $0.0095  quotes 0.5  stored=False
+  U4|pass2   agent  12.83s  $0.0184  quotes 0.6  stored=False
+  N1|pass2   cache   0.26s  $0.0000  quotes -  stored=False
+  N5|pass2   cache   0.22s  $0.0000  quotes -  stored=False
+  M1|pass2   cache   0.22s  $0.0000  quotes -  stored=False
+  M2|pass2   agent  16.55s  $0.0126  quotes 1.0  stored=True
+  M3|pass2   cache    0.2s  $0.0000  quotes -  stored=False
+  M4|pass2   agent  13.64s  $0.0081  quotes 0.8888888888888888  stored=False
+  M5|pass2   agent  12.59s  $0.0093  quotes 1.0  stored=True
+  M6|pass2   cache   0.27s  $0.0000  quotes -  stored=False
+  M7|pass2   cache   0.24s  $0.0000  quotes -  stored=False
+  M8|pass2   cache   0.32s  $0.0000  quotes -  stored=False
+  M9|pass2   cache   0.22s  $0.0000  quotes -  stored=False
+  M10|pass2  agent  13.98s  $0.0103  quotes 1.0  stored=True
+  M11|pass2  cache   0.25s  $0.0000  quotes -  stored=False
+  M12|pass2  cache   0.38s  $0.0000  quotes -  stored=False
+##### judge 15:54:51
+  S1    balanced  pass
+  S1    strict    pass
+  S2    balanced  pass
+  S2    strict    fail
+  S3    balanced  fail
+  S3    strict    fail
+  S4    balanced  pass
+  S4    strict    pass
+  S5    balanced  pass
+  S5    strict    pass
+  S6    balanced  pass
+  S6    strict    pass
+  S7    balanced  pass
+  S7    strict    fail
+  N2    balanced  pass
+  N2    strict    pass
+  N3    balanced  fail
+  N3    strict    fail
+  N4    balanced  fail
+  N4    strict    fail
+  C1    balanced  pass
+  C1    strict    pass
+  C2    balanced  pass
+  C2    strict    pass
+  C3    balanced  pass
+  C3    strict    pass
+  C4    balanced  pass
+  C4    strict    pass
+  C5    balanced  pass
+  C5    strict    pass
+  C6    balanced  pass
+  C6    strict    pass
+  C7    balanced  pass
+  C7    strict    pass
+  C8    balanced  pass
+  C8    strict    fail
+  T1    balanced  fail
+  T1    strict    fail
+  T2    balanced  pass
+  T2    strict    pass
+  T3    balanced  fail
+  T3    strict    fail
+  T4    balanced  pass
+  T4    strict    pass
+  T5    balanced  fail
+  T5    strict    fail
+  Q1    balanced  pass
+  Q1    strict    fail
+  Q2    balanced  fail
+  Q2    strict    fail
+  Q3    balanced  pass
+  Q3    strict    pass
+  Q4    balanced  pass
+  Q4    strict    pass
+  Q5    balanced  pass
+  Q5    strict    pass
+  Q6    balanced  fail
+  Q6    strict    fail
+  Q7    balanced  pass
+  Q7    strict    pass
+  Q8    balanced  pass
+  Q8    strict    pass
+  V1    balanced  pass
+  V1    strict    pass
+  V2    balanced  pass
+  V2    strict    pass
+  V3    balanced  fail
+  V3    strict    fail
+  V4    balanced  fail
+  V4    strict    fail
+  V5    balanced  pass
+  V5    strict    pass
+  V6    balanced  pass
+  V6    strict    pass
+  V7    balanced  pass
+  V7    strict    pass
+  V8    balanced  fail
+  V8    strict    fail
+  U1    balanced  pass
+  U1    strict    pass
+  U2    balanced  pass
+  U2    strict    pass
+  U3    balanced  fail
+  U3    strict    pass
+  U4    balanced  pass
+  U4    strict    pass
+  N1    balanced  pass
+  N1    strict    pass
+  N5    balanced  fail
+  N5    strict    fail
+  M1    balanced  pass
+  M1    strict    pass
+  M2    balanced  pass
+  M2    strict    pass
+  M3    balanced  fail
+  M3    strict    pass
+  M4    balanced  fail
+  M4    strict    fail
+  M5    balanced  fail
+  M5    strict    fail
+  M6    balanced  fail
+  M6    strict    fail
+  M7    balanced  fail
+  M7    strict    fail
+  M8    balanced  fail
+  M8    strict    fail
+  M9    balanced  fail
+  M9    strict    fail
+  M10   balanced  fail
+  M10   strict    fail
+  M11   balanced  pass
+  M11   strict    fail
+  M12   balanced  pass
+  M12   strict    pass
+done 16:06:19

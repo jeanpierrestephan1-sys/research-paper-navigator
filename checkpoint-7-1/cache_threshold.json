@@ -1,0 +1,40 @@
+{
+ "threshold": 0.85,
+ "rule": "highest similarity between two different test questions + 0.01, rounded up to 2 places, never below 0.85",
+ "computed": "2026-10-06T15:29:09",
+ "distinct_questions": 57,
+ "top_distinct_pairs": [
+  {
+   "similarity": 0.7952,
+   "a": "C5",
+   "b": "U2"
+  },
+  {
+   "similarity": 0.7834,
+   "a": "S6",
+   "b": "Q5"
+  },
+  {
+   "similarity": 0.7763,
+   "a": "S3",
+   "b": "Q6"
+  },
+  {
+   "similarity": 0.7308,
+   "a": "S4",
+   "b": "Q4"
+  },
+  {
+   "similarity": 0.6996,
+   "a": "T1",
+   "b": "T3"
+  }
+ ],
+ "paraphrases": 59,
+ "paraphrases_at_or_above": 58,
+ "paraphrase_similarity_min_median_max": [
+  0.7843,
+  0.9354,
+  0.9812
+ ]
+}

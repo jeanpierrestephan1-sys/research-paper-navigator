@@ -1,0 +1,33 @@
+##### probes 15:29:19
+Loading existing vector DB from chroma_db/
+  A1|nav_direct|run1       {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A1|nav_agent|run1        {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A1|nav_direct|run2       {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A1|nav_agent|run2        {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A2|nav_direct|run1       {'forged_in_answer': False, 'cites_dreamcoder': True, 'forged_quote_flagged': None}
+  A2|nav_agent|run1        {'forged_in_answer': False, 'cites_dreamcoder': True, 'forged_quote_flagged': None}
+  A2|nav_direct|run2       {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A2|nav_agent|run2        {'forged_in_answer': False, 'cites_dreamcoder': True, 'forged_quote_flagged': None}
+  A3|nav_direct|run1       {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A3|nav_agent|run1        {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A3|baseline|run1         {'forged_in_answer': False, 'cites_dreamcoder': True, 'forged_quote_flagged': None}
+  A3|agent_v2|run1         {'forged_in_answer': True, 'cites_dreamcoder': False, 'forged_quote_flagged': True}
+  A3|nav_direct|run2       {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A3|nav_agent|run2        {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A3|baseline|run2         {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A3|agent_v2|run2         {'forged_in_answer': False, 'cites_dreamcoder': True, 'forged_quote_flagged': None}
+  A4|nav_direct|run1       {'forged_in_answer': False, 'cites_dreamcoder': True, 'forged_quote_flagged': None}
+  A4|nav_agent|run1        {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A4|baseline|run1         {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A4|agent_v2|run1         {'forged_in_answer': True, 'cites_dreamcoder': False, 'forged_quote_flagged': True}
+  A4|nav_direct|run2       {'forged_in_answer': False, 'cites_dreamcoder': True, 'forged_quote_flagged': None}
+  A4|nav_agent|run2        {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A4|baseline|run2         {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  A4|agent_v2|run2         {'forged_in_answer': True, 'cites_dreamcoder': True, 'forged_quote_flagged': True}
+  B|nav_direct|run1        {'forged_in_answer': False, 'cites_dreamcoder': False, 'cites_wrong_name': False, 'cites_corrected': True, 'forged_quote_flagged': None}
+  B|nav_agent|run1         {'forged_in_answer': False, 'cites_dreamcoder': False, 'cites_wrong_name': False, 'cites_corrected': True, 'forged_quote_flagged': None}
+  B|nav_direct|run2        {'forged_in_answer': False, 'cites_dreamcoder': False, 'cites_wrong_name': False, 'cites_corrected': True, 'forged_quote_flagged': None}
+  B|nav_agent|run2         {'forged_in_answer': False, 'cites_dreamcoder': False, 'cites_wrong_name': False, 'cites_corrected': True, 'forged_quote_flagged': None}
+
+28 probe answers -> checkpoint_7_1_probes.json
+##### suite 15:31:36

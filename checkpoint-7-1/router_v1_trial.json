@@ -1,0 +1,424 @@
+{
+ "_about": "First router prompt (router v1), stopped after 4 of 57 on 2026-10-06: it sent single-paper questions to the agent. Kept as evidence; not part of the suite.",
+ "answers": {
+  "S1|pass1": {
+   "question": "In the ENCOMPASS paper, what does PAN stand for and what two concerns does the programming model separate?",
+   "sanitized": "In the ENCOMPASS paper, what does PAN stand for and what two concerns does the programming model separate?",
+   "route": "agent",
+   "cache_hit": false,
+   "similarity": 0.0,
+   "router_in": 158,
+   "router_out": 1253,
+   "planner_calls": 2,
+   "answer_calls": 1,
+   "mini_in": 3965,
+   "mini_out": 242,
+   "embed_calls": 5,
+   "tool_calls": 1,
+   "router_reason": "{\"route\":\"agent\",\"reason\":\"The question requires pulling exact acronym expansion (PAN) and the two programming-model concerns from the ENCOMPASS paper; to answer reliably I need to consult the ENCOMPA",
+   "answer_raw": "PAN stands for “probabilistic angelic nondeterminism” [conf_nips_li2025encompass p.1]. The paper says PAN “disentangles” or separates “the core workflow logic and the inference-time strategy” [conf_nips_li2025encompass p.1], and more specifically it “uses angelic nondeterminism to separate inference-time algorithms (search policy) from the underlying logic of the agent (specification of the search space)” [conf_nips_li2025encompass p.2].",
+   "answer": "PAN stands for “probabilistic angelic nondeterminism” [conf_nips_li2025encompass p.1]. The paper says PAN “disentangles” or separates “the core workflow logic and the inference-time strategy” [conf_nips_li2025encompass p.1], and more specifically it “uses angelic nondeterminism to separate inference-time algorithms (search policy) from the underlying logic of the agent (specification of the search space)” [conf_nips_li2025encompass p.2].",
+   "quote_check": {
+    "n_quotes": 3,
+    "quote_verification": 1.0,
+    "n_citations": 3,
+    "coverage": 1
+   },
+   "quotes": [
+    {
+     "quote": "probabilistic angelic nondeterminism",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "the core workflow logic and the inference-time strategy",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "uses angelic nondeterminism to separate inference-time algorithms (search policy) from the underlying logic of the agent (specification of the search space)",
+     "outcome": "own_page",
+     "verified": true
+    }
+   ],
+   "chunks": [
+    {
+     "source": "conf_nips_li2025encompass",
+     "label": "conf_nips_li2025encompass",
+     "page": 3,
+     "text": "2 ENCOMPASS, a Python framework for PAN\nIn this section, we introduce the PAN programming model (Section 2.1) and describe its Python im-\nplementation in the ENCOMPASS framework (Section 2.2). For simplicity, we will ignore the feature\nof memory sharing across different program execution paths (see Section 3.2). The documentation\nfor ENCOMPASS is in Appendix B and the ENCOMPASS compiler is described in Appendix C.\n2.1 Probabilistic angelic nondeterminism (PAN)\nThe core idea of PAN is to search over the tree of possible execution paths of a probabilistic program\n— where some operations (e.g., LLM calls) have randomness — to find the path that optimizes a\nuser-specified objective. Given a probabilistic program with branchpoints at certain locations in the\nprogram, we model its computation as a Markov chain over the space of possible program states. The\nMarkov chain consists of the following components:\n• Branchpoints and the end of the program constitute a set of marked locations in the program.\nIn Figure 1, branchpoints are denoted by blue dots .\n• A program state is a pair consisting of a marked location of the program and a memory state,\nwhich is a mapping from variables to values.\n• The code that executes from one marked location to the next defines a probabilistic transition\nfunction that maps from a program state to the next program state. Program states at the end\nof the p"
+    },
+    {
+     "source": "conf_nips_li2025encompass",
+     "label": "conf_nips_li2025encompass",
+     "page": 2,
+     "text": "call this programming model\nprobabilistic angelic nondeterminism (PAN). As a form of angelic nondeterminism [23], PAN lets the\nprogrammer write their program pretending the unreliable operations always produce good outputs,\nand the runtime searches the space of possible execution paths for one where the operations indeed\nproduced good outputs.\nOur work makes the following concrete contributions:\n• We introduce the PAN programming model (Section 2.1), which uses angelic nondetermin-\nism to separate inference-time algorithms (search policy) from the underlying logic of the\nagent (specification of the search space).\n• We present ENCOMPASS, a Python library that implements PAN (Section 2.2), providing\n1. primitives like branchpoint() that the programmer can use inside their ENCOMPASS\nfunction, 2. a Python function decorator that compiles an ENCOMPASS function into a\nsearch space object at run-time, and 3. common search algorithms, as well as an interface\nfor implementing custom search algorithms.\n• We illustrate how ENCOMPASS provides a unifying framework for common inference-time\nstrategies and agentic patterns, which are special cases of search over nondeterministic\nexecution paths of ENCOMPASS programs (Section 3). ENCOMPASS also provides a natural\ngeneralization of these inference-time strategies.\n• We present case studies showing how ENCOMPASS enables easy experimentation of v"
+    },
+    {
+     "source": "conf_nips_li2025encompass",
+     "label": "conf_nips_li2025encompass",
+     "page": 10,
+     "text": "rporated into agents built with an existing\nPython agent framework.\nAngelic nondeterminism Previous implementations of angelic nondeterminism include John\nMcCarthy’s amb operator in Common Lisp [35] and the list monad in Haskell [36]. The main\nconceptual difference is that ENCOMPASS implements a probabilistic form of angelic nondeterminism,\nwhich samples from a probability distribution such as an LLM instead of choosing from a given set\nof choices.\nProbabilistic programming Our work is also inspired by probabilistic programming, a program-\nming paradigm that separates the two main concerns of probabilistic inference: specifying the\nprobabilistic model and implementing the inference algorithm. (See, e.g., [37] for a review.) This\nallows the programmer to efficiently specify a probabilistic model in code while independently\nexperiment with different probabilistic inference algorithms. Similarly, ENCOMPASS aims to separate\nthe two main concerns of agent programming: specifying the core agent workflow and implementing\nthe inference-time search strategy.\n6 Limitations\nENCOMPASS targets program-in-control style agents, where implementations without ENCOMPASS\ntypically force the programmer to entangle the underlying agent and the overlaying search strategy.\nENCOMPASS is not meant for LLM-in-control style agents, where the two aspects are already\ndecoupled. Nevertheless, there has been"
+    },
+    {
+     "source": "conf_nips_li2025encompass",
+     "label": "conf_nips_li2025encompass",
+     "page": 1,
+     "text": "ENCOMPASS: Enhancing Agent Programming with\nSearch Over Program Execution Paths\nZhening Li∗\nAsari AI, MIT CSAIL\nzhening.li@asari.ai\nArmando Solar-Lezama\nAsari AI, MIT CSAIL\nasolar@csail.mit.edu\nYisong Yue\nAsari AI, Caltech CMS\nyisong@asari.ai\nStephan Zheng\nAsari AI\nstephan@asari.ai\nAbstract\nWe introduce a new approach to agent programming, the development of LLM-\nbased agents. Current approaches to agent programming often entangle two aspects\nof agent design: the core workflow logic and the inference-time strategy (e.g., tree\nsearch). We introduce probabilistic angelic nondeterminism (PAN), a programming\nmodel that disentangles these two concerns, allowing the programmer to describe\nthe agent workflow and independently experiment with different inference-time\nstrategies by simply changing a few inputs. We provide an implementation of\nPAN in Python as the ENCOMPASS framework, which uses a Python decorator to\ncompile agent workflow programs into a search space. We present three case studies\nthat demonstrate how the framework lets the programmer quickly improve the\nreliability of an agent and easily switch between different inference-time strategies,\nall with little additional coding.\n1 Introduction\nRecent work has shown the power of scaling inference-time compute for LLMs [1, 2], where popular\nstrategies include best-of-Nsampling [3, 4, 5], refinement [6, 7], and tree search [8, "
+    }
+   ],
+   "stored": true,
+   "seconds": 19.05,
+   "cost_usd": 0.004572,
+   "id": "S1",
+   "set": "3.1",
+   "category": "specific_paper",
+   "pass_no": 1,
+   "ts": "2026-10-06T15:31:58"
+  },
+  "S2|pass1": {
+   "question": "How many Python functions are in the CRUXEval benchmark, and what two tasks does each function support?",
+   "sanitized": "How many Python functions are in the CRUXEval benchmark, and what two tasks does each function support?",
+   "route": "agent",
+   "cache_hit": false,
+   "similarity": 0.2953,
+   "router_in": 157,
+   "router_out": 1149,
+   "planner_calls": 2,
+   "answer_calls": 1,
+   "mini_in": 6647,
+   "mini_out": 227,
+   "embed_calls": 5,
+   "tool_calls": 1,
+   "router_reason": "{\"route\": \"agent\", \"reason\": \"Determining the exact number of Python functions and the two tasks per function for CRUXEval may require consulting multiple CRUXEval papers to confirm definitions and an",
+   "answer_raw": "CRUXEval consists of **800 Python functions**. The benchmark has **two tasks** for each function: **input prediction** and **output prediction**. As stated, “CRUXEval consists of 800 distinct functions” and “we derive two benchmark tasks. In the output prediction task, the goal is to predict the output… In the input prediction task, the goal is to find any input…” [DBLP_conf_icml_GuRLSS024 p.3]",
+   "answer": "CRUXEval consists of **800 Python functions**. The benchmark has **two tasks** for each function: **input prediction** and **output prediction**. As stated, “CRUXEval consists of 800 distinct functions” and “we derive two benchmark tasks. In the output prediction task, the goal is to predict the output… In the input prediction task, the goal is to find any input…” [DBLP_conf_icml_GuRLSS024 p.3]",
+   "quote_check": {
+    "n_quotes": 2,
+    "quote_verification": 1.0,
+    "n_citations": 1,
+    "coverage": 1
+   },
+   "quotes": [
+    {
+     "quote": "CRUXEval consists of 800 distinct functions",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "we derive two benchmark tasks. In the output prediction task, the goal is to predict the output… In the input prediction task, the goal is to find any input…",
+     "outcome": "own_page",
+     "verified": true
+    }
+   ],
+   "chunks": [
+    {
+     "source": "DBLP_journals_corr_abs-2401-03065",
+     "label": "DBLP_journals_corr_abs-2401-03065",
+     "page": 5,
+     "text": "3 Benchmark Construction\nCRUXEval consists of 800 distinct functions, each with an input-output pair such that executing\nthe function on the input deterministically produces the output. Using these functions and input-\noutput pairs, we derive two benchmark tasks. In the output prediction task, the goal is to predict\nthe output of executing the function on its associated input. In the input prediction task, the goal is\nto find any input such that executing the function on that input produces the output. For both\ntasks, we use an execution-based correctness metric. For input prediction, a generated input passes\nif assert f(generated input) == output passes, and for output prediction, a generated output\npasses if assert f(input) == generated output passes. A few statistics about the samples of\nCRUXEval can be found in Appendix A.3.\n3.1 Generating Candidates\nWe use Code Llama 34B to generate all the candidate functions and inputs of CRUXEval. To do\nso, we prompt it with the name of a function in the Python standard library such as str.zfill\nand ask it to generate a Python function that makes use of the library function in addition to 5\ntest inputs. We provide two varying few-shot examples in our prompt for improved diversity of\ngenerations (see Appendix A.2 for more details). A sample prompt is shown in Listing 11.\nWe use a total of 69 different functions from the standard library:"
+    },
+    {
+     "source": "DBLP_conf_icml_GuRLSS024",
+     "label": "DBLP_conf_icml_GuRLSS024",
+     "page": 1,
+     "text": "CRUXEval: A Benchmark for Code Reasoning, Understanding and Execution\nAlex Gu 1 2 Baptiste Rozi`\nere 1 Hugh Leather 1 Armando Solar-Lezama 2 Gabriel Synnaeve 1 Sida I. Wang 1\nAbstract\nWe present CRUXEVAL (Code Reasoning,\nUnderstanding, and eXecution Evaluation), a\nbenchmark consisting of 800 Python functions\n(3-13 lines). Each function comes with an input-\noutput pair, leading to two natural tasks: input\nprediction and output prediction. First, we pro-\npose a general recipe for generating our execu-\ntion benchmark by sampling from a model, which\ncan be used for more challenging versions of the\nbenchmark if needed. Second, we evaluate twenty\ncode models on our benchmark and discover that\nmany recent high-scoring models on HumanEval\nshow no improvements on our benchmark. Third,\nwe show that simple CoT and fine-tuning schemes\ncan improve performance on our benchmark but\nremain far from solving it. The best setup, GPT-4\nwith chain of thought (CoT), achieves a pass@1 of\n75% and 81% on input and output prediction, re-\nspectively. In contrast, Code Llama 34B achieves\na pass@1 of 50% and 46% on input and output\nprediction. When it comes to reasoning about\ncode, GPT-4 has a huge edge over other models\nbut still fails consistently on some surprisingly\nsimple Python programs.\ndef f(string):\nstring_x = string.rstrip(\"a\")\nstring = string_x.rstrip(\"e\")\nreturn string\n# output prediction, CRUX"
+    },
+    {
+     "source": "DBLP_conf_icml_GuRLSS024",
+     "label": "DBLP_conf_icml_GuRLSS024",
+     "page": 16,
+     "text": "CRUXEval: A Benchmark for Code Reasoning, Understanding and Execution\nB. Benchmark Construction and Statistics\nIn this section, we provide more details about the process of constructing our benchmark. A sample prompt for generating\nfunctions and test cases is shown in Listing 6. The prompt is constructed by including two few-shot examples, one containing\na specified str function and one containing a specified list function. The full list of specified functions is given in B.1,\nand the full list of few-shot examples chosen from is given in B.2. We learned that having random-looking inputs instead of\ncommon words and phrases in the few-shot prompts significantly increased the difficulty of the benchmark.\nListing 6. Sample prompt for generating functions and test cases\nYou will be given a function name between [TASK] and [/TASK] tags. Following the examples given, write a Python\n→ function that makes use of the given function and 5 test inputs for that function.\n[TASK]\nstr.center\n[/TASK]\n[PYTHON]\ndef f(text):\nls = list(text)\nfor i in range(1, len(ls) - 1):\nls.insert(i, ’+’)\nreturn ’’.join(ls).center((len(ls) - 1) * 2)\n[/PYTHON]\n[TEST]\nassert f(’lynel’) == ??\nassert f(’nzoh’) == ??\nassert f(’u’) == ??\nassert f(’anfsoixz’) == ??\nassert f(’xzd’) == ??\n[/TEST]\n[TASK]\nlist.append\n[/TASK]\n[PYTHON]\ndef f(nums):\ncount = len(nums)\nfor i in range(-count+1, 0):\nnums.append(nums[i])\nreturn nu"
+    },
+    {
+     "source": "DBLP_journals_corr_abs-2401-03065",
+     "label": "DBLP_journals_corr_abs-2401-03065",
+     "page": 1,
+     "text": "arXiv:2401.03065v1 [cs.SE] 5 Jan 2024\nCRUXEval: A Benchmark for Code Reasoning,\nUnderstanding and Execution\nAlex Gu⋆ gua@mit.edu\nMIT CSAIL\nMeta AI\nMeta AI\nMIT CSAIL\nMeta AI\nMeta AI\nBaptiste Rozi`ere broz@meta.com\nHugh Leather hleather@meta.com\nArmando Solar-Lezama asolar@csail.mit.edu\nGabriel Synnaeve gab@meta.com\nSida I. Wang sida@meta.com\nAbstract\nWe present CRUXEval (Code Reasoning, Understanding, and eXecution Evaluation),\na benchmark consisting of 800 Python functions (3-13 lines). Each function comes\nwith an input-output pair, leading to two natural tasks: input prediction and output\nprediction. First, we propose a generic recipe for generating our execution benchmark\nwhich can be used to create future variation of the benchmark. Second, we evaluate\ntwenty code models on our benchmark and discover that many recent high-scoring\nmodels on HumanEval do not show the same improvements on our benchmark. Third,\nwe show that simple CoT and fine-tuning schemes can improve performance on our\nbenchmark but remain far from solving it. The best setup, GPT-4 with chain of thought\n(CoT), achieves a pass@1 of 75% and 81% on input and output prediction, respectively.\nIn contrast, Code Llama 34B achieves a pass@1 of 50% and 46% on input and output\nprediction, highlighting the gap between open and closed source models. As no model\nis close to acing CRUXEval, we provide examples of consisten"
+    },
+    {
+     "source": "DBLP_conf_icml_GuRLSS024",
+     "label": "DBLP_conf_icml_GuRLSS024",
+     "page": 2,
+     "text": "CRUXEval: A Benchmark for Code Reasoning, Understanding and Execution\nhavior of code also paves the way to tackling more difficult\ntasks such as code repair with execution feedback and code\nsummarization.\nAt a high level, our benchmark is constructed as follows.\nFirst, we use CODE LLAMA 34B to generate a large set of\nfunctions and inputs. The outputs are generated by execut-\ning the functions on the inputs. Second, we filter the set so\nthat our benchmark only consists of short problems with low\ncomputation and memory requirements, problems which a\ngood human programmer should be able to do without extra\nmemory in a minute or so. Third, we randomly select 800\nsamples passing the filter, ensuring the benchmark is both\nsmall enough to easily run but large enough to reliably see\nperformance differences among various models. While it\nis difficult to come up with example where the strongest\nmodels like GPT-4 fail consistently, we observe that mod-\nels actually fail often on random yet reasonable generated\nprograms. We also highlight that as models improve, this\ngenerate-and-filter approach can be used to create future\nbenchmarks that are more difficult and test different aspects\nof program execution.\nThe best model, GPT-4, achieves a pass@1 of 67% on\nCRUXEVAL-I and 63% on CRUXEVAL-O. In contrast, the\nbest open-source models only achieve 47% on CRUXEVAL-\nI and 44% on CRUXEVAL-O, faili"
+    },
+    {
+     "source": "DBLP_conf_icml_GuRLSS024",
+     "label": "DBLP_conf_icml_GuRLSS024",
+     "page": 14,
+     "text": "CRUXEval: A Benchmark for Code Reasoning, Understanding and Execution\nA. Limitations and Future Work\nCorrelations between various code tasks: While our benchmark serves as an interesting lens to analyze code LMs, one\nmight object that output prediction can simply be done with a Python interpreter and that input prediction abilities can be\ngreatly enhanced by equipping a LM with an interpreter, like in GPT-4 Code Interpreter mode. While this is true, we believe\nthat a good code LM still ought to have good code understanding and execution capabilities, similar to that of a strong\nprogrammer. We see that base models have a reasonably strong correlation between HumanEval, input prediction, and\noutput prediction score. An interesting future direction is to more deeply investigate the correlations between performance\non various code-related tasks such as code completion, execution, bug-finding, and code summarization.\nDistilling future execution benchmarks: Our benchmark only measures the input and output prediction accuracy of\nrelatively simple and self-contained Python functions distilled from a single model (Code Llama 34B). It would also be\ninteresting to measure these capabilities on longer and more difficult code snippets, open-domain code samples, or code in\nother programming languages. As our distillation technique is relatively general, we welcome others to create their own\n"
+    },
+    {
+     "source": "DBLP_conf_icml_GuRLSS024",
+     "label": "DBLP_conf_icml_GuRLSS024",
+     "page": 3,
+     "text": "mples of\nreasoning failures include 1) understanding negation (Hos-\nseini et al., 2021), 2) ignoring irrelevant context (Shi et al.,\n2023), 3) operating under counterfactual situations such as\n1-indexed Python or base-9 addition (Wu et al., 2023), and 4)\ngenerating Python code after identifier swaps like print,\nlen = len, print (Miceli-Barone et al., 2023). Tak-\ning a more theoretical perspective, (Dziri et al., 2023; Zhou\net al., 2023; Merrill & Sabharwal, 2023; Giannou et al.,\n2023) characterize the types of reasoning tasks transformers\ncan and cannot be expected to carry out. (Merrill et al.,\n2021) argues that it is not possible to learn meaning from\nungrounded form with context dependence and assuming\nthat syntax is independent of semantics. In this work, we\nuse CRUXEVAL to empirically examine failures in code\nexecution / reasoning.\n3. Benchmark Construction\nCRUXEVAL consists of 800 distinct functions, each with an\ninput-output pair such that executing the function on the in-\nput deterministically produces the output. Using these func-\ntions and input-output pairs, we derive two benchmark tasks.\nIn the output prediction task, the goal is to predict the output\nof executing the function on its associated input. In the\ninput prediction task, the goal is to find any input such that\nexecuting the function on that input produces the output. For\nboth tasks, we use an execution-bas"
+    },
+    {
+     "source": "DBLP_conf_icml_GuRLSS024",
+     "label": "DBLP_conf_icml_GuRLSS024",
+     "page": 15,
+     "text": "CRUXEval: A Benchmark for Code Reasoning, Understanding and Execution\nqualitative analysis, we find that when using CoT, many output prediction failures are recitation errors of information the\nmodel may already understand. Therefore, we believe that these mistakes may be easier to repair than when the correct\nreasoning path is not found in the first place, and that CRUXEVAL may be a simpler task to better understand model repair\ncapabilities.\n15"
+    }
+   ],
+   "stored": true,
+   "seconds": 17.52,
+   "cost_usd": 0.006474,
+   "id": "S2",
+   "set": "3.1",
+   "category": "specific_paper",
+   "pass_no": 1,
+   "ts": "2026-10-06T15:32:15"
+  },
+  "S3|pass1": {
+   "question": "What does LINC stand for, and what role does the language model play in it?",
+   "sanitized": "What does LINC stand for, and what role does the language model play in it?",
+   "route": "agent",
+   "cache_hit": false,
+   "similarity": 0.3697,
+   "router_in": 154,
+   "router_out": 673,
+   "planner_calls": 2,
+   "answer_calls": 1,
+   "mini_in": 8123,
+   "mini_out": 339,
+   "embed_calls": 5,
+   "tool_calls": 1,
+   "router_reason": "{\"route\":\"agent\",\"reason\":\"The acronym 'LINC' and the specific role of the language model vary across papers; answering accurately requires pulling definitions and LM usage from multiple sources (e.g.",
+   "answer_raw": "LINC stands for **“Logical Inference via Neurosymbolic Computation”** [DBLP_conf_emnlp_OlaussonGLZSTL23 p.1].\n\nThe language model’s role is to act as **“a semantic parser, translating premises and conclusions from natural language to expressions in first-order logic”** [DBLP_conf_emnlp_OlaussonGLZSTL23 p.1]. The resulting expressions are then **“offloaded to an external theorem prover, which symbolically performs deductive inference”** [DBLP_conf_emnlp_OlaussonGLZSTL23 p.1].\n\nThe excerpts also say that in LINC, **“the language model itself no longer needs to perform any deductive reasoning”** because that is **“offloaded to the theorem prover”** [DBLP_conf_emnlp_OlaussonGLZSTL23 p.2].",
+   "answer": "LINC stands for **“Logical Inference via Neurosymbolic Computation”** [DBLP_conf_emnlp_OlaussonGLZSTL23 p.1].\n\nThe language model’s role is to act as **“a semantic parser, translating premises and conclusions from natural language to expressions in first-order logic”** [DBLP_conf_emnlp_OlaussonGLZSTL23 p.1]. The resulting expressions are then **“offloaded to an external theorem prover, which symbolically performs deductive inference”** [DBLP_conf_emnlp_OlaussonGLZSTL23 p.1].\n\nThe excerpts also say that in LINC, **“the language model itself no longer needs to perform any deductive reasoning”** because that is **“offloaded to the theorem prover”** [DBLP_conf_emnlp_OlaussonGLZSTL23 p.2].",
+   "quote_check": {
+    "n_quotes": 5,
+    "quote_verification": 1.0,
+    "n_citations": 4,
+    "coverage": 1
+   },
+   "quotes": [
+    {
+     "quote": "Logical Inference via Neurosymbolic Computation",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "a semantic parser, translating premises and conclusions from natural language to expressions in first-order logic",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "offloaded to an external theorem prover, which symbolically performs deductive inference",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "the language model itself no longer needs to perform any deductive reasoning",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "offloaded to the theorem prover",
+     "outcome": "own_page",
+     "verified": true
+    }
+   ],
+   "chunks": [
+    {
+     "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "label": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "page": 2,
+     "text": "em prover algorithmically determines the\ntruth value of the conclusion given the formalized\npremises. In practice, we also incorporate a third\nmajority voting step, which is shown to improve\nperformance. LINC is a natural extension of recent\nwork augmenting lanugage models with symbolic\ntools such as calculators or interpreters (Schick\net al., 2023).\nLINC has a key advantage: the language model\nitself no longer needs to perform any deductive rea-\nsoning, which is offloaded to the theorem prover.\nHowever, there are also clear drawbacks: the for-\nmalization from natural language to first-order\nlogic must perfectly capture all relevant informa-\ntion contained in the premises, and any loss of in-\nformation in the formalization procedure may lead\nthe solver astray, leading to an incorrect conclusion.\nAs it is not clear whether the task of formalization\nis more or less difficult than that of end-to-end nat-\nural language reasoning, our core interest in this\nwork is to compare and contrast our neurosym-\nbolic approach to existing reasoning strategies like\nChain-of-Thought. Our contributions are thus\nthree-fold:\n• First, we propose LINC, a two-stage neurosym-\nbolic approach for logical reasoning tasks\n(Sec. 2).\n• Second, we compare LINC to three baseline\nLLM strategies (Fig. 2), across three mod-\nels (StarCoder+, GPT-3.5, GPT-4) and two\ndatasets (FOLIO and ProofWriter) (Sec. 4).\nWe fin"
+    },
+    {
+     "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "label": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "page": 2,
+     "text": "soning tasks\n(Sec. 2).\n• Second, we compare LINC to three baseline\nLLM strategies (Fig. 2), across three mod-\nels (StarCoder+, GPT-3.5, GPT-4) and two\ndatasets (FOLIO and ProofWriter) (Sec. 4).\nWe find that LINC significantly improves per-\nformance over every baseline in all experimen-\ntal conditions except for GPT-4 on FOLIO.\n• Third, we provide a thorough error analysis of\nboth LINC and Chain-of-Thought, identify-\ning three high-level failure modes of each. We\ndiscover that these failure modes are distinct,\nhighlighting the potential for a synergy of the\ntwo methods (Sec. 5).\nOverall, we present strong evidence for the po-\ntential of future neurosymbolic logical reasoning\nsystems based on integrating language models and\ntheorem provers.\n5154"
+    },
+    {
+     "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "label": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "page": 1,
+     "text": "LINC: A Neurosymbolic Approach for Logical Reasoning by Combining\nLanguage Models with First-Order Logic Provers\nTheo X. Olausson*1 Alex Gu*1 Benjamin Lipkin*2 Cedegao E. Zhang*2\nArmando Solar-Lezama1 Joshua B. Tenenbaum1,2 Roger Levy2\n{theoxo, gua, lipkinb, cedzhang}@mit.edu\n1MIT CSAIL 2MIT BCS\n∗ Equal contribution.\nAbstract\n1 Introduction\nLogical reasoning, i.e., deductively inferring\nthe truth value of a conclusion from a set of\npremises, is an important task for artificial in-\ntelligence with wide potential impacts on sci-\nence, mathematics, and society. While many\nprompting-based strategies have been proposed\nto enable Large Language Models (LLMs) to\ndo such reasoning more effectively, they still\nappear unsatisfactory, often failing in subtle\nand unpredictable ways. In this work, we\ninvestigate the validity of instead reformulat-\ning such tasks as modular neurosymbolic pro-\ngramming, which we call LINC: Logical In-\nference via Neurosymbolic Computation. In\nLINC, the LLM acts as a semantic parser, trans-\nlating premises and conclusions from natural\nlanguage to expressions in first-order logic.\nThese expressions are then offloaded to an ex-\nternal theorem prover, which symbolically per-\nforms deductive inference. Leveraging this ap-\nproach, we observe significant performance\ngains on FOLIO and a balanced subset of\nProofWriter for three different models in nearly\nall experime"
+    },
+    {
+     "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "label": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "page": 9,
+     "text": "orough survey of\nrecent work in the tool-usage literature.\n7 Conclusion\nIn this work, we present LINC: Logical Inference\nvia Neurosymbolic Computation, a neurosymbolic\napproach for scalable logical reasoning with large\nlanguage models. Our experiments show that LINC\nleads to significant performance gains in nearly ev-\nery setting we consider, and that it supports gener-\nalization to settings where the model has to reason\nabout a much larger set of premises than it is shown\nin the in-context learning examples. Furthermore,\ncarrying out a quantitative and qualitative analysis\nof the mistakes made by LINC, we find evidence\nthat it may complement purely in-context reasoning\nstrategies such as Chain-of-Thought prompting,\nsince they differ greatly in the types and frequen-\ncies of mistakes made. This work thus supports the\nefficacy of neurosymbolic approaches to natural\nlanguage reasoning, setting the stage for continued\nadvances in combining large language models and\nsymbolic reasoning engines; we discuss several\npromising future directions in Appendix A.\n8 Limitations\nNarrow scope of logical reasoning task consid-\nered: In this work, we focus exclusively on one as-\npect of logical reasoning: predicting the truth value\nof a conclusion given a set of natural language\npremises. Here, we consider a setting where the\n5161"
+    },
+    {
+     "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "label": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "page": 4,
+     "text": "iven\nthe natural language premises and is asked to di-\nrectly generate the label (True/False/Uncertain).\n2We use gpt-3.5-turbo-16k-0613 and gpt-4-0613.\n3https://huggingface.co/bigcode/starcoderplus\n4See https://huggingface.co/spaces/bigcode/\nin-the-stack and https://huggingface.co/spaces/\nbigcode/search.\n5Although the exact size of these models has not been\nmade public, their common predecessor GPT-3 was known to\nhave 175B parameters; see Brown et al. (2020).\nIn the Scratchpad baseline (Nye et al., 2021), the\nmodel is asked to first generate FOL expressions\ncorresponding to the premises, and then generate\nthe label. This baseline is thus an ablation of LINC,\nwhere we use the LLM instead of Prover9 as the\nlogic solver. Finally, in the CoT baseline, we use the\nstandard technique of CoT prompting (Wei et al.,\n2022; Kojima et al., 2022; Wang et al., 2023b),\nwhere the model is asked to generate step-by-step\nnatural language reasoning to arrive at the conclu-\nsion. The prompts we use for all approaches can\nbe found in Appendix D.\n4 Results & Discussion\nOur main results are shown in Figure 3. Each bar\nrepresents either LINC or one of the three baselines,\nwhile each group of bars indicates the language\nmodel used (in {StarCoder+, GPT-3.5, GPT-4}).\nWe note first that in the FOLIO domain (Figure\n3a), StarCoder+—the smallest model we experi-\nment with—benefits the most from LINC, achiev-\n"
+    },
+    {
+     "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "label": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "page": 4,
+     "text": " the language\nmodel used (in {StarCoder+, GPT-3.5, GPT-4}).\nWe note first that in the FOLIO domain (Figure\n3a), StarCoder+—the smallest model we experi-\nment with—benefits the most from LINC, achiev-\ning a mean accuracy that is 14.2 points higher than\nthe closest controlled baseline (56.0% vs. 41.8%\nwith CoT). We find that Scratchpad, where the\nintermediate logical formulae are still generated\nbut the call to the symbolic solver is ablated and\nreplaced by the model’s own prediction, does not\nappear to benefit performance; for StarCoder+, nei-\nther Scratchpad nor the Naïve baseline perform\nbetter than simply deterministically predicting the\nmost common label (“Uncertain”). For GPT-3.5,\nthe trend is similar, although the gap between LINC\nand the closest baseline shrinks (62.6% vs. 54.9%\n5156"
+    },
+    {
+     "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "label": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "page": 8,
+     "text": "False, and 41% Uncertain, while LINC predicts\n24% True, 17% False, and 57% Uncertain (with\n2% of predictions throwing an error). Notably, we\nobserve that LINC predicts Uncertain much more\nfrequently than CoT (57% vs. 41%). To under-\nstand why, note that the translation from natural\nlanguage to FOL is a lossy process: recall that in\nL1 and L2, we saw that the information conveyed\nthrough the FOL is sometimes a subset of the infor-\nmation in the original premises. Removing pieces\nof crucial information that were on the critical path\nto deducing True/False may then leave an uncer-\ntain conclusion. At the same time, while the FOL\ntranslations sometimes do not retain all of the infor-\nmation in the NL, they rarely contain false informa-\ntion that was not provided in the original premises.\nTherefore, LINC’s precision when predicting True\nor False is very high (93%) compared to that of\nCoT (81%), but this comes at the cost of lower re-\ncall on True/False predictions (60% for LINC vs.\n75% for CoT).\n2. LINC and CoT mispredict on different ex-\namples. Earlier in Sec. 5.1, we saw that LINC and\nCoT exhibit different failure modes, which suggests\nthey should fail on different examples. Indeed, we\nfind that this is the case in our experiments on FO-\nLIO: Figure 5c shows a 2 ×2 confusion matrix\nwhich compares whether or not each method’s pre-\ndiction was correct. We observe that out of the\n24"
+    },
+    {
+     "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "label": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "page": 1,
+     "text": "lly per-\nforms deductive inference. Leveraging this ap-\nproach, we observe significant performance\ngains on FOLIO and a balanced subset of\nProofWriter for three different models in nearly\nall experimental conditions we evaluate. On\nProofWriter, augmenting the comparatively\nsmall open-source StarCoder+ (15.5B parame-\nters) with LINC even outperforms GPT-3.5 and\nGPT-4 with Chain-of-Thought (CoT) prompt-\ning by an absolute 38% and 10%, respec-\ntively. When used with GPT-4, LINC scores\n26% higher than CoT on ProofWriter while\nperforming comparatively on FOLIO. Further\nanalysis reveals that although both methods on\naverage succeed roughly equally often on this\ndataset, they exhibit distinct and complemen-\ntary failure modes. We thus provide promising\nevidence for how logical reasoning over natural\nlanguage can be tackled through jointly lever-\naging LLMs alongside symbolic provers. All\ncorresponding code is publicly available.1\n∗ Author order randomized; all reserve the right to list\ntheir name first.\n1 https://github.com/benlipkin/linc\nWidespread adoption of large language models\n(LLMs) such as GPT-3 (Brown et al., 2020), GPT-\n4 (OpenAI, 2023), and PaLM (Chowdhery et al.,\n2022) have led to a series of remarkable successes\nin tasks ranging from text summarization to pro-\ngram synthesis. Some of these successes have en-\ncouraged the hypothesis that such models are able\nto flexibly an"
+    },
+    {
+     "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "label": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "page": 3,
+     "text": "verage symbolic algo-\nrithms with provable guarantees that the deductive\nchains will be correct with respect to the semantics\nof the intermediate representation. Making effec-\ntive use of this reformulation thus requires the logic\nexpressions generated by the LLM to be 1) syntac-\ntically valid, such that they are accepted by the\nprover, and 2) semantically valid, such that their\nevaluation results in the correct conclusion. In our\nexperiments, we mitigate these risks by using a K-\nway majority voting procedure, which is discussed\nfurther in Sec. 3.\nThe significance of this problem space refor-\nmulation can—beyond the numerical increases in\nperformance observed across our experiments—\nperhaps best be seen through an in-depth compari-\nson of how LINC and traditional end-to-end LLM\nreasoning approaches such as Chain-of-Thought\n(CoT) fail. To foreshadow our latter analysis, we\nfind that compared to CoT, LINC has worse recall\nbut better precision on True/False predictions. We\ndiscuss this further in Sec. 5 and highlight that this\nsuggests that LINC, as well as neurosymbolic com-\nputation more generally, has the potential to reduce\nLLM overconfidence and hallucination.\n3 Experiments\nIn this section, we present our experimental setup,\nthe models we use, and the three baselines to which\nwe compare LINC.\nDatasets: Our experiments use tasks from two\nexisting datasets: FOLIO (Han et al., "
+    },
+    {
+     "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "label": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "page": 7,
+     "text": " times, it gets stuck\nin the middle of a reasoning chain.\n5.2 Quantitative Analysis\n1. Compared to CoT, LINC has worse recall but\nbetter precision on True/False predictions. To\nsee this, we plotted the confusion matrices in Fig-\nure 5b (CoT) and Figure 5a (LINC). Looking just\nat the distributions of predicted labels of the two\nmethods, we see that CoT predicts 32% True, 27%\n5159"
+    },
+    {
+     "source": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "label": "DBLP_conf_emnlp_OlaussonGLZSTL23",
+     "page": 5,
+     "text": " shallow\nproofs (Figure 4c). However, even with GPT-4 the\nperformance drops as the necessary proof depth\nincreases with every configuration except for LINC,\nwhich performs near or at ceiling through the max-\nimum proof depth available in the dataset.\n5 Error Analysis\nHaving established that LINC can improve perfor-\nmance in many settings, we now move on to our\nfinal research question: How do the failure modes\nof LINC compare to those of in-context reasoning\n5157"
+    }
+   ],
+   "stored": true,
+   "seconds": 14.29,
+   "cost_usd": 0.007895,
+   "id": "S3",
+   "set": "3.1",
+   "category": "specific_paper",
+   "pass_no": 1,
+   "ts": "2026-10-06T15:32:30"
+  },
+  "S4|pass1": {
+   "question": "What are the three pillars of machine programming, and what does each emphasize?",
+   "sanitized": "What are the three pillars of machine programming, and what does each emphasize?",
+   "route": "agent",
+   "cache_hit": false,
+   "similarity": 0.4334,
+   "router_in": 151,
+   "router_out": 776,
+   "planner_calls": 2,
+   "answer_calls": 1,
+   "mini_in": 5936,
+   "mini_out": 614,
+   "embed_calls": 5,
+   "tool_calls": 1,
+   "router_reason": "{\"route\": \"agent\", \"reason\": \"The query asks for a specific framework ('three pillars of machine programming') and how each pillar is emphasized. This concept appears in multiple papers and may requir",
+   "answer_raw": "The three pillars are **intention, invention, and adaptation**. The paper says:\n\n- **Intention**: “the ability of the machine to understand the programmer’s goals through more natural forms of interaction” [DBLP_conf_mapl_GottschlichSTCR18 p.2]. It also says intention “focuses on the interface between the human and the machine programming system” and on techniques to “discover what a program needs to do from input that is natural to express by the human” [DBLP_conf_mapl_GottschlichSTCR18 p.8].\n\n- **Invention**: “the ability of the machine to discover how to accomplish such goals; whether by devising new algorithms, or even by devising new abstractions from which such algorithms can be built” [DBLP_conf_mapl_GottschlichSTCR18 p.2]. It also says invention “emphasizes the creation or refinement of algorithms or core hardware and software building blocks through machine learning (ML)” [DBLP_conf_mapl_GottschlichSTCR18 p.1], and “machine systems that create and refine algorithms or the core hardware and software building blocks from which systems are built” [DBLP_conf_mapl_GottschlichSTCR18 p.8].\n\n- **Adaptation**: “the ability to autonomously evolve software, whether to make it execute efficiently on new or existing platforms, or to fix errors and address vulnerabilities” [DBLP_conf_mapl_GottschlichSTCR18 p.2]. It also says adaptation “emphasizes advances in the use of ML-based constructs to autonomously evolve software” [DBLP_conf_mapl_GottschlichSTCR18 p.1], and “focuses on ML-based tools that help software adapt to changing conditions” [DBLP_conf_mapl_GottschlichSTCR18 p.8].\n\nSo, in short: **intention = understanding user goals, invention = creating/refining algorithms and building blocks, adaptation = evolving software over time and across changing conditions** [DBLP_conf_mapl_GottschlichSTCR18 p.2; p.1; p.8].",
+   "answer": "The three pillars are **intention, invention, and adaptation**. The paper says:\n\n- **Intention**: “the ability of the machine to understand the programmer’s goals through more natural forms of interaction” [DBLP_conf_mapl_GottschlichSTCR18 p.2]. It also says intention “focuses on the interface between the human and the machine programming system” and on techniques to “discover what a program needs to do from input that is natural to express by the human” [DBLP_conf_mapl_GottschlichSTCR18 p.8].\n\n- **Invention**: “the ability of the machine to discover how to accomplish such goals; whether by devising new algorithms, or even by devising new abstractions from which such algorithms can be built” [DBLP_conf_mapl_GottschlichSTCR18 p.2]. It also says invention “emphasizes the creation or refinement of algorithms or core hardware and software building blocks through machine learning (ML)” [DBLP_conf_mapl_GottschlichSTCR18 p.1], and “machine systems that create and refine algorithms or the core hardware and software building blocks from which systems are built” [DBLP_conf_mapl_GottschlichSTCR18 p.8].\n\n- **Adaptation**: “the ability to autonomously evolve software, whether to make it execute efficiently on new or existing platforms, or to fix errors and address vulnerabilities” [DBLP_conf_mapl_GottschlichSTCR18 p.2]. It also says adaptation “emphasizes advances in the use of ML-based constructs to autonomously evolve software” [DBLP_conf_mapl_GottschlichSTCR18 p.1], and “focuses on ML-based tools that help software adapt to changing conditions” [DBLP_conf_mapl_GottschlichSTCR18 p.8].\n\nSo, in short: **intention = understanding user goals, invention = creating/refining algorithms and building blocks, adaptation = evolving software over time and across changing conditions** [DBLP_conf_mapl_GottschlichSTCR18 p.2; p.1; p.8].",
+   "quote_check": {
+    "n_quotes": 9,
+    "quote_verification": 1.0,
+    "n_citations": 11,
+    "coverage": 1
+   },
+   "quotes": [
+    {
+     "quote": "the ability of the machine to understand the programmer’s goals through more natural forms of interaction",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "focuses on the interface between the human and the machine programming system",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "discover what a program needs to do from input that is natural to express by the human",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "the ability of the machine to discover how to accomplish such goals; whether by devising new algorithms, or even by devising new abstractions from which such algorithms can be built",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "emphasizes the creation or refinement of algorithms or core hardware and software building blocks through machine learning (ML)",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "machine systems that create and refine algorithms or the core hardware and software building blocks from which systems are built",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "the ability to autonomously evolve software, whether to make it execute efficiently on new or existing platforms, or to fix errors and address vulnerabilities",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "emphasizes advances in the use of ML-based constructs to autonomously evolve software",
+     "outcome": "own_page",
+     "verified": true
+    },
+    {
+     "quote": "focuses on ML-based tools that help software adapt to changing conditions",
+     "outcome": "own_page",
+     "verified": true
+    }
+   ],
+   "chunks": [
+    {
+     "source": "DBLP_conf_mapl_GottschlichSTCR18",
+     "label": "DBLP_conf_mapl_GottschlichSTCR18",
+     "page": 7,
+     "text": "The Three Pillars of Machine Programming 5 The Interplay Between Pillars\nSystems for machine programming will most likely be com-\nposed of a set of tools each of which focuses on a particular\npillar. We anticipate that, in most cases, an individual tool\ncannot be fully understood in terms of a single pillar. The\nmachine programming problem is multifaceted and issues\nconcerning one pillar will inevitably impact the other pil-\nlars. Hence, we need to understand machine programming\nsystems in terms of the interplay between the three pillars.\nWe expect this interplay to expose a tension between\nfeatures of a tool that are supportive of the needs of any given\npillar and those that are disruptive to the needs of the other\npillars. The challenge in designing a machine programming\nsystem is to understand this interplay and reach an effective\nresolution of those tensions. As an example to explore this\ninterplay, consider verified lifting [36].\nVerified lifting tools input code written in one language,\ntranslate the code into a new language, and then formally\nverify that the new code produces results that are consis-\ntent with the original code. The prototypical example [36]\ntakes stencil codes written in an imperative language, trans-\nlates them into a modern DSL such as Halide, and then uses\ntheorem proving technology to verify that the original and\ngenerated DSL codes are functionally"
+    },
+    {
+     "source": "DBLP_conf_mapl_GottschlichSTCR18",
+     "label": "DBLP_conf_mapl_GottschlichSTCR18",
+     "page": 2,
+     "text": "er the growing set of digital\ndevices permeating daily life.\n1.2 The Three Pillars\nGiven the opportunity and the need, there are already a\nnumber of research efforts in the direction of machine pro-\ngramming in both industry and academia. The general goal\nof machine programming is to remove the burden of writing\ncorrect and efficient code from a human programmer and to\ninstead place it on a machine. The goal of this paper is to pro-\nvide a conceptual framework for us to reason about machine\nprogramming. We describe this framework in the context of\nthree technical pillars: (i) intention, (ii) invention, and (iii)\nGottschlich et al.\nadaptation. Each of these pillars corresponds to a class of\ncapabilities that we believe are necessary to transform the\nprogramming landscape.\nIntention is the ability of the machine to understand the\nprogrammer’s goals through more natural forms of inter-\naction, which is critical to reducing the complexity of writ-\ning software. Invention is the ability of the machine to dis-\ncover how to accomplish such goals; whether by devising\nnew algorithms, or even by devising new abstractions from\nwhich such algorithms can be built. Adaptation is the ability\nto autonomously evolve software, whether to make it exe-\ncute efficiently on new or existing platforms, or to fix errors\nand address vulnerabilities. As suggested in Figure 1, inten-\ntion, invention, and "
+    },
+    {
+     "source": "DBLP_conf_mapl_GottschlichSTCR18",
+     "label": "DBLP_conf_mapl_GottschlichSTCR18",
+     "page": 1,
+     "text": "arXiv:1803.07244v3 [cs.AI] 26 Jun 2021\nThe Three Pillars of Machine Programming\nJustin Gottschlich\nIntel Labs, USA\njustin.gottschlich@intel.com\nMichael Carbin\nMIT, USA\nmcarbin@csail.mit.edu\nSaman Amarasinghe\nMIT, USA\nsaman@csail.mit.edu\nArmando Solar-Lezama\nMIT, USA\nasolar@csail.mit.edu\nMartin Rinard\nMIT, USA\nrinard@csail.mit.edu\nJoshua B. Tenenbaum\nMIT, USA\njbt@mit.edu\nNesime Tatbul\nIntel Labs and MIT, USA\ntatbul@csail.mit.edu\nRegina Barzilay\nMIT, USA\nregina@csail.mit.edu\nTim Mattson\nIntel Labs, USA\ntimothy.g.mattson@intel.com\nAbstract\nIn this position paper, we describe our vision of the future of\nmachine programming through a categorical examination of\nthree pillars of research. Those pillars are: (i) intention, (ii) in-\nvention, and (iii) adaptation. Intention emphasizes advance-\nments in the human-to-computer and computer-to-machine-\nlearning interfaces. Invention emphasizes the creation or\nrefinement of algorithms or core hardware and software\nbuilding blocks through machine learning (ML). Adaptation\nemphasizes advances in the use of ML-based constructs to\nautonomously evolve software.\nKeywords program synthesis, machine programming, soft-\nware development, software maintenance, intention, inven-\ntion, adaptation\n1 Introduction\nProgramming is a cognitively demanding task that requires\nextensive knowledge, experience and a large degree of cre-\nativity, and is notoriously d"
+    },
+    {
+     "source": "DBLP_conf_mapl_GottschlichSTCR18",
+     "label": "DBLP_conf_mapl_GottschlichSTCR18",
+     "page": 7,
+     "text": "pply the three pillars in their\nown research, it is essential to consider the interplay be-\ntween the three pillars and how this interplay is supportive\nor disruptive to the overall programming process.\n6 Data\nNearly all machine programming systems require data to\ndrive their algorithms. More specifically, every Research Area\nlisted in Tables 1, 2, and 3 requires data (in some form) to\nfunction properly. The data required by these subdomains\ncomes in a variety of forms (e.g., code, input/output examples,\nDSLs, etc.), but is ever-present. This dependency on data\nmakes it essential that we consider the open problems and\nemerging uses around data when reasoning about machine\nprogramming and the systems that implement it.\nThe various approaches to address the three machine pro-\ngramming pillars have different needs in terms of the type\nand size of data they require. Moreover, there is a wide spec-\ntrum in terms of the quality of the data that a project might\nuse. We discuss some of these emerging data uses and issues\nfor the remainder of this section.\nCode Repositories Large version control repositories, such\nas GitHub, offer the promise of access to full revision histo-\nries for all the code necessary to build and run a project, as\nwell as its accompanying documentation. The code available\nin these public repositories has grown exponentially over\nthe last several years and show no"
+    },
+    {
+     "source": "DBLP_conf_mapl_GottschlichSTCR18",
+     "label": "DBLP_conf_mapl_GottschlichSTCR18",
+     "page": 8,
+     "text": "ts a framework to organize\nwork on this problem. We call this framework the three pillars\nof machine programming. The three pillars are intention,\ninvention, and adaptation.\nIntention focuses on the interface between the human and\nthe machine programming system; i.e., techniques to dis-\ncover what a program needs to do from input that is natural\nto express by the human. A system grounded in the intention\npillar meets human programmers on their terms rather than\nforcing them to express code in computer/hardware nota-\ntions. Invention emphasizes machine systems that create and\nrefine algorithms or the core hardware and software building\nblocks from which systems are built. Adaptation focuses on\nML-based tools that help software adapt to changing condi-\ntions; whether they are bugs or vulnerabilities found in an\napplication or new hardware systems.\nData is at the foundation of the modern renaissance in\nartificial intelligence (AI). Without vast amounts of data, it is\nunlikely that AI would have had significant impact outside\nspecialized academic circles. In this paper, we explored the\nimpact of data as it pertains to machine programming. Soft-\nware repositories in systems such as GitHub and the vast\namount of software embedded in countless webpages is the\nraw material that will likely support a large majority of the\nemergence of machine programming.\nFinally, there are numerous ope"
+    },
+    {
+     "source": "DBLP_conf_mapl_GottschlichSTCR18",
+     "label": "DBLP_conf_mapl_GottschlichSTCR18",
+     "page": 1,
+     "text": "me, a program must be maintained as\nFigure 1. The Three Pillars of Machine Programming: Inten-\ntion, Invention, and Adaptation. Each pillar in the diagram\nincludes a few example sub-domains generally related to\nthem.\nit adapts to changes in the program’s goals, errors in the\nprogram, and the features in new computer platforms. A\nmachine programming system is any system that automates\nsome or all of the steps of turning the user’s intent into an\nexecutable program and maintaining that program over time.\nThe automation of programming has been a goal of the\nprogramming systems community since the birth of Fortran\nin the 1950s. The first paper on “The FORTRAN Automatic\nCoding System” made it clear that its goal was “for the 704\n[IBM’s next large computer] to code problems for itself and\nproduce as good programs as human coders (but without\nthe errors)” [8]. The broader AI community has also been\ninterested in automatic programming dating back to the Pro-\ngrammer’s Apprentice Project back in the late 1970s [64].\nA number of technological developments over the past few\nyears, however, are creating both the need and the opportu-\nnity for transformative advances in our ability to use ma-\nchines to help users write software programs."
+    },
+    {
+     "source": "DBLP_conf_mapl_GottschlichSTCR18",
+     "label": "DBLP_conf_mapl_GottschlichSTCR18",
+     "page": 1,
+     "text": "ce, intention, inven-\ntion, adaptation\n1 Introduction\nProgramming is a cognitively demanding task that requires\nextensive knowledge, experience and a large degree of cre-\nativity, and is notoriously difficult to automate. Machine\nlearning (ML) has the capacity to reshape the way soft-\nware is developed. At some level, this has already begun,\nas machine-learned components progressively replace com-\nplex hand-crafted algorithms in domains such as natural-\nlanguage understanding and vision. Yet, we believe that it is\npossible to move much further. We envision machine learn-\ning and automated reasoning techniques that will enable new\nprogramming systems; systems that will deliver a significant\ndegree of automation to reduce the cost of producing secure,\ncorrect, and efficient software. These systems will also en-\nable non-programmers to harness the full power of modern\ncomputing platforms to solve complex problems correctly\nand efficiently. We call such efforts machine programming.\n1.1 Why Now?\nProgramming is the process of turning a problem defini-\ntion (the intent) into a sequence of instructions that when\nexecuted on a computer, produces a solution to the origi-\nnal problem. Over time, a program must be maintained as\nFigure 1. The Three Pillars of Machine Programming: Inten-\ntion, Invention, and Adaptation. Each pillar in the diagram\nincludes a few example sub-domains generally "
+    }
+   ],
+   "stored": true,
+   "seconds": 16.08,
+   "cost_usd": 0.007533,
+   "id": "S4",
+   "set": "3.1",
+   "category": "specific_paper",
+   "pass_no": 1,
+   "ts": "2026-10-06T15:32:46"
+  }
+ }
+}
