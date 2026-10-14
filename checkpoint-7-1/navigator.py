@@ -15,7 +15,8 @@ The 5.1 Navigator with four changes, each aimed at a finding from the 6.1 audit.
      An answer with an unverified quotation is never stored in the cache.
   3. Relabel the 16 mislabeled files.  (6.1 Issue 2: MANTRA was credited to Jeon et al.,
      2016, because the file is named for that paper.) Excerpts from those files carry a
-     label naming the paper actually inside, from relabeled_files.json.
+     corrected label from relabeled_files.json: for 15 files, the paper read from page 1;
+     for one file that holds only a page of chart axes, a label saying it is unidentified.
   4. Route, and cache.  (6.1 Step 3: the agent cost about 3x the plain pipeline, and its
      second planner call only ever decided to stop.) A small model (gpt-5-nano) sends
      questions that need two or more papers, or a trend over time, to the 5.1 agent, and
