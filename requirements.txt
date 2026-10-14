@@ -13,7 +13,9 @@ langchain-community==0.4.1
 # Vector store (checkpoint 2.1 onward)
 chromadb==1.5.9
 
-# OpenAI SDK, used directly by the RAGAS judge in the labs
+# OpenAI SDK (pulled in by langchain-openai) and RAGAS. No checkpoint imports either
+# one directly; both were installed in the environment the results came from and are
+# pinned so a fresh install matches it.
 openai==2.26.0
 ragas==0.4.3
 
@@ -23,7 +25,7 @@ rank-bm25==0.2.2
 # Agent workflow (checkpoint 5.1)
 langgraph==1.1.10
 
-# Graph retrieval (lab 4.2; imported by the 4.1 starter)
+# Graph retrieval; imported by the 4.1 solution and its starter file
 networkx==3.6.1
 
 # Transitive dependencies that drift

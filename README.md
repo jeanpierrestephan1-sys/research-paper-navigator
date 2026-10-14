@@ -32,9 +32,16 @@ python navigator.py "What is MANTRA, and what does it validate?"
 python navigator.py --chat                                    # one question after another
 ```
 
+Other options: `--route direct` or `--route agent` skips the router and forces
+that path; `--no-cache` answers without reading or writing the cache; `--quiet`
+hides the progress lines.
+
 Each answer ends with a line showing the path it took (`cache`, `direct` or
 `agent`), the model calls made, the seconds taken and the cost. If a quotation
 in the answer is not on the page it cites, the answer says so underneath.
+`checkpoint-7-1/demo_run_2026-10-13.log` holds four fresh runs made with
+`--no-cache` on 2026-10-13: three ordinary questions and the 6.1 forged-excerpt
+attack, each with everything the Navigator printed.
 
 How a question is answered:
 
@@ -108,7 +115,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Create a `.env` file in the repo root containing:
+Create a `.env` file in the repo root (or one level above it, next to the
+`data/` folder; the code looks in both places) containing:
 
 ```
 OPENROUTER_API_KEY=your-key-here
